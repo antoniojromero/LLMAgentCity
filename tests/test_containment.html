@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Containment Validation Tests</title>
+  <script src="../src/frontend/js/area_manager.js"></script>
+  <script src="../src/frontend/js/area_validator.js"></script>
+  <style>
+    body {
+      font-family: 'Monaco', 'Courier New', monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 { color: #58a6ff; margin-bottom: 30px; }
+    .test-section {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .test-title {
+      color: #79c0ff;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 10px;
+    }
+    .test-result {
+      margin: 10px 0;
+      padding: 8px 12px;
+      border-radius: 4px;
+      background: #0d1117;
+      border-left: 3px solid #30363d;
+    }
+    .pass {
+      border-left-color: #3fb950;
+      color: #3fb950;
+    }
+    .fail {
+      border-left-color: #f85149;
+      color: #f85149;
+    }
+    .info {
+      border-left-color: #58a6ff;
+      color: #58a6ff;
+    }
+    .code {
+      background: #0d1117;
+      padding: 12px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 10px 0;
+      border: 1px solid #30363d;
+      font-size: 0.9em;
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .summary {
+      background: #238636;
+      color: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .summary.fail {
+      background: #da3633;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Containment Validation Tests</h1>
+
+  <div id="test-container"></div>
+
+  <script>
+    const TestRunner = {
+      results: [],
+      areaManager: new AreaManager(),
+      validator: new AreaValidator(new AreaManager()),
+
+      log(message, type = 'info') {
+        const container = document.getElementById('test-container');
+        const div = document.createElement('div');
+        div.className = `test-result ${type}`;
+        div.textContent = message;
+        container.appendChild(div);
+      },
+
+      section(title) {
+        const container = document.getElementById('test-container');
+        const section = document.createElement('div');
+        section.className = 'test-section';
+
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'test-title';
+        titleDiv.textContent = title;
+
+        section.appendChild(titleDiv);
+        container.appendChild(section);
+
+        this.currentSection = section;
+      },
+
+      addResult(message, passed) {
+        this.results.push({ message, passed });
+
+        const div = document.createElement('div');
+        div.className = `test-result ${passed ? 'pass' : 'fail'}`;
+        div.textContent = `${passed ? '✓' : '✗'} ${message}`;
+
+        this.currentSection.appendChild(div);
+      },
+
+      code(text) {
+        const div = document.createElement('div');
+        div.className = 'code';
+        const pre = document.createElement('pre');
+        pre.textContent = text;
+        div.appendChild(pre);
+        this.currentSection.appendChild(div);
+      },
+
+      summary() {
+        const passed = this.results.filter(r => r.passed).length;
+        const total = this.results.length;
+        const allPassed = passed === total;
+
+        const div = document.createElement('div');
+        div.className = `summary ${allPassed ? 'pass' : 'fail'}`;
+        div.textContent = `${passed}/${total} Tests Passed (${(passed/total*100).toFixed(0)}%)`;
+
+        document.getElementById('test-container').appendChild(div);
+      }
+    };
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 1: Basic Containment - Agents in Clusters
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 1: Basic Containment - Agents in Clusters');
+    TestRunner.log('Testing that agents are properly contained within cluster boundaries', 'info');
+
+    const basicClusters = {
+      'tech': {
+        polygon: [[-10, -10], [10, -10], [10, 10], [-10, 10]],
+        area: 400
+      },
+      'social': {
+        polygon: [[20, -10], [40, -10], [40, 10], [20, 10]],
+        area: 400
+      }
+    };
+
+    const basicAgents = {
+      'alice': {
+        polygon: [[-5, -5], [5, -5], [5, 5], [-5, 5]],
+        cluster: 'tech',
+        area: 100
+      },
+      'bob': {
+        polygon: [[-3, -3], [3, -3], [3, 3], [-3, 3]],
+        cluster: 'tech',
+        area: 36
+      },
+      'carol': {
+        polygon: [[22, -5], [38, -5], [38, 5], [22, 5]],
+        cluster: 'social',
+        area: 160
+      }
+    };
+
+    const basicBuildings = {
+      'alice_b1': {
+        polygon: [[-2, -2], [2, -2], [2, 2], [-2, 2]],
+        agent: 'alice',
+        area: 16
+      },
+      'bob_b1': {
+        polygon: [[-1, -1], [1, -1], [1, 1], [-1, 1]],
+        agent: 'bob',
+        area: 4
+      }
+    };
+
+    const basicResults = TestRunner.validator.validateHierarchy(basicClusters, basicAgents, basicBuildings);
+
+    TestRunner.addResult('All basic containment checks passed',
+                         basicResults.passed === basicResults.total && basicResults.failed.length === 0);
+
+    TestRunner.code(
+      `Validation Results:\n` +
+      `  Total checks: ${basicResults.total}\n` +
+      `  Passed: ${basicResults.passed}\n` +
+      `  Failed: ${basicResults.failed.length}`
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 2: Violation Detection - Agent Escaping Cluster
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 2: Violation Detection - Agent Escaping Cluster');
+    TestRunner.log('Testing detection of agents that escape cluster boundaries', 'info');
+
+    const violationClusters = {
+      'tech': {
+        polygon: [[-10, -10], [10, -10], [10, 10], [-10, 10]],
+        area: 400
+      }
+    };
+
+    const violationAgents = {
+      'alice': {
+        polygon: [[-8, -8], [12, -8], [12, 8], [-8, 8]],  // Extends beyond cluster!
+        cluster: 'tech',
+        area: 320
+      }
+    };
+
+    const violationBuildings = {};
+
+    const violationResults = TestRunner.validator.validateHierarchy(violationClusters, violationAgents, violationBuildings);
+
+    TestRunner.addResult('Violation correctly detected',
+                         violationResults.failed.length > 0);
+
+    TestRunner.addResult('Violation details captured',
+                         violationResults.failed[0]?.outsideVertices > 0);
+
+    TestRunner.code(
+      `Detected Violation:\n` +
+      `  Type: ${violationResults.failed[0]?.type}\n` +
+      `  Outside vertices: ${violationResults.failed[0]?.outsideVertices}/${violationResults.failed[0]?.totalVertices}`
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 3: Overlap Detection
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 3: Overlap Detection');
+    TestRunner.log('Testing detection of overlapping elements at same level', 'info');
+
+    const overlapAgents = {
+      'alice': {
+        polygon: [[-8, -8], [2, -8], [2, 2], [-8, 2]],
+        area: 100
+      },
+      'bob': {
+        polygon: [[-2, -2], [8, -2], [8, 8], [-2, 8]],
+        area: 100
+      }
+    };
+
+    const overlapResults = TestRunner.validator.validateNoOverlaps(overlapAgents, 'AGENTS');
+
+    TestRunner.addResult('Overlapping agents detected',
+                         overlapResults.overlaps.length > 0);
+
+    TestRunner.addResult('Overlap count correct',
+                         overlapResults.total_pairs > 0);
+
+    TestRunner.code(
+      `Overlap Results:\n` +
+      `  Total pairs checked: ${overlapResults.total_pairs}\n` +
+      `  Overlaps detected: ${overlapResults.overlaps.length}\n` +
+      `  Clean: ${overlapResults.clean}`
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 4: Non-Overlapping Elements
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 4: Non-Overlapping Elements');
+    TestRunner.log('Testing validation of non-overlapping elements', 'info');
+
+    const noOverlapAgents = {
+      'alice': {
+        polygon: [[-8, -8], [-2, -8], [-2, -2], [-8, -2]],
+        area: 36
+      },
+      'bob': {
+        polygon: [[2, 2], [8, 2], [8, 8], [2, 8]],
+        area: 36
+      }
+    };
+
+    const noOverlapResults = TestRunner.validator.validateNoOverlaps(noOverlapAgents, 'AGENTS');
+
+    TestRunner.addResult('No overlaps detected correctly',
+                         noOverlapResults.overlaps.length === 0 && noOverlapResults.clean);
+
+    TestRunner.code(
+      `No-Overlap Results:\n` +
+      `  Total pairs checked: ${noOverlapResults.total_pairs}\n` +
+      `  Overlaps detected: ${noOverlapResults.overlaps.length}\n` +
+      `  Clean: ${noOverlapResults.clean}`
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 5: Complex Hierarchy Validation
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 5: Complex Hierarchy Validation');
+    TestRunner.log('Testing multi-level containment with multiple clusters/agents/buildings', 'info');
+
+    const complexClusters = {
+      'team_a': {
+        polygon: [[-15, -15], [0, -15], [0, 0], [-15, 0]],
+        area: 225
+      },
+      'team_b': {
+        polygon: [[5, -15], [20, -15], [20, 0], [5, 0]],
+        area: 225
+      }
+    };
+
+    const complexAgents = {
+      'alice': {
+        polygon: [[-12, -12], [-3, -12], [-3, -3], [-12, -3]],
+        cluster: 'team_a',
+        area: 81
+      },
+      'bob': {
+        polygon: [[-12, -3], [-3, -3], [-3, 3], [-12, 3]],
+        cluster: 'team_a',
+        area: 81
+      },
+      'carol': {
+        polygon: [[8, -12], [17, -12], [17, -3], [8, -3]],
+        cluster: 'team_b',
+        area: 81
+      }
+    };
+
+    const complexBuildings = {
+      'alice_b1': {
+        polygon: [[-11, -11], [-4, -11], [-4, -4], [-11, -4]],
+        agent: 'alice',
+        area: 49
+      },
+      'bob_b1': {
+        polygon: [[-11, -2], [-4, -2], [-4, 2], [-11, 2]],
+        agent: 'bob',
+        area: 28
+      },
+      'carol_b1': {
+        polygon: [[9, -11], [16, -11], [16, -4], [9, -4]],
+        agent: 'carol',
+        area: 49
+      }
+    };
+
+    const complexResults = TestRunner.validator.validateHierarchy(complexClusters, complexAgents, complexBuildings);
+
+    TestRunner.addResult('Complex hierarchy validated',
+                         complexResults.passed === complexResults.total);
+
+    TestRunner.addResult('All clusters checked',
+                         complexResults.total >= 6); // At least 2 agents per cluster + buildings
+
+    TestRunner.code(
+      `Complex Hierarchy Results:\n` +
+      `  Total containment checks: ${complexResults.total}\n` +
+      `  Passed: ${complexResults.passed}\n` +
+      `  Failed: ${complexResults.failed.length}\n` +
+      `  Success rate: ${(complexResults.passed/complexResults.total*100).toFixed(0)}%`
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 6: Validator Stats
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 6: Validator Statistics');
+    TestRunner.log('Testing validator statistics tracking', 'info');
+
+    const stats = TestRunner.validator.getStats();
+
+    TestRunner.addResult('Stats accumulated correctly',
+                         stats.total > 0 && stats.passes > 0);
+
+    TestRunner.code(
+      `Validator Stats:\n` +
+      `  Total tests: ${stats.total}\n` +
+      `  Passed: ${stats.passes}\n` +
+      `  Failed: ${stats.failures}\n` +
+      `  Success rate: ${stats.rate_percent}%`
+    );
+
+    TestRunner.validator.resetStats();
+    const resetStats = TestRunner.validator.getStats();
+
+    TestRunner.addResult('Stats reset successfully',
+                         resetStats.total === 0 && resetStats.passes === 0);
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // FINAL SUMMARY
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.summary();
+  </script>
+</body>
+</html>

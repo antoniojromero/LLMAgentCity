@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Area Consistency Tests</title>
+  <script src="../src/frontend/js/area_manager.js"></script>
+  <script src="../src/frontend/js/area_validator.js"></script>
+  <style>
+    body {
+      font-family: 'Monaco', 'Courier New', monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 { color: #58a6ff; margin-bottom: 30px; }
+    .test-section {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .test-title {
+      color: #79c0ff;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 10px;
+    }
+    .test-result {
+      margin: 10px 0;
+      padding: 8px 12px;
+      border-radius: 4px;
+      background: #0d1117;
+      border-left: 3px solid #30363d;
+    }
+    .pass {
+      border-left-color: #3fb950;
+      color: #3fb950;
+    }
+    .fail {
+      border-left-color: #f85149;
+      color: #f85149;
+    }
+    .info {
+      border-left-color: #58a6ff;
+      color: #58a6ff;
+    }
+    .code {
+      background: #0d1117;
+      padding: 12px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 10px 0;
+      border: 1px solid #30363d;
+      font-size: 0.9em;
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .summary {
+      background: #238636;
+      color: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .summary.fail {
+      background: #da3633;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Area Consistency Tests</h1>
+
+  <div id="test-container"></div>
+
+  <script>
+    const TestRunner = {
+      results: [],
+      areaManager: new AreaManager(),
+      validator: new AreaValidator(new AreaManager()),
+
+      log(message, type = 'info') {
+        const container = document.getElementById('test-container');
+        const div = document.createElement('div');
+        div.className = `test-result ${type}`;
+        div.textContent = message;
+        container.appendChild(div);
+      },
+
+      section(title) {
+        const container = document.getElementById('test-container');
+        const section = document.createElement('div');
+        section.className = 'test-section';
+
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'test-title';
+        titleDiv.textContent = title;
+
+        section.appendChild(titleDiv);
+        container.appendChild(section);
+
+        this.currentSection = section;
+      },
+
+      addResult(message, passed) {
+        this.results.push({ message, passed });
+
+        const div = document.createElement('div');
+        div.className = `test-result ${passed ? 'pass' : 'fail'}`;
+        div.textContent = `${passed ? '✓' : '✗'} ${message}`;
+
+        this.currentSection.appendChild(div);
+      },
+
+      code(text) {
+        const div = document.createElement('div');
+        div.className = 'code';
+        const pre = document.createElement('pre');
+        pre.textContent = text;
+        div.appendChild(pre);
+        this.currentSection.appendChild(div);
+      },
+
+      summary() {
+        const passed = this.results.filter(r => r.passed).length;
+        const total = this.results.length;
+        const allPassed = passed === total;
+
+        const div = document.createElement('div');
+        div.className = `summary ${allPassed ? 'pass' : 'fail'}`;
+        div.textContent = `${passed}/${total} Tests Passed (${(passed/total*100).toFixed(0)}%)`;
+
+        document.getElementById('test-container').appendChild(div);
+      }
+    };
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 1: Grid Cluster Area Calculation
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 1: Grid Cluster Area Calculation');
+    TestRunner.log('Testing cluster area calculation for various agent counts', 'info');
+
+    const agentCounts = [1, 3, 6, 9, 12];
+    const weights = [1.0, 1.5, 2.0, 1.2, 0.8, 1.3];
+
+    const clusterResults = [];
+    agentCounts.forEach(count => {
+      const clusterInfo = TestRunner.areaManager.calculateClusterArea(
+        count,
+        weights.slice(0, count)
+      );
+      clusterResults.push(clusterInfo);
+
+      const testName = `Cluster with ${count} agent${count === 1 ? '' : 's'}: area = ${clusterInfo.area.toFixed(0)} sq units (${clusterInfo.cols}x${clusterInfo.rows})`;
+      TestRunner.addResult(testName, clusterInfo.area > 0 && clusterInfo.area < 1000);
+    });
+
+    TestRunner.code(
+      'Results:\n' +
+      clusterResults.map((r, i) =>
+        `  ${agentCounts[i]} agents: area=${r.area.toFixed(1)}, dims=${r.width.toFixed(1)}x${r.height.toFixed(1)}, scale=${r.actScale.toFixed(2)}`
+      ).join('\n')
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 2: Agent Area Allocation
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 2: Agent Area Allocation');
+    TestRunner.log('Testing proportional area allocation based on agent weights', 'info');
+
+    const cluster6 = TestRunner.areaManager.calculateClusterArea(6, weights.slice(0, 6));
+    const totalWeight = weights.slice(0, 6).reduce((s, w) => s + w, 0);
+
+    const agentResults = [];
+    weights.slice(0, 6).forEach((w, i) => {
+      const agentInfo = TestRunner.areaManager.calculateAgentArea(w, cluster6, totalWeight);
+      agentResults.push(agentInfo);
+
+      const fraction = (w / totalWeight * 100).toFixed(1);
+      const testName = `Agent ${i}: weight=${w}, area=${agentInfo.area.toFixed(1)} sq units (${fraction}% of cluster)`;
+      TestRunner.addResult(testName, agentInfo.area > 0 && agentInfo.area <= cluster6.area);
+    });
+
+    TestRunner.code(
+      'Results:\n' +
+      agentResults.map((r, i) =>
+        `  Agent ${i}: area=${r.area.toFixed(1)}, min=${r.minWidth.toFixed(2)}x${r.minHeight.toFixed(2)}`
+      ).join('\n')
+    );
+
+    // Verify total allocation
+    const totalAllocated = agentResults.reduce((s, a) => s + a.area, 0);
+    const clusterUsable = cluster6.area * 0.82;
+    const allocRatio = (totalAllocated / clusterUsable * 100).toFixed(1);
+    TestRunner.addResult(`Total agent area = ${totalAllocated.toFixed(1)} (${allocRatio}% of cluster usable area)`,
+                         totalAllocated <= clusterUsable);
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 3: Building Area Calculation
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 3: Building Area Allocation');
+    TestRunner.log('Testing building footprint allocation within agents', 'info');
+
+    const agent0 = agentResults[0];
+    const buildingMetrics = [
+      {h: 2.0, w: 1.0, d: 1.0},
+      {h: 1.5, w: 0.8, d: 0.8},
+      {h: 3.0, w: 1.2, d: 1.2},
+      {h: 1.2, w: 0.6, d: 0.6}
+    ];
+
+    const buildingResults = [];
+    buildingMetrics.forEach((m, i) => {
+      const buildingInfo = TestRunner.areaManager.calculateBuildingArea(m, agent0, buildingMetrics.length);
+      buildingResults.push(buildingInfo);
+
+      const footprint = m.w * m.d;
+      const testName = `Building ${i}: h=${m.h}, footprint=${footprint.toFixed(2)} → ${buildingInfo.footprint.toFixed(2)} sq units`;
+      TestRunner.addResult(testName, buildingInfo.footprint > 0 && buildingInfo.footprint <= agent0.area);
+    });
+
+    TestRunner.code(
+      'Results:\n' +
+      buildingResults.map((r, i) =>
+        `  Building ${i}: footprint=${r.footprint.toFixed(2)}, height=${r.height.toFixed(1)}`
+      ).join('\n')
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 4: Voronoi Scale Factor
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 4: Voronoi Scale Factor Calculation');
+    TestRunner.log('Testing scale factor calculation for Voronoi-to-Grid adaptation', 'info');
+
+    const testScales = [
+      { grid: 500, voronoi: 350 },
+      { grid: 1000, voronoi: 1000 },
+      { grid: 750, voronoi: 900 },
+      { grid: 400, voronoi: 600 }
+    ];
+
+    testScales.forEach((test, i) => {
+      const scaleFactor = TestRunner.areaManager.getVoronoiScaleFactor(test.grid, test.voronoi);
+      const scaledArea = test.voronoi * scaleFactor * scaleFactor;
+      const diff = Math.abs(scaledArea - test.grid) / test.grid * 100;
+
+      const testName = `Scale test ${i + 1}: Grid=${test.grid}, Voronoi=${test.voronoi}, scale=${scaleFactor.toFixed(3)}, scaled=${scaledArea.toFixed(0)} (diff=${diff.toFixed(1)}%)`;
+      TestRunner.addResult(testName, Math.abs(scaleFactor - 1.0) < 0.5); // Scale factor should be reasonable
+    });
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 5: Area Consistency Validation
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 5: Area Consistency Validation');
+    TestRunner.log('Testing area consistency checking between Grid and Voronoi', 'info');
+
+    const gridAreas = {
+      'agent_1': 25.5,
+      'agent_2': 18.3,
+      'agent_3': 22.1,
+      'agent_4': 20.0
+    };
+
+    const voronoiElements = {
+      'agent_1': { area: 25.8 },  // 1.2% difference
+      'agent_2': { area: 19.5 },  // 6.6% difference
+      'agent_3': { area: 24.2 },  // 9.5% difference (within 15% tolerance)
+      'agent_4': { area: 15.0 }   // 25% difference (exceeds 15% tolerance)
+    };
+
+    const consistencyResults = TestRunner.areaManager.validateAreaConsistency(gridAreas, voronoiElements);
+
+    TestRunner.addResult(`Consistency check: ${consistencyResults.within_tolerance}/${consistencyResults.total} within tolerance`,
+                         consistencyResults.within_tolerance >= 3);
+
+    TestRunner.code(
+      'Results:\n' +
+      Object.entries(gridAreas).map(([id, gridArea]) => {
+        const voroArea = voronoiElements[id]?.area || 0;
+        const diff = Math.abs(voroArea - gridArea) / gridArea * 100;
+        const status = diff <= 15 ? '✓' : '✗';
+        return `  ${status} ${id}: Grid=${gridArea.toFixed(1)}, Voronoi=${voroArea.toFixed(1)} (${diff.toFixed(1)}% diff)`;
+      }).join('\n')
+    );
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // TEST 6: Cache Operations
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.section('Test 6: Cache Operations');
+    TestRunner.log('Testing area caching for performance', 'info');
+
+    const testCacheName = 'test_cluster_1';
+    const testAreaInfo = { area: 156.25, width: 15.6, height: 10.0 };
+
+    TestRunner.areaManager.cacheClusterArea(testCacheName, testAreaInfo);
+    const retrievedArea = TestRunner.areaManager.getClusterArea(testCacheName);
+
+    TestRunner.addResult('Cache cluster area', retrievedArea !== null && retrievedArea.area === testAreaInfo.area);
+    TestRunner.addResult('Retrieved area matches stored area',
+                         retrievedArea?.area === testAreaInfo.area);
+
+    const debugInfo = TestRunner.areaManager.getDebugSummary();
+    TestRunner.log('Cache state: ' + debugInfo.split('\n')[0], 'info');
+
+    TestRunner.areaManager.clearCaches();
+    const clearedArea = TestRunner.areaManager.getClusterArea(testCacheName);
+    TestRunner.addResult('Caches cleared successfully', clearedArea === null);
+
+    // ════════════════════════════════════════════════════════════════════════════
+    // FINAL SUMMARY
+    // ════════════════════════════════════════════════════════════════════════════
+
+    TestRunner.summary();
+  </script>
+</body>
+</html>
