@@ -7,8 +7,6 @@
     
          Real-Time Spatial Visualization of Agent Interactions
     
-              Powered by Voronoi Tessellation and Three.js
-    
     ========================================================================
 ```
 
