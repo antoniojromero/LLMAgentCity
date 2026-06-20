@@ -3,7 +3,7 @@
 ```
     ========================================================================
     
-              SOCIAL AGENTS CITY 3D - v1.0 FINAL RELEASE
+              SOCIAL AGENTS CITY 3D - v1.0 RELEASE
     
          Real-Time Spatial Visualization of Agent Interactions
     
@@ -457,55 +457,9 @@ Verify API key validity in service account dashboard.
 - Monitor system resources in Developer view
 - Increase available system RAM if possible
 
-## 10. Testing and Validation
+## 10. Architecture and Implementation
 
-### 10.1 Integrated Test Suites
-
-Two comprehensive test suites verify system correctness:
-
-**Test Suite 1: Area Consistency (35 Tests)**
-
-URL: http://localhost:8002/tests/test_area_consistency.html
-
-Tests:
-- Cluster area calculation accuracy
-- Agent area allocation proportionality
-- Building footprint constraints
-- Voronoi scale factor computation
-- Grid-Voronoi area synchronization
-- Cache operation correctness
-
-Expected Result: 35/35 PASSING
-
-**Test Suite 2: Containment Validation (14 Tests)**
-
-URL: http://localhost:8002/tests/test_containment.html
-
-Tests:
-- Hierarchical containment (agents in clusters, buildings in agents)
-- Boundary violation detection
-- Overlap detection at same hierarchical level
-- Non-overlapping element validation
-- Complex multi-level hierarchy
-- Validator statistics tracking
-
-Expected Result: 14/14 PASSING
-
-### 10.2 Quality Metrics
-
-Production build specifications:
-
-| Metric | Target | Actual |
-|--------|--------|--------|
-| Code Coverage | >90% | 93% |
-| Test Pass Rate | 100% | 49/49 passing |
-| Runtime Errors | 0 | 0 |
-| Performance (Generation) | <50ms | 20-35ms |
-| Scalability | 4-60 agents | Verified |
-
-## 11. Architecture and Implementation
-
-### 11.1 System Architecture
+### 10.1 System Architecture
 
 Backend:
 - Framework: FastAPI with Uvicorn ASGI server
@@ -517,7 +471,7 @@ Frontend:
 - Spatial: Voronoi tessellation via D3-Delaunay
 - Geometry: Custom area calculation and validation systems
 
-### 11.2 Core Modules
+### 10.2 Core Modules
 
 | Module | Lines | Function |
 |--------|-------|----------|
@@ -527,7 +481,7 @@ Frontend:
 | index.html | 3000+ | Main interactive interface |
 | main.py | 2938 | Backend simulation engine |
 
-### 11.3 Data Flow
+### 10.3 Data Flow
 
 ```
 Multi-Agent Conversation Input
@@ -558,9 +512,9 @@ Three.js Rendering Pipeline
 Interactive 3D Visualization
 ```
 
-## 12. Performance Characteristics
+## 11. Performance Characteristics
 
-### 12.1 Computational Complexity
+### 11.1 Computational Complexity
 
 | Operation | Algorithm | Complexity | Actual Time |
 |-----------|-----------|-----------|------------|
@@ -571,7 +525,7 @@ Interactive 3D Visualization
 | Containment Check | Hierarchical PIP | O(n²m) | <5ms (100+ elements) |
 | Full City Generation | - | - | 20-35ms typical |
 
-### 12.2 Scalability Limits
+### 11.2 Scalability Limits
 
 | Dimension | Maximum | Performance Impact |
 |-----------|---------|-------------------|
@@ -581,7 +535,7 @@ Interactive 3D Visualization
 | Buildings per Agent | 20+ | Visual clutter increases |
 | Simulation Rounds | Unlimited | Linear time increase |
 
-## 13. Conclusion
+## 12. Conclusion
 
 Social Agents City 3D provides researchers and practitioners with an integrated platform for comprehensive multi-agent conversation analysis. Through hierarchical spatial visualization, the system reduces dimensionality of interaction data while maintaining analytical fidelity across six orthogonal perspectives. The combination of deterministic Voronoi tessellation, real-time metrics computation, and interactive three-dimensional rendering enables intuitive understanding of complex multi-agent dynamics.
 
@@ -935,28 +889,9 @@ pytest tests/
 
 ## 📖 Citation
 
-If you use Social Agents City in academic research, please cite:
-
-```bibtex
-@software{social_agents_city_2026,
-  title = {Social Agents City 3D: A 3D Procedural City Visualization for Multi-Agent LLM Conversations},
-  author = {Social Agents City Contributors},
-  year = {2026},
-  url = {https://github.com/social-agents-city/social-agents-city},
-  version = {1.0.0}
-}
-```
-
-See [CITATION.cff](CITATION.cff) for additional citation formats.
+If you use Social Agents City in academic research, please cite: PENDING
 
 ---
-
-## 📋 System Requirements
-
-- **Python**: 3.11 or later
-- **Browser**: Modern WebGL-capable browser (Chrome, Firefox, Safari, Edge)
-- **RAM**: 2GB minimum (4GB+ recommended for 50+ agents)
-- **GPU**: Optional (accelerates Three.js rendering)
 
 ### Ollama Integration (Optional)
 For full LLM agent support:
@@ -1008,9 +943,7 @@ Built on foundational research in:
 
 ## 📧 Contact & Support
 
-- **Issues**: [GitHub Issues](https://github.com/social-agents-city/social-agents-city/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/social-agents-city/social-agents-city/discussions)
-- **Email**: contact@social-agents-city.dev
+- **Email**: antoniojose.romero@uah.es | ajrbarrera@comillas.edu
 
 ---
 
