@@ -13,13 +13,12 @@ from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
+from .emotion_engine import EmotionEngine
+
+from .metrics.integration import get_metrics as _get_real_metrics
+
 def get_metrics():
-    class DummyMetrics:
-        def compute_agent_metrics(self, *args, **kwargs):
-            return args[0]
-        def reset_metrics(self):
-            pass
-    return DummyMetrics()
+    return _get_real_metrics()
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -29,7 +28,7 @@ CFG = {
     "key":   os.getenv("OLLAMA_KEY", ""),
     "ssl":   False,  # CRITICAL: Always False - ignore SSL verification errors
     "model": os.getenv("OLLAMA_MODEL", ""),
-    "sentiment_model": "lexicon",
+    "sentiment_model": "vad",
     "context_window": 60,
     "agent_history":  20,
     "mode":  "conversation",
@@ -39,6 +38,8 @@ CFG = {
     "include_topic": True,       # Always include topic/theme in prompt
     "include_history": True,     # Include conversation history
     "include_agent_name": True,  # Include "You are X" instruction
+    "alpha": 0.0,   # USD per prompt token
+    "beta": 0.0,    # USD per completion token
 }
 
 EXECUTOR = ThreadPoolExecutor(max_workers=16)
@@ -177,18 +178,14 @@ def detect_emotions(text):
     words = re.findall(r"[a-z']+", text.lower())
     detected = {}
 
-    # Use lexicon if available, otherwise fall back to keywords
-    if EMOTION_LEXICON:
-        # Count emotions from lexicon
+    # Use NRC Emotion Lexicon engine
+    if _emotion_engine and _emotion_engine.is_loaded:
         emotion_counts = {}
         for w in words:
-            if w in EMOTION_LEXICON:
-                entry = EMOTION_LEXICON[w]
-                emo = entry.get('emotion')
-                if emo:
-                    emotion_counts[emo] = emotion_counts.get(emo, 0) + 1
-
-        # Normalize to 0-1 intensity
+            result = _emotion_engine.get_word_emotion(w)
+            if result:
+                emo = result.get('emotion')
+                emotion_counts[emo] = emotion_counts.get(emo, 0) + 1
         if emotion_counts:
             max_count = max(emotion_counts.values())
             for emo, count in emotion_counts.items():
@@ -309,74 +306,22 @@ LOW_DOM  = set("maybe perhaps might could possibly suggest wonder ask request "
                "hope wish consider allow permit enable".split())
 
 # ══════════════════════════════════════════════════════════════════════════════
-# TEXT-ANALYSIS-MASTER: Emotion Lexicon (14,852 words)
+# NRC Emotion Lexicon (14,182 words × 8 emotions + 2 sentiments)
 # ══════════════════════════════════════════════════════════════════════════════
 
-import csv
-from pathlib import Path
-
-# Cargar lexicon compilado al inicio
-LEXICON_PATH = Path(__file__).parent.parent.parent / "data" / "lexicons" / "emotions_compiled.csv"
-EMOTION_LEXICON = {}  # {word: {emotion, color, sentiment, subjectivity}}
-
-def load_emotion_lexicon():
-    """Carga el lexicon compilado de text-analysis-master en memoria."""
-    global EMOTION_LEXICON
-    if LEXICON_PATH.exists():
-        try:
-            with open(LEXICON_PATH, 'r', encoding='utf-8') as f:
-                reader = csv.DictReader(f)
-                for row in reader:
-                    word = row['word'].lower()
-                    EMOTION_LEXICON[word] = {
-                        'emotion': row['emotion'] if row['emotion'] else None,
-                        'color': row['color'] if row['color'] else None,
-                        'sentiment': row['sentiment'] if row['sentiment'] else None,
-                        'subjectivity': row['subjectivity'] if row['subjectivity'] else None,
-                        'source': row['source']
-                    }
-            print(f"[INFO] Loaded {len(EMOTION_LEXICON)} words from emotion lexicon")
-        except Exception as e:
-            print(f"[WARNING] Could not load emotion lexicon: {e}")
-    else:
-        print(f"[WARNING] Lexicon not found at {LEXICON_PATH}")
-
-# Cargar al importar el módulo
-load_emotion_lexicon()
-
-# Mapeo de emociones a colores hex (para frontend)
-EMOTION_COLORS_HEX = {
-    'joy': '#fbbf24',           # amarillo
-    'anger': '#ef4444',         # rojo
-    'fear': '#8b5cf6',          # morado
-    'sadness': '#3b82f6',       # azul
-    'disgust': '#84cc16',       # verde lima
-    'surprise': '#f97316',      # naranja
-    'trust': '#22c55e',         # verde
-    'anticipation': '#06b6d4',  # cyan
-}
+_emotion_engine = EmotionEngine()
+_emotion_engine.load_all()
+if _emotion_engine.is_loaded:
+    print(f"[EMOTION] NRC Lexicon loaded: {_emotion_engine.word_count} words ({_emotion_engine.emotion_word_count} with emotions)")
+else:
+    print("[EMOTION] WARNING: NRC lexicon not found")
 
 def get_word_emotion(word):
-    """Retorna información emocional de una palabra desde el lexicon."""
-    w = word.lower().strip(".,;:!?()[]{}\"'")
-    entry = EMOTION_LEXICON.get(w)
-    if entry and entry['emotion']:
-        return {
-            'word': word,
-            'emotion': entry['emotion'],
-            'color': EMOTION_COLORS_HEX.get(entry['emotion'], '#8b949e'),
-            'sentiment': entry['sentiment'],
-            'lexicon_color': entry['color']  # Color del lexicon original
-        }
-    return None
+    return _emotion_engine.get_word_emotion(word)
 
 def _lexicon_pad(text):
-    words = re.findall(r"[a-z']+", text.lower())
-    n = max(len(words), 1)
-    v = sum(1 for w in words if w in POS_VALENCE) - sum(1 for w in words if w in NEG_VALENCE)
-    a = sum(1 for w in words if w in HIGH_AROUSAL) - sum(1 for w in words if w in LOW_AROUSAL)
-    d = sum(1 for w in words if w in HIGH_DOM) - sum(1 for w in words if w in LOW_DOM)
-    return round(v/n, 3), round(a/n, 3), round(d/n, 3)
+    """Use NRC-derived VAD lexicon for valence, arousal, dominance."""
+    return _emotion_engine.pad_vad(text) if _emotion_engine.vad_lexicon else (0, 0, 0)
 
 def _llm_pad(text, model):
     try:
@@ -398,69 +343,6 @@ def pad_sentiment(text):
     if sm == "lexicon" or not sm:
         return _lexicon_pad(text)
     return _llm_pad(text, sm)
-
-# ══════════════════════════════════════════════════════════════════════════════
-# TEXT-ANALYSIS-MASTER: Emotion Lexicon (14,852 words)
-# ══════════════════════════════════════════════════════════════════════════════
-
-LEXICON_PATH = Path(__file__).parent.parent.parent / "data" / "lexicons" / "emotions_compiled.csv"
-EMOTION_LEXICON = {}  # {word: {emotion, color, sentiment, subjectivity, source}}
-
-def load_emotion_lexicon():
-    """Carga el lexicon compilado de text-analysis-master en memoria."""
-    global EMOTION_LEXICON
-    if LEXICON_PATH.exists():
-        try:
-            with open(LEXICON_PATH, 'r', encoding='utf-8') as f:
-                reader = csv.DictReader(f)
-                count = 0
-                for row in reader:
-                    word = row['word'].lower().strip()
-                    if word:
-                        EMOTION_LEXICON[word] = {
-                            'emotion': row.get('emotion', '').strip() or None,
-                            'color': row.get('color', '').strip() or None,
-                            'sentiment': row.get('sentiment', '').strip() or None,
-                            'subjectivity': row.get('subjectivity', '').strip() or None,
-                            'source': row.get('source', '').strip()
-                        }
-                        count += 1
-            print(f"[EMOTION_LEXICON] Loaded {count} words from {LEXICON_PATH}")
-        except Exception as e:
-            print(f"[ERROR] Failed to load emotion lexicon: {e}")
-    else:
-        print(f"[WARNING] Lexicon not found at {LEXICON_PATH}")
-
-# Mapeo de emociones a colores hex (para frontend)
-EMOTION_COLORS_HEX = {
-    'joy': '#fbbf24',           # amarillo
-    'anger': '#ef4444',         # rojo
-    'fear': '#8b5cf6',          # morado
-    'sadness': '#3b82f6',       # azul
-    'disgust': '#84cc16',       # verde lima
-    'surprise': '#f97316',      # naranja
-    'trust': '#22c55e',         # verde
-    'anticipation': '#06b6d4',  # cyan
-}
-
-def get_word_emotion(word):
-    """Retorna información emocional de una palabra desde el lexicon."""
-    w = word.lower().strip(".,;:!?()[]{}\"'")
-    if not w:
-        return None
-    entry = EMOTION_LEXICON.get(w)
-    if entry and entry['emotion']:
-        return {
-            'word': word,
-            'emotion': entry['emotion'],
-            'color': EMOTION_COLORS_HEX.get(entry['emotion'], '#8b949e'),
-            'sentiment': entry['sentiment'],
-            'lexicon_color': entry['color']  # Color del lexicon original
-        }
-    return None
-
-# Cargar lexicon al iniciar
-load_emotion_lexicon()
 
 def normalize_text(text):
     """Normaliza caracteres especiales problemáticos (p.ej. non-breaking hyphens)"""
@@ -1874,6 +1756,11 @@ async def set_config(body: dict):
         if k in body:
             CFG[k] = bool(body[k])
 
+    float_fields = ("alpha","beta")
+    for k in float_fields:
+        if k in body:
+            CFG[k] = float(body[k])
+
     if "temperature" in body:
         CFG["temperature"] = max(0.0, min(2.0, float(body["temperature"])))
 
@@ -2272,6 +2159,8 @@ async def step(body: dict):
     a_id  = body.get("agent_a");  b_id = body.get("agent_b")
     topic = body.get("topic","How should cities grow sustainably?")
     model = body.get("model", CFG["model"])
+    if body.get("url"): CFG["url"] = body["url"]
+    if body.get("key"): CFG["key"] = body["key"]
     if not model:          return {"error":"No model selected"}
     if not agents:         return {"error":"No agents loaded. Load a preset first."}
     if a_id == b_id:       return {"error":"Agent A and B must be different"}
@@ -2300,7 +2189,13 @@ async def round_sim(body: dict):
     topic = body.get("topic", "")
     pairs = body.get("pairs", 3)
     rounds = body.get("rounds", 1)
+    # Accept url/key from frontend
+    if body.get("url"):
+        CFG["url"] = body["url"]
+    if body.get("key"):
+        CFG["key"] = body["key"]
     if not model: return {"error": "No model selected"}
+    print(f"[DEBUG round_sim] url={CFG['url']} key={'***' if CFG.get('key') else 'EMPTY'} model={model}")
     if not agents: return {"error": "No agents loaded. Load a preset first."}
 
     import random
@@ -2334,6 +2229,8 @@ async def broadcast_sim(body: dict):
     global current_round
     model = body.get("model", CFG["model"])
     topic = body.get("topic", "")
+    if body.get("url"): CFG["url"] = body["url"]
+    if body.get("key"): CFG["key"] = body["key"]
     if not model: return {"error": "No model selected"}
     if not agents: return {"error": "No agents loaded. Load a preset first."}
     current_round += 1
@@ -2407,6 +2304,8 @@ async def debate_sim(body: dict):
     global current_round
     model = body.get("model", CFG["model"])
     topic = body.get("topic", "")
+    if body.get("url"): CFG["url"] = body["url"]
+    if body.get("key"): CFG["key"] = body["key"]
     if not model: return {"error": "No model selected"}
     if not agents: return {"error": "No agents loaded. Load a preset first."}
     current_round += 1
@@ -2479,6 +2378,8 @@ async def develop_sim(body: dict):
     global current_round
     model = body.get("model", CFG["model"])
     task = body.get("task", body.get("topic",""))
+    if body.get("url"): CFG["url"] = body["url"]
+    if body.get("key"): CFG["key"] = body["key"]
     if not model: return {"error": "No model selected"}
     if not agents: return {"error": "No agents loaded. Load a preset first."}
     current_round += 1
@@ -2552,6 +2453,8 @@ async def multi_round(body: dict):
     global current_round
     model = body.get("model", CFG["model"])
     topic = body.get("topic", "")
+    if body.get("url"): CFG["url"] = body["url"]
+    if body.get("key"): CFG["key"] = body["key"]
     rounds_n = body.get("rounds", 3)
     stop_at = body.get("stop_at_round")
     round_mode = body.get("round_mode", "group_random")
@@ -2587,6 +2490,8 @@ async def simulate_multi_district(body: dict):
     model = body.get("model", CFG["model"])
     topic = body.get("topic", "")
 
+    if body.get("url"): CFG["url"] = body["url"]
+    if body.get("key"): CFG["key"] = body["key"]
     if not model:
         return {"error": "No model selected"}
     if not agents:
@@ -2928,6 +2833,128 @@ async def get_metrics_status(agent_id: str):
     except Exception as e:
         return {"error": str(e)}
 
+
+@app.post("/api/report/generate")
+async def generate_report(body: dict):
+    messages = body.get("messages", [])
+    mode = body.get("mode", CFG.get("mode", "conversation"))
+    model = body.get("model", CFG.get("model", ""))
+    if not model:
+        return {"error": "No model configured. Set a model in Settings."}
+    if not messages:
+        messages = global_messages[-100:] if global_messages else []
+    if not messages:
+        return {"error": "No messages to analyze. Run a simulation first."}
+
+    snapshot_data = body.get("snapshots", [])
+    agent_data = body.get("agents", [])
+
+    metrics_summary = {}
+    if agent_data:
+        for a in agent_data:
+            metrics_summary[a.get("id","?")] = {
+                "name": a.get("name","?"),
+                "cluster": a.get("cluster","?"),
+                "turncount": a.get("turn_count", a.get("turncount", 0)),
+                "influence": a.get("influence", 0),
+                "valence": a.get("valence", 0),
+                "arousal": a.get("arousal", 0),
+                "dominance": a.get("dominance", 0),
+                "tokens": a.get("total_tokens", 0),
+                "cost_usd": a.get("total_cost_usd", 0),
+                "betweenness": a.get("betweennessproxy", 0),
+                "brokerage": a.get("brokeragescore", 0),
+                "reciprocity": a.get("reciprocity", 0),
+                "closeness": a.get("closeness_centrality", 0),
+                "clustering": a.get("clustering_coefficient", 0),
+                "eigenvector": a.get("eigenvector_centrality", 0),
+                "pagerank": a.get("pagerank_proxy", 0),
+                "structural_holes": a.get("structural_holes", 0),
+                "emotion_diversity": a.get("emotiondiversity", 0),
+                "valence_volatility": a.get("valence_volatility", 0),
+                "sentiment_drift": a.get("sentiment_drift", 0),
+                "affective_influence": a.get("affective_influence", 0),
+                "emotion_contagion": a.get("emotioncontagion", 0),
+                "toxicity": a.get("toxicity_score", 0),
+                "emotional_inertia": a.get("emotional_inertia", 0),
+                "emotion_count": a.get("emotion_count", 0),
+                "emotion_variety": a.get("emotion_variety", 0),
+                "cost_per_turn": a.get("costperturn", 0),
+                "token_efficiency": a.get("token_efficiency", 0),
+                "throughput": a.get("throughput", 0),
+                "context_utilization": a.get("context_utilization", 0),
+                "retry_rate": a.get("retry_rate", 0),
+                "argument_strength": a.get("argument_strength", 0),
+                "planning_load": a.get("planning_load", 0),
+                "review_depth": a.get("review_depth", 0),
+                "turn_taking_equity": a.get("turn_taking_equity", 0),
+                "stance_intensity": a.get("stance_intensity", 0),
+                "consensus_alignment": a.get("consensus_alignment", 0),
+                "delegation_load": a.get("delegation_load", 0),
+            }
+
+    conversation_log = []
+    for msg in messages[-100:]:
+        conversation_log.append({
+            "author": msg.get("author", ""),
+            "text": msg.get("text", "")[:500],
+            "round": msg.get("round", 0),
+        })
+
+    prompt = f"""You are a senior research analyst reviewing a multi-agent simulation. Write a structured academic report based on the data below.
+
+SIMULATION MODE: {mode}
+
+AGENT METRICS SUMMARY:
+{json.dumps(metrics_summary, indent=2)}
+
+CONVERSATION LOG (last {len(conversation_log)} messages):
+{json.dumps(conversation_log, indent=2)}
+
+Report structure (use this template exactly):
+
+## 1. EXECUTIVE SUMMARY
+[3-4 sentences summarizing the simulation outcomes, key findings, and most notable agent behaviors]
+
+## 2. PARTICIPATION OVERVIEW
+| Agent | Turn Count | Influence | Valence | Cost (USD) | Tokens | Key Role |
+|-------|-----------|-----------|---------|------------|--------|----------|
+[One row per agent, identify each agent's role in the interaction. Use the metrics to characterize them.]
+
+## 3. SOCIAL NETWORK ANALYSIS
+[Analyze betweenness, brokerage, reciprocity, clustering, eigenvector centrality. Identify who are the bridges, who are central, who is isolated. Use network vocabulary.]
+
+## 4. AFFECTIVE ANALYSIS  
+[Analyze valence, arousal, emotional diversity, volatility, drift, inertia, toxicity. Identify emotional leaders, stable vs volatile agents, group emotional dynamics.]
+
+## 5. OPERATIONAL ANALYSIS
+[Analyze token efficiency, throughput, context utilization, cost per turn, retry rates. Compare agent efficiency and resource usage.]
+
+## 6. COORDINATION ANALYSIS
+[Analyze argument strength, planning load, review depth, turn-taking equity, consensus alignment, delegation load. Identify leaders, facilitators, and contributors.]
+
+## 7. KEY INSIGHTS
+- [3-5 bullet points of the most significant findings]
+
+## 8. METHODOLOGY NOTES
+[1-2 sentences on what metrics were used and any limitations]
+
+Write professionally, use academic tone, cite metric values directly from the data. Be specific. Do not speculate beyond what the data shows."""
+
+    try:
+        loop = asyncio.get_event_loop()
+        reply, usage = await loop.run_in_executor(
+            EXECUTOR,
+            lambda: ollama_chat(model, [{"role": "user","content": prompt}], 0.3)
+        )
+        return {
+            "report": reply,
+            "usage": usage,
+            "prompt_preview": prompt[:300],
+            "timestamp": datetime.utcnow().isoformat()
+        }
+    except Exception as e:
+        return {"error": f"LLM report generation failed: {str(e)}"}
 
 # ══════════════════════════════════════════════════════════════════════════════
 if __name__ == "__main__":

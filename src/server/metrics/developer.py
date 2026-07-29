@@ -68,7 +68,10 @@ def compute_cross_file_coordination(
     if not detected_files:
         return 0
 
-    unique_files = set(f.get("path", f.get("name", "")) for f in detected_files)
+    if isinstance(detected_files[0], str):
+        unique_files = set(detected_files)
+    else:
+        unique_files = set(f.get("path", f.get("name", "")) for f in detected_files)
 
     return len(unique_files)
 

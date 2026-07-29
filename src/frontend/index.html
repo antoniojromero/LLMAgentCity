@@ -202,6 +202,12 @@ padding:7px;border-radius:4px;border:1px solid #21262d;margin-top:3px}
 oninput="document.getElementById('temp-display').textContent=parseFloat(this.value).toFixed(2)">
 <button class="btn b-green" onclick="applyConfig()"> Connect</button>
 </div>
+<div class="sec"><h2>Metric Configuration</h2>
+<label>Prompt token cost (α, $)</label>
+<input id="cfg-alpha" type="number" step="0.0000001" value="0.0">
+<label>Completion token cost (β, $)</label>
+<input id="cfg-beta" type="number" step="0.0000001" value="0.0">
+</div>
 <div class="sec"><h2> Preset scenarios</h2>
 <select id="preset-sel">
 <option value="">-- choose preset --</option>
@@ -306,6 +312,7 @@ oninput="if(document.getElementById('new-temp-override').checked) document.getEl
 </div>
 <div class="sec"><h2>&#x1F517; Mention Matrix</h2><div id="mention-matrix"></div></div>
 <div class="sec"><h2>&#x1F4C8; Valence Timeline</h2><div id="valence-timeline"></div></div>
+<button class="btn b-purple" style="width:100%;padding:6px 0;margin:6px 0;font-size:.69rem" onclick="generateReport()">Generate Report (LLM)</button>
 <button class="btn b-blue" style="width:100%;padding:4px 0;margin:6px 0;font-size:.69rem" onclick="downloadAnalytics()">&#x1F4CA; Export Analytics JSON</button>
 </div>
 
@@ -552,6 +559,14 @@ oninput="if(document.getElementById('edit-temp-override').checked) document.getE
 <div class="row2" style="margin-top:6px">
 <button class="btn b-green" onclick="saveEditModal()">&#x1F4BE; Save</button>
 <button class="btn b-grey" onclick="closeModals()">Cancel</button>
+</div></div>
+
+<div class="modal" id="modal-report" style="width:700px;max-width:95vw">
+<h3>Agent Simulation Report</h3>
+<div id="report-content" style="font-size:.67rem;line-height:1.6;color:#c9d1d9;white-space:pre-wrap;max-height:65vh;overflow-y:auto"></div>
+<div class="row2" style="margin-top:10px">
+<button class="btn b-blue" onclick="downloadReport()">Download Report</button>
+<button class="btn b-grey" onclick="closeModals()">Close</button>
 </div></div>
 
 <script>
@@ -3594,8 +3609,11 @@ async function applyConfig(){
   const model=document.getElementById('cfg-model').value;
   const sent=document.getElementById('cfg-sent').value;
   const temp=parseFloat(document.getElementById('cfg-temp').value);
+  const alpha=parseFloat(document.getElementById('cfg-alpha').value)||0;
+  const beta=parseFloat(document.getElementById('cfg-beta').value)||0;
   const body={url,key,model,temperature:temp,
-    sentiment_model:sent==='_global_'?model:sent};
+    sentiment_model:sent==='_global_'?model:sent,
+    alpha,beta};
   const d=await safeFetch('/api/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
   if(d.status==='ok'){
     document.getElementById('dot').classList.add('ok');
@@ -3695,15 +3713,18 @@ function clearLog(){
 
 // === API: Simulation ===
 async function runStep(){
+  const url=document.getElementById('cfg-url').value.trim();
+  const key=document.getElementById('cfg-key').value.trim();
   const model=document.getElementById('cfg-model').value;
   if(!model){alert('Apply config first.');return;}
   const a=document.getElementById('sim-a').value, b=document.getElementById('sim-b').value;
   if(!a||!b||a===b){alert('Select two different agents.');return;}
   const topic=document.getElementById('sim-topic').value;
+  console.log('[DEBUG runStep] url:',url,' key:',key?'***':'EMPTY',' model:',model);
   setLoad(true,'Agents thinking...');exitTimelineScrub();
   try{
     const d=await safeFetch('/api/simulate/step',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({agent_a:a,agent_b:b,topic,model})});
+      body:JSON.stringify({agent_a:a,agent_b:b,topic,model,url,key})});
     if(d.error) alert(d.error);
     else{convLog.push(d);(d.turns||[]).forEach(t=>pushLog({name:t.name,agent_id:t.agent_id,reply:t.text,sentences:t.sentences,ts:d.ts,round:t.round}));
     simulationStarted=true;await refreshState();await refreshTimeline();}
@@ -3711,12 +3732,16 @@ async function runStep(){
   setLoad(false);
 }
 async function runGroup(){
+  const url=document.getElementById('cfg-url').value.trim();
+  const key=document.getElementById('cfg-key').value.trim();
   const model=document.getElementById('cfg-model').value;
+  const topic=document.getElementById('sim-topic').value;
   if(!model){alert('Apply config first.');return;}
+  console.log('[DEBUG runGroup] url:',url,' key:',key?'***':'EMPTY',' model:',model);
   setLoad(true,'Group discussion...');exitTimelineScrub();
   try{
     const d=await safeFetch('/api/simulate/round',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({topic:document.getElementById('sim-topic').value,model,pairs:3})});
+      body:JSON.stringify({topic,model,pairs:3,url,key})});
     if(d.error) alert(d.error);
     else{(d.rounds||[]).forEach(e=>{convLog.push(e);(e.turns||[]).forEach(t=>pushLog({name:t.name,agent_id:t.agent_id,reply:t.text,sentences:t.sentences,ts:e.ts,round:t.round}));});
     simulationStarted=true;await refreshState();await refreshTimeline();}
@@ -3724,14 +3749,17 @@ async function runGroup(){
   setLoad(false);
 }
 async function runBroadcast(){
+  const url=document.getElementById('cfg-url').value.trim();
+  const key=document.getElementById('cfg-key').value.trim();
   const model=document.getElementById('cfg-model').value;
   const topic=document.getElementById('sim-topic').value;
   if(!model){alert('Apply config first.');return;}
   if(!topic){alert('Enter a topic.');return;}
+  console.log('[DEBUG runBroadcast] url:',url,' key:',key!= 'EMPTY',' model:',model);
   setLoad(true,'Broadcasting...');exitTimelineScrub();
   try{
     const d=await safeFetch('/api/simulate/broadcast',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({topic,model})});
+      body:JSON.stringify({topic,model,url,key})});
     if(d.error) alert(d.error);
     else{convLog.push(d);(d.turns||[]).forEach(t=>pushLog({name:t.name,agent_id:t.agent_id,reply:t.text,sentences:t.sentences,ts:d.ts,round:t.round}));
     simulationStarted=true;await refreshState();await refreshTimeline();}
@@ -3739,13 +3767,16 @@ async function runBroadcast(){
   setLoad(false);
 }
 async function runDebate(){
+  const url=document.getElementById('cfg-url').value.trim();
+  const key=document.getElementById('cfg-key').value.trim();
   const model=document.getElementById('cfg-model').value;
   const topic=document.getElementById('sim-topic').value;
   if(!model){alert('Apply config first.');return;}
+  console.log('[DEBUG runDebate] url:',url,' key:',key? '***':'EMPTY',' model:',model);
   setLoad(true,'Debate in progress...');exitTimelineScrub();
   try{
     const d=await safeFetch('/api/simulate/debate',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({topic,model})});
+      body:JSON.stringify({topic,model,url,key})});
     if(d.error) alert(d.error);
     else{convLog.push(d);(d.turns||[]).forEach(t=>pushLog({name:t.name,agent_id:t.agent_id,reply:t.text,sentences:t.sentences,ts:d.ts,role:t.role,round:t.round}));
     simulationStarted=true;await refreshState();await refreshTimeline();}
@@ -3753,14 +3784,17 @@ async function runDebate(){
   setLoad(false);
 }
 async function runDeveloper(){
+  const url=document.getElementById('cfg-url').value.trim();
+  const key=document.getElementById('cfg-key').value.trim();
   const model=document.getElementById('cfg-model').value;
   const task=document.getElementById('sim-topic').value;
   if(!model){alert('Apply config first.');return;}
   if(!task){alert('Enter a task description.');return;}
+  console.log('[DEBUG runDeveloper] url:',url,' key:',key?'***':'EMPTY',' model:',model);
   setLoad(true,'Dev sprint running...');exitTimelineScrub();
   try{
     const d=await safeFetch('/api/simulate/developer',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({task,model})});
+      body:JSON.stringify({task,model,url,key})});
     if(d.error) alert(d.error);
     else{convLog.push(d);(d.turns||[]).forEach(t=>pushLog({name:t.name,agent_id:t.agent_id,reply:t.text,sentences:t.sentences,ts:d.ts,phase:t.phase,round:t.round}));
     simulationStarted=true;await refreshState();await refreshTimeline();}
@@ -3768,16 +3802,19 @@ async function runDeveloper(){
   setLoad(false);
 }
 async function runMultiRound(){
+  const url=document.getElementById('cfg-url').value.trim();
+  const key=document.getElementById('cfg-key').value.trim();
   const model=document.getElementById('cfg-model').value;
   if(!model){alert('Apply config first.');return;}
   const n=parseInt(document.getElementById('multi-n').value)||3;
   const stopAt=parseInt(document.getElementById('stop-at').value)||null;
   const simMode=document.getElementById('sim-mode').value;
   const topic=document.getElementById('sim-topic').value;
+  console.log('[DEBUG runMultiRound] url:',url,' key:',key?'***':'EMPTY',' model:',model);
   setLoad(true,`Running ${n} rounds...`);exitTimelineScrub();
   try{
     const d=await safeFetch('/api/simulate/multi-round',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({rounds:n,model,topic,stop_at_round:stopAt,
+      body:JSON.stringify({rounds:n,model,topic,stop_at_round:stopAt,url,key,
       round_mode:simMode==='debate'?'debate':simMode==='developer'?'developer':'group_random'})});
     if(d.error) alert(d.error);
     else{
@@ -4883,6 +4920,86 @@ async function downloadProblem(){const d=await safeFetch('/api/problem/export');
 async function downloadResults(){const d=await safeFetch('/api/results/export');if(!d.error)_dl(d,'results_'+_ts()+'.json');}
 async function downloadAnalytics(){const d=await safeFetch('/api/analytics/export');if(!d.error)_dl(d,'analytics_'+_ts()+'.json');}
 function downloadLog(){_dl(convLog,'log_'+_ts()+'.json');}
+
+let lastReportContent = '';
+
+async function generateReport(){
+  const model = simConfig?.model;
+  if(!model){alert('No LLM model configured. Go to Settings tab, configure a model, then retry.');return;}
+
+  const agents_data = [];
+  try{
+    const state = await safeFetch('/api/state');
+    agents_data.push(...(state.agents||[]));
+  }catch(e){}
+
+  const messages = convLog.flatMap(entry => {
+    if(entry.turns) return entry.turns.map(t => ({author: t.name||t.agent_id, text: t.text||t.reply||'', round: t.round||entry.round}));
+    if(entry.text) return [{author: entry.author||entry.name, text: entry.text, round: entry.round}];
+    return [];
+  }).filter(m => m.text);
+
+  if(messages.length===0){alert('No conversations to analyze. Run a simulation first.');return;}
+
+  document.getElementById('modal-overlay').classList.add('on');
+  document.getElementById('modal-report').classList.add('on');
+  const content = document.getElementById('report-content');
+  content.innerHTML = '<div style="text-align:center;padding:40px"><div style="font-size:1rem;margin-bottom:10px">Generating report...</div><div style="color:#8b949e">Sending conversation data to LLM for analysis...</div></div>';
+
+  try{
+    const r = await safeFetch('/api/report/generate',{
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        messages: messages,
+        agents: await (await fetch('/api/state')).json().then(d => d.agents||[]),
+        mode: simConfig.mode||'conversation',
+        model: model,
+        snapshots: []
+      })
+    });
+
+    if(r.error){ content.innerHTML = '<div style="color:#ef4444;padding:20px">Error: '+r.error+'</div>'; setLoad(false); return;}
+
+    const report = r.report || '';
+    lastReportContent = report;
+
+    const formatted = report
+      .replace(/^## (.*$)/gm, '<h4 style="margin:16px 0 8px;color:#79c0ff;font-size:.75rem;border-bottom:1px solid #21262d;padding-bottom:4px">$1</h4>')
+      .replace(/^# (.*$)/gm, '<h3 style="margin:20px 0 10px;color:#58a6ff;font-size:.85rem;border-bottom:1px solid #30363d;padding-bottom:6px">$1</h3>')
+      .replace(/^### (.*$)/gm, '<h5 style="margin:12px 0 4px;color:#79c0ff">$1</h5>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/^\|(.+)\|$/gm, (m) => {
+        const cells = m.split('|').filter(c => c.trim()).map(c => c.trim());
+        if(cells.every(c => /^-{2,}$/.test(c))) return '';
+        const tag = m.includes('|---') ? '' : '<tr>' + cells.map((c,i) => {
+          const st = i===0 && cells[0].startsWith('---') ? '' : 
+            i===0 ? 'text-align:left' : 'text-align:right';
+          return `<td style="${st};padding:3px 6px;border:1px solid #21262d;font-size:.64rem;font-family:monospace">${c}</td>`;
+        }).join('') + '</tr>';
+        return tag;
+      })
+      .replace(/\n/g, '<br>');
+
+    content.innerHTML = formatted.replace(/<(\/?)table>/g, (m,slash) => 
+      slash ? '</table>' : '<table style="width:100%;border-collapse:collapse;margin:8px 0;background:#0d1117">');
+
+    content.style.whiteSpace = 'normal';
+  } catch(e) {
+    content.innerHTML = '<div style="color:#ef4444;padding:20px">Report generation failed: '+e.message+'</div>';
+  }
+  setLoad(false);
+}
+
+function downloadReport(){
+  if(!lastReportContent){ alert('No report generated yet.'); return; }
+  const md = lastReportContent;
+  const blob = new Blob([md], {type: 'text/markdown'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'agent_simulation_report_'+_ts()+'.md';
+  a.click();
+}
 
 // === Boot ===
 setInterval(()=>{if(!isTimelineScrubbing) refreshState();},5000);
