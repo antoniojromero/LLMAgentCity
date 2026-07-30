@@ -217,7 +217,7 @@ This tool implements the adaptive city-metaphor framework for LLM agents describ
 
 ## Citation
 
-Pending publication. Contact: antoniojosé.romero@uah.es, alvaro.paricio@uah.es
+Pending publication. Contact: antoniojose.romero@uah.es
 
 ---
 
