@@ -1,0 +1,97 @@
+{
+  "topic": "",
+  "mode": "conversation",
+  "temperature": 0.8,
+  "clusters": {
+    "default_strategy": {
+      "label": "Strategy",
+      "color": "#6366f1",
+      "cx": -9.8,
+      "cz": -6.2,
+      "district": "default"
+    },
+    "default_finance": {
+      "label": "Finance",
+      "color": "#22c55e",
+      "cx": 9.8,
+      "cz": -6.2,
+      "district": "default"
+    },
+    "default_operations": {
+      "label": "Operations",
+      "color": "#f59e0b",
+      "cx": -6.2,
+      "cz": 6.2,
+      "district": "default"
+    },
+    "default_marketing": {
+      "label": "Marketing",
+      "color": "#ec4899",
+      "cx": 6.2,
+      "cz": 6.2,
+      "district": "default"
+    }
+  },
+  "agents": [
+    {
+      "id": "ceo_park",
+      "name": "CEO Park",
+      "role": "CEO",
+      "cluster": "default_strategy",
+      "personality": "You are CEO Park, visionary leader focused on long-term growth. Bold but calculated. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "cfo_mueller",
+      "name": "CFO Mueller",
+      "role": "CFO",
+      "cluster": "default_finance",
+      "personality": "You are CFO Mueller, conservative financial officer focused on margins and cash flow. Numbers-driven, risk-averse. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "coo_singh",
+      "name": "COO Singh",
+      "role": "COO",
+      "cluster": "default_operations",
+      "personality": "You are COO Singh, operations chief worried about supply chain and capacity. Practical, detail-oriented. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "cmo_tanaka",
+      "name": "CMO Tanaka",
+      "role": "CMO",
+      "cluster": "default_marketing",
+      "personality": "You are CMO Tanaka, marketing chief excited about Asian market potential. Optimistic, data-savvy. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "vp_legal",
+      "name": "VP Legal Chen",
+      "role": "VP Legal",
+      "cluster": "default_strategy",
+      "personality": "You are VP Legal Chen, cautious about regulatory differences. Thorough, warns about compliance risks. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "board_rep",
+      "name": "Board Rep Eva",
+      "role": "Board Representative",
+      "cluster": "default_finance",
+      "personality": "You are Eva, board representative focused on shareholder value and governance. Asks tough questions. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    }
+  ]
+}

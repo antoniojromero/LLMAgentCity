@@ -1,0 +1,2368 @@
+[
+  {
+    "ts": "2026-07-30T14:38:27.187186",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 1,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "We must acknowledge that while Prof. Abebe’s data demands urgent action, we cannot trigger a socio-economic collapse by abandoning our energy workforce overnight. My priority is a managed transition that protects fossil fuel jobs through strategic diversification, ensuring stability for workers while incrementally shifting toward the goals Amb. Osei is negotiating globally. We seek a pragmatic middle ground: green progress that does not come at the cost of immediate political and economic volatility.",
+        "sentences": [
+          {
+            "text": "We must acknowledge that while Prof. Abebe’s data demands urgent action, we cannot trigger a socio-economic collapse by abandoning our energy workforce overnight.",
+            "valence": -0.3,
+            "arousal": 0.383,
+            "dominance": -0.25,
+            "word_count": 23,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgent",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              }
+            ]
+          },
+          {
+            "text": "My priority is a managed transition that protects fossil fuel jobs through strategic diversification, ensuring stability for workers while incrementally shifting toward the goals Amb. Osei is negotiating globally.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 29,
+            "mentions": [
+              "diplomat_osei"
+            ],
+            "words_emotions": []
+          },
+          {
+            "text": "We seek a pragmatic middle ground: green progress that does not come at the cost of immediate political and economic volatility.",
+            "valence": 0.365,
+            "arousal": 0.43,
+            "dominance": 0.26,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "seek",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "ground",
+                "emotion": "trust"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "progress",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "volatility",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": 0.022,
+        "arousal": 0.271,
+        "dominance": 0.003,
+        "tokens": 225,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Minister Thorn, \"pragmatism\" cannot override the laws of thermodynamics; the cost of socio-economic collapse from climate failure far outweighs the cost of a rapid workforce transition. We are crossing critical tipping points now, and incrementalism is merely a slow-motion surrender to catastrophe.",
+        "sentences": [
+          {
+            "text": "Minister Thorn, \"pragmatism\" cannot override the laws of thermodynamics; the cost of socio-economic collapse from climate failure far outweighs the cost of a rapid workforce transition.",
+            "valence": -0.3,
+            "arousal": 0.322,
+            "dominance": -0.3,
+            "word_count": 26,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              },
+              {
+                "word": "failure",
+                "emotion": "disgust"
+              },
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "We are crossing critical tipping points now, and incrementalism is merely a slow-motion surrender to catastrophe.",
+            "valence": -0.28,
+            "arousal": 0.337,
+            "dominance": -0.087,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "motion",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "surrender",
+                "emotion": "fear"
+              },
+              {
+                "word": "catastrophe",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.29,
+        "arousal": 0.33,
+        "dominance": -0.194,
+        "tokens": 340,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "I agree with Minister Thorn; we cannot simply flip a switch without risking global energy poverty and systemic instability. While I respect Prof. Abebe’s urgency, the reality is that oil and gas provide the foundational energy security required to actually build and fund the green infrastructure he envisions. We are committed to reducing emissions, but this must be a calculated transition, not a reckless leap that bankrupts the very industries driving the global economy.",
+        "sentences": [
+          {
+            "text": "I agree with Minister Thorn; we cannot simply flip a switch without risking global energy poverty and systemic instability.",
+            "valence": -0.588,
+            "arousal": 0.338,
+            "dominance": -0.312,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "poverty",
+                "emotion": "anger"
+              },
+              {
+                "word": "instability",
+                "emotion": "disgust"
+              }
+            ]
+          },
+          {
+            "text": "While I respect Prof. Abebe’s urgency, the reality is that oil and gas provide the foundational energy security required to actually build and fund the green infrastructure he envisions.",
+            "valence": 0.458,
+            "arousal": 0.371,
+            "dominance": 0.196,
+            "word_count": 29,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "respect",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "provide",
+                "emotion": "trust"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              }
+            ]
+          },
+          {
+            "text": "We are committed to reducing emissions, but this must be a calculated transition, not a reckless leap that bankrupts the very industries driving the global economy.",
+            "valence": 0.2,
+            "arousal": 0.3,
+            "dominance": 0.133,
+            "word_count": 26,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "committed",
+                "emotion": "trust"
+              },
+              {
+                "word": "reckless",
+                "emotion": "anger"
+              },
+              {
+                "word": "economy",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.023,
+        "arousal": 0.336,
+        "dominance": 0.006,
+        "tokens": 474,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "CEO Anders and Minister Thorn are masking cowardice as \"pragmatism\" while our house burns down around us. We don't have time for \"calculated transitions\" when Prof. Abebe is warning us of total systemic collapse; every single second you protect fossil fuel profits, you are sentencing millions to death. This is not a policy debate—it is a moral emergency, and your \"stability\" is just a death sentence for the global south.",
+        "sentences": [
+          {
+            "text": "CEO Anders and Minister Thorn are masking cowardice as \"pragmatism\" while our house burns down around us.",
+            "valence": -0.5,
+            "arousal": 0.7,
+            "dominance": -0.5,
+            "word_count": 17,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "cowardice",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "We don't have time for \"calculated transitions\" when Prof. Abebe is warning us of total systemic collapse; every single second you protect fossil fuel profits, you are sentencing millions to death.",
+            "valence": -0.308,
+            "arousal": 0.429,
+            "dominance": -0.171,
+            "word_count": 31,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "don",
+                "emotion": "trust"
+              },
+              {
+                "word": "time",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "warning",
+                "emotion": "fear"
+              },
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              },
+              {
+                "word": "death",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "This is not a policy debate-it is a moral emergency, and your \"stability\" is just a death sentence for the global south.",
+            "valence": -0.109,
+            "arousal": 0.307,
+            "dominance": 0.017,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "policy",
+                "emotion": "trust"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "emergency",
+                "emotion": "fear"
+              },
+              {
+                "word": "death",
+                "emotion": "anger"
+              },
+              {
+                "word": "sentence",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.306,
+        "arousal": 0.479,
+        "dominance": -0.218,
+        "tokens": 613,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "Emotional appeals from Devi and the stability concerns of CEO Anders both miss the central mechanism: we must internalize the cost of carbon to drive the transition. By implementing a robust, global carbon price, we can utilize market forces to make Prof. Abebe's urgency financially viable while providing the predictable capital flow Minister Thorn needs for workforce diversification.",
+        "sentences": [
+          {
+            "text": "Emotional appeals from Devi and the stability concerns of CEO Anders both miss the central mechanism: we must internalize the cost of carbon to drive the transition.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 27,
+            "mentions": [
+              "ceo_anders",
+              "activist_devi"
+            ],
+            "words_emotions": []
+          },
+          {
+            "text": "By implementing a robust, global carbon price, we can utilize market forces to make Prof. Abebe's urgency financially viable while providing the predictable capital flow Minister Thorn needs for workforce diversification.",
+            "valence": 0.267,
+            "arousal": 0.517,
+            "dominance": 0.117,
+            "word_count": 31,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "providing",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.134,
+        "arousal": 0.259,
+        "dominance": 0.059,
+        "tokens": 699,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Dr. Wu’s carbon pricing is a theoretical luxury that ignores the historical debt owed to the Global South; we cannot be expected to pay for a crisis we did not create. While CEO Anders speaks of \"instability,\" the true instability is the climate catastrophe already destroying our lands. Wealthy nations must lead with immediate, non-repayable grants and technology transfers, ensuring equity is the foundation of this transition, not an afterthought.",
+        "sentences": [
+          {
+            "text": "Dr. Wu’s carbon pricing is a theoretical luxury that ignores the historical debt owed to the Global South; we cannot be expected to pay for a crisis we did not create.",
+            "valence": 0.327,
+            "arousal": 0.34,
+            "dominance": 0.267,
+            "word_count": 31,
+            "mentions": [
+              "economist_wu"
+            ],
+            "words_emotions": [
+              {
+                "word": "luxury",
+                "emotion": "joy"
+              },
+              {
+                "word": "debt",
+                "emotion": "sadness"
+              },
+              {
+                "word": "expected",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "pay",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "create",
+                "emotion": "joy"
+              }
+            ]
+          },
+          {
+            "text": "While CEO Anders speaks of \"instability,\" the true instability is the climate catastrophe already destroying our lands.",
+            "valence": -0.295,
+            "arousal": 0.369,
+            "dominance": -0.162,
+            "word_count": 17,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "instability",
+                "emotion": "disgust"
+              },
+              {
+                "word": "true",
+                "emotion": "joy"
+              },
+              {
+                "word": "instability",
+                "emotion": "disgust"
+              },
+              {
+                "word": "catastrophe",
+                "emotion": "anger"
+              },
+              {
+                "word": "destroying",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Wealthy nations must lead with immediate, non-repayable grants and technology transfers, ensuring equity is the foundation of this transition, not an afterthought.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": []
+          }
+        ],
+        "valence": 0.011,
+        "arousal": 0.236,
+        "dominance": 0.035,
+        "tokens": 794,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:39:51.455456",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 2,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "I recognize Amb. Osei’s call for equity and Dr. Wu’s market mechanisms, but we must ensure these policies don't alienate the very workers whose support is vital for political stability. If we push too fast, as Devi demands, we risk a populist backlash that could dismantle all our progress. We must bridge the gap between Prof. Abebe's urgency and CEO Anders' stability by tying carbon pricing directly to a guaranteed social safety net for displaced workers.",
+        "sentences": [
+          {
+            "text": "I recognize Amb. Osei’s call for equity and Dr. Wu’s market mechanisms, but we must ensure these policies don't alienate the very workers whose support is vital for political stability.",
+            "valence": -0.65,
+            "arousal": 0.4,
+            "dominance": 0.05,
+            "word_count": 30,
+            "mentions": [
+              "economist_wu",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "don",
+                "emotion": "trust"
+              },
+              {
+                "word": "alienate",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "If we push too fast, as Devi demands, we risk a populist backlash that could dismantle all our progress.",
+            "valence": 0.175,
+            "arousal": 0.575,
+            "dominance": 0.15,
+            "word_count": 19,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "progress",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "We must bridge the gap between Prof. Abebe's urgency and CEO Anders' stability by tying carbon pricing directly to a guaranteed social safety net for displaced workers.",
+            "valence": -0.317,
+            "arousal": 0.483,
+            "dominance": -0.1,
+            "word_count": 27,
+            "mentions": [
+              "prof_abebe",
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "displaced",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.264,
+        "arousal": 0.486,
+        "dominance": 0.033,
+        "tokens": 915,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Minister Thorn, prioritizing political stability over planetary stability is a fatal category error; there is no \"social safety net\" on a dead planet. While Dr. Wu and Amb. Osei argue over mechanisms, the atmospheric carbon concentration continues to climb, rendering your \"bridge\" a pier to nowhere. We must decouple our energy system from carbon immediately, or the resulting ecological collapse will create a level of volatility that no policy can mitigate.",
+        "sentences": [
+          {
+            "text": "Minister Thorn, prioritizing political stability over planetary stability is a fatal category error; there is no \"social safety net\" on a dead planet.",
+            "valence": -0.667,
+            "arousal": -0.033,
+            "dominance": -0.2,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "fatal",
+                "emotion": "anger"
+              },
+              {
+                "word": "error",
+                "emotion": "sadness"
+              }
+            ]
+          },
+          {
+            "text": "While Dr. Wu and Amb. Osei argue over mechanisms, the atmospheric carbon concentration continues to climb, rendering your \"bridge\" a pier to nowhere.",
+            "valence": -0.7,
+            "arousal": 0.7,
+            "dominance": 0.5,
+            "word_count": 23,
+            "mentions": [
+              "economist_wu",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "argue",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "We must decouple our energy system from carbon immediately, or the resulting ecological collapse will create a level of volatility that no policy can mitigate.",
+            "valence": 0.289,
+            "arousal": 0.312,
+            "dominance": 0.15,
+            "word_count": 25,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "system",
+                "emotion": "trust"
+              },
+              {
+                "word": "immediately",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              },
+              {
+                "word": "create",
+                "emotion": "joy"
+              },
+              {
+                "word": "level",
+                "emotion": "trust"
+              },
+              {
+                "word": "volatility",
+                "emotion": "anger"
+              },
+              {
+                "word": "policy",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.359,
+        "arousal": 0.326,
+        "dominance": 0.15,
+        "tokens": 1063,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "Prof. Abebe's rhetoric ignores the fact that a sudden collapse of the energy sector would trigger the very global chaos and poverty Amb. Osei is fighting against. We are ready to integrate Dr. Wu's carbon pricing, provided it recognizes the essential role of natural gas as a bridge fuel to maintain reliability. We cannot fund a green future by destroying the economic engines of the present.",
+        "sentences": [
+          {
+            "text": "Prof. Abebe's rhetoric ignores the fact that a sudden collapse of the energy sector would trigger the very global chaos and poverty Amb. Osei is fighting against.",
+            "valence": -0.276,
+            "arousal": 0.374,
+            "dominance": -0.012,
+            "word_count": 27,
+            "mentions": [
+              "prof_abebe",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "fact",
+                "emotion": "trust"
+              },
+              {
+                "word": "sudden",
+                "emotion": "surprise"
+              },
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              },
+              {
+                "word": "chaos",
+                "emotion": "anger"
+              },
+              {
+                "word": "poverty",
+                "emotion": "anger"
+              },
+              {
+                "word": "fighting",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "We are ready to integrate Dr. Wu's carbon pricing, provided it recognizes the essential role of natural gas as a bridge fuel to maintain reliability.",
+            "valence": 0.4,
+            "arousal": 0.3,
+            "dominance": 0.25,
+            "word_count": 25,
+            "mentions": [
+              "economist_wu"
+            ],
+            "words_emotions": [
+              {
+                "word": "ready",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "reliability",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "We cannot fund a green future by destroying the economic engines of the present.",
+            "valence": 0.181,
+            "arousal": 0.386,
+            "dominance": 0.158,
+            "word_count": 14,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "destroying",
+                "emotion": "anger"
+              },
+              {
+                "word": "present",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.102,
+        "arousal": 0.353,
+        "dominance": 0.132,
+        "tokens": 1254,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "CEO Anders, your \"bridge fuel\" is a lie designed to keep you profitable while the world drowns. You speak of poverty, yet you ignore the millions already losing their homes to the climate chaos your industry engineered. We are past the point of \"calculated\" moves; we need a revolution of will before there is nothing left to save.",
+        "sentences": [
+          {
+            "text": "CEO Anders, your \"bridge fuel\" is a lie designed to keep you profitable while the world drowns.",
+            "valence": -0.667,
+            "arousal": 0.133,
+            "dominance": -0.067,
+            "word_count": 17,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "lie",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "You speak of poverty, yet you ignore the millions already losing their homes to the climate chaos your industry engineered.",
+            "valence": -0.653,
+            "arousal": 0.253,
+            "dominance": -0.058,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "poverty",
+                "emotion": "anger"
+              },
+              {
+                "word": "losing",
+                "emotion": "anger"
+              },
+              {
+                "word": "chaos",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "We are past the point of \"calculated\" moves; we need a revolution of will before there is nothing left to save.",
+            "valence": 0.21,
+            "arousal": 0.395,
+            "dominance": 0.165,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "revolution",
+                "emotion": "anger"
+              },
+              {
+                "word": "save",
+                "emotion": "joy"
+              }
+            ]
+          }
+        ],
+        "valence": -0.37,
+        "arousal": 0.26,
+        "dominance": 0.013,
+        "tokens": 1413,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "To resolve the deadlock between Prof. Abebe's urgency and CEO Anders' stability, we must shift from rhetoric to a price signal that penalizes emissions while funding the Global South's transition. If we implement a carbon border adjustment mechanism, we can prevent the \"leakage\" CEO Anders fears while generating the revenue Amb. Osei requires for equity. This transforms the \"bridge fuel\" debate into a quantifiable financial liability, forcing the market to accelerate the transition faster than any political mandate could.",
+        "sentences": [
+          {
+            "text": "To resolve the deadlock between Prof. Abebe's urgency and CEO Anders' stability, we must shift from rhetoric to a price signal that penalizes emissions while funding the Global South's transition.",
+            "valence": 0.0,
+            "arousal": 0.633,
+            "dominance": -0.1,
+            "word_count": 30,
+            "mentions": [
+              "prof_abebe",
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "If we implement a carbon border adjustment mechanism, we can prevent the \"leakage\" CEO Anders fears while generating the revenue Amb. Osei requires for equity.",
+            "valence": -0.5,
+            "arousal": 0.7,
+            "dominance": -0.5,
+            "word_count": 25,
+            "mentions": [
+              "ceo_anders",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "prevent",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "This transforms the \"bridge fuel\" debate into a quantifiable financial liability, forcing the market to accelerate the transition faster than any political mandate could.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 24,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "accelerate",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": -0.1,
+        "arousal": 0.611,
+        "dominance": -0.1,
+        "tokens": 1503,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Dr. Wu, a \"price signal\" is merely another mechanism to shift the financial burden onto the victims of this crisis. CEO Anders claims to fear global poverty, yet he ignores that the Global South is already paying the ultimate price for the prosperity of the North. We will not accept \"border adjustments\" or loans; we demand the immediate transfer of technology and unconditional grants as a matter of historical justice.",
+        "sentences": [
+          {
+            "text": "Dr. Wu, a \"price signal\" is merely another mechanism to shift the financial burden onto the victims of this crisis.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 20,
+            "mentions": [
+              "economist_wu"
+            ],
+            "words_emotions": []
+          },
+          {
+            "text": "CEO Anders claims to fear global poverty, yet he ignores that the Global South is already paying the ultimate price for the prosperity of the North.",
+            "valence": -0.492,
+            "arousal": 0.342,
+            "dominance": -0.058,
+            "word_count": 26,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "fear",
+                "emotion": "anger"
+              },
+              {
+                "word": "poverty",
+                "emotion": "anger"
+              },
+              {
+                "word": "ultimate",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "We will not accept \"border adjustments\" or loans; we demand the immediate transfer of technology and unconditional grants as a matter of historical justice.",
+            "valence": -0.05,
+            "arousal": 0.4,
+            "dominance": 0.35,
+            "word_count": 24,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "justice",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.181,
+        "arousal": 0.247,
+        "dominance": 0.097,
+        "tokens": 1609,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:41:08.466244",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 3,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "While I respect the moral urgency expressed by Devi and the scientific warnings from Prof. Abebe, we cannot govern by desperation; a government that ignores its working class will be swept away by the very volatility we seek to avoid. I propose we integrate Dr. Wu's carbon pricing with Amb. Osei's demand for technology transfers, using those funds specifically to retrain fossil fuel workers for the new economy. This transforms the transition from a zero-sum conflict into a shared economic evolution that preserves both the planet and our social fabric.",
+        "sentences": [
+          {
+            "text": "While I respect the moral urgency expressed by Devi and the scientific warnings from Prof. Abebe, we cannot govern by desperation; a government that ignores its working class will be swept away by the very volatility we seek to avoid.",
+            "valence": 0.079,
+            "arousal": 0.465,
+            "dominance": 0.037,
+            "word_count": 40,
+            "mentions": [
+              "prof_abebe",
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "respect",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "scientific",
+                "emotion": "trust"
+              },
+              {
+                "word": "govern",
+                "emotion": "trust"
+              },
+              {
+                "word": "government",
+                "emotion": "fear"
+              },
+              {
+                "word": "volatility",
+                "emotion": "anger"
+              },
+              {
+                "word": "seek",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "avoid",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "I propose we integrate Dr. Wu's carbon pricing with Amb. Osei's demand for technology transfers, using those funds specifically to retrain fossil fuel workers for the new economy.",
+            "valence": -0.05,
+            "arousal": 0.4,
+            "dominance": 0.35,
+            "word_count": 28,
+            "mentions": [
+              "economist_wu",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "economy",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "This transforms the transition from a zero-sum conflict into a shared economic evolution that preserves both the planet and our social fabric.",
+            "valence": -0.633,
+            "arousal": 0.333,
+            "dominance": -0.1,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "conflict",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.201,
+        "arousal": 0.399,
+        "dominance": 0.096,
+        "tokens": 1643,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Minister Thorn, you mistake scientific necessity for desperation; the physics of our atmosphere do not negotiate with political cycles or voter sentiment. While you attempt to harmonize Dr. Wu’s pricing and Amb. Osei’s equity, the window for a managed transition is slamming shut. If we continue to prioritize the \"social fabric\" of the present over the biological survival of the future, there will be no economy left to evolve.",
+        "sentences": [
+          {
+            "text": "Minister Thorn, you mistake scientific necessity for desperation; the physics of our atmosphere do not negotiate with political cycles or voter sentiment.",
+            "valence": -0.05,
+            "arousal": -0.15,
+            "dominance": -0.05,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "mistake",
+                "emotion": "sadness"
+              },
+              {
+                "word": "scientific",
+                "emotion": "trust"
+              },
+              {
+                "word": "necessity",
+                "emotion": "sadness"
+              },
+              {
+                "word": "negotiate",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "While you attempt to harmonize Dr. Wu’s pricing and Amb. Osei’s equity, the window for a managed transition is slamming shut.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 21,
+            "mentions": [
+              "economist_wu",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "attempt",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "If we continue to prioritize the \"social fabric\" of the present over the biological survival of the future, there will be no economy left to evolve.",
+            "valence": 0.492,
+            "arousal": 0.292,
+            "dominance": 0.225,
+            "word_count": 26,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "continue",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "present",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "economy",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.214,
+        "arousal": 0.214,
+        "dominance": 0.158,
+        "tokens": 1815,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "Prof. Abebe speaks of physics, but I speak of the physical reality of powering billions of homes and hospitals today. We can support Minister Thorn's plan for retraining and Dr. Wu's pricing, provided these frameworks don't stifle the capital investment needed to scale carbon-capture technology. A transition that ignores the economic necessity of our industry will only result in a chaotic failure that helps neither the planet nor the people.",
+        "sentences": [
+          {
+            "text": "Prof. Abebe speaks of physics, but I speak of the physical reality of powering billions of homes and hospitals today.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 20,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": []
+          },
+          {
+            "text": "We can support Minister Thorn's plan for retraining and Dr. Wu's pricing, provided these frameworks don't stifle the capital investment needed to scale carbon-capture technology.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 25,
+            "mentions": [
+              "economist_wu"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "don",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "A transition that ignores the economic necessity of our industry will only result in a chaotic failure that helps neither the planet nor the people.",
+            "valence": -0.45,
+            "arousal": 0.233,
+            "dominance": 0.025,
+            "word_count": 25,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "necessity",
+                "emotion": "sadness"
+              },
+              {
+                "word": "result",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "chaotic",
+                "emotion": "anger"
+              },
+              {
+                "word": "failure",
+                "emotion": "disgust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.083,
+        "arousal": 0.244,
+        "dominance": 0.108,
+        "tokens": 2038,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "CEO Anders, your \"physical reality\" is a curated delusion designed to protect your balance sheet while the world burns. Minister Thorn's obsession with \"political cycles\" is a betrayal of every child born into this crisis; you cannot negotiate with a tipping point. This isn't about retraining workers—it's about stopping a massacre, and your incrementalism is nothing more than complicity.",
+        "sentences": [
+          {
+            "text": "CEO Anders, your \"physical reality\" is a curated delusion designed to protect your balance sheet while the world burns.",
+            "valence": -0.633,
+            "arousal": 0.333,
+            "dominance": -0.1,
+            "word_count": 19,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "delusion",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Minister Thorn's obsession with \"political cycles\" is a betrayal of every child born into this crisis; you cannot negotiate with a tipping point.",
+            "valence": 0.144,
+            "arousal": 0.261,
+            "dominance": 0.178,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "betrayal",
+                "emotion": "anger"
+              },
+              {
+                "word": "child",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "negotiate",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "This isn't about retraining workers-it's about stopping a massacre, and your incrementalism is nothing more than complicity.",
+            "valence": -0.625,
+            "arousal": 0.275,
+            "dominance": -0.175,
+            "word_count": 17,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "massacre",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.371,
+        "arousal": 0.29,
+        "dominance": -0.032,
+        "tokens": 2233,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "The debate remains stalled on a binary of \"physics versus politics,\" but the solution is to make the physics a fiscal reality. By scaling the carbon price aggressively, we turn CEO Anders' \"physical reality\" into an unsustainable liability and provide the immediate capital for the technology transfers Amb. Osei demands. This removes the need for Minister Thorn's cautious incrementalism by making the green transition the only profitable path forward.",
+        "sentences": [
+          {
+            "text": "The debate remains stalled on a binary of \"physics versus politics,\" but the solution is to make the physics a fiscal reality.",
+            "valence": -0.522,
+            "arousal": 0.567,
+            "dominance": 0.256,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              },
+              {
+                "word": "versus",
+                "emotion": "anger"
+              },
+              {
+                "word": "politics",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "By scaling the carbon price aggressively, we turn CEO Anders' \"physical reality\" into an unsustainable liability and provide the immediate capital for the technology transfers Amb. Osei demands.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 28,
+            "mentions": [
+              "ceo_anders",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "provide",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "This removes the need for Minister Thorn's cautious incrementalism by making the green transition the only profitable path forward.",
+            "valence": 0.4,
+            "arousal": 0.392,
+            "dominance": 0.175,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "cautious",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              }
+            ]
+          }
+        ],
+        "valence": 0.159,
+        "arousal": 0.353,
+        "dominance": 0.21,
+        "tokens": 2335,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Dr. Wu, attempting to \"make physics a fiscal reality\" only serves those who already hold the capital. It is offensive to suggest that the Global South should wait for a market signal to trigger the aid that is already owed to us as a debt of reparations. We do not seek a \"profitable path\" for investors, but an equitable one funded by those who built their wealth on our atmospheric destruction.",
+        "sentences": [
+          {
+            "text": "Dr. Wu, attempting to \"make physics a fiscal reality\" only serves those who already hold the capital.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 17,
+            "mentions": [
+              "economist_wu"
+            ],
+            "words_emotions": []
+          },
+          {
+            "text": "It is offensive to suggest that the Global South should wait for a market signal to trigger the aid that is already owed to us as a debt of reparations.",
+            "valence": -0.138,
+            "arousal": 0.15,
+            "dominance": 0.063,
+            "word_count": 30,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "offensive",
+                "emotion": "anger"
+              },
+              {
+                "word": "suggest",
+                "emotion": "trust"
+              },
+              {
+                "word": "wait",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "debt",
+                "emotion": "sadness"
+              }
+            ]
+          },
+          {
+            "text": "We do not seek a \"profitable path\" for investors, but an equitable one funded by those who built their wealth on our atmospheric destruction.",
+            "valence": 0.067,
+            "arousal": 0.517,
+            "dominance": 0.383,
+            "word_count": 24,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "seek",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "wealth",
+                "emotion": "joy"
+              },
+              {
+                "word": "destruction",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.024,
+        "arousal": 0.222,
+        "dominance": 0.149,
+        "tokens": 2422,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:41:48.110979",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 4,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "We have reached a deadlock where scientific necessity, corporate stability, and historical justice are treated as mutually exclusive. I propose a \"Transition Compact\" that mandates a strict phase-out timeline for the most polluting fuels, but anchors it to a guaranteed fund for workforce retraining and Global South technology grants. By codifying these protections, we provide CEO Anders the predictability he needs and Amb. Osei the equity he demands, while finally moving toward the urgency Prof. Abebe requires.",
+        "sentences": [
+          {
+            "text": "We have reached a deadlock where scientific necessity, corporate stability, and historical justice are treated as mutually exclusive.",
+            "valence": 0.167,
+            "arousal": -0.067,
+            "dominance": 0.033,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "scientific",
+                "emotion": "trust"
+              },
+              {
+                "word": "necessity",
+                "emotion": "sadness"
+              },
+              {
+                "word": "justice",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "I propose a \"Transition Compact\" that mandates a strict phase-out timeline for the most polluting fuels, but anchors it to a guaranteed fund for workforce retraining and Global South technology grants.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 31,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "By codifying these protections, we provide CEO Anders the predictability he needs and Amb. Osei the equity he demands, while finally moving toward the urgency Prof. Abebe requires.",
+            "valence": 0.287,
+            "arousal": 0.378,
+            "dominance": 0.067,
+            "word_count": 28,
+            "mentions": [
+              "prof_abebe",
+              "ceo_anders",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "provide",
+                "emotion": "trust"
+              },
+              {
+                "word": "finally",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.351,
+        "arousal": 0.137,
+        "dominance": 0.1,
+        "tokens": 2367,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Minister Thorn, a \"Compact\" is only useful if the timeline is dictated by carbon budgets, not political convenience. Your attempt to balance corporate predictability and social stability ignores the fact that nature does not negotiate; we are out of time for \"anchors\" and \"protections.\" Unless this phase-out is immediate and absolute, your Compact is merely a blueprint for a managed collapse.",
+        "sentences": [
+          {
+            "text": "Minister Thorn, a \"Compact\" is only useful if the timeline is dictated by carbon budgets, not political convenience.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "Your attempt to balance corporate predictability and social stability ignores the fact that nature does not negotiate; we are out of time for \"anchors\" and \"protections.\" Unless this phase-out is immediate and absolute, your Compact is merely a blueprint for a managed collapse.",
+            "valence": 0.267,
+            "arousal": 0.239,
+            "dominance": 0.133,
+            "word_count": 43,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "attempt",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "fact",
+                "emotion": "trust"
+              },
+              {
+                "word": "negotiate",
+                "emotion": "trust"
+              },
+              {
+                "word": "time",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              },
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.433,
+        "arousal": 0.169,
+        "dominance": 0.167,
+        "tokens": 2541,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "Minister Thorn's \"Transition Compact\" is a workable framework, provided it offers the regulatory certainty required for us to pivot our massive capital investments. However, Prof. Abebe's demand for a timeline based solely on carbon budgets ignores the logistical reality of energy distribution; we cannot risk a global blackout in the name of scientific purity. We will commit to the phase-out, but only if the timeline is grounded in operational feasibility to prevent total economic meltdown.",
+        "sentences": [
+          {
+            "text": "Minister Thorn's \"Transition Compact\" is a workable framework, provided it offers the regulatory certainty required for us to pivot our massive capital investments.",
+            "valence": 0.325,
+            "arousal": 0.25,
+            "dominance": 0.025,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              },
+              {
+                "word": "pivot",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "However, Prof. Abebe's demand for a timeline based solely on carbon budgets ignores the logistical reality of energy distribution; we cannot risk a global blackout in the name of scientific purity.",
+            "valence": 0.012,
+            "arousal": 0.525,
+            "dominance": 0.125,
+            "word_count": 31,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "scientific",
+                "emotion": "trust"
+              },
+              {
+                "word": "purity",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "We will commit to the phase-out, but only if the timeline is grounded in operational feasibility to prevent total economic meltdown.",
+            "valence": -0.6,
+            "arousal": 0.15,
+            "dominance": -0.4,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "grounded",
+                "emotion": "fear"
+              },
+              {
+                "word": "prevent",
+                "emotion": "fear"
+              },
+              {
+                "word": "meltdown",
+                "emotion": "sadness"
+              }
+            ]
+          }
+        ],
+        "valence": -0.088,
+        "arousal": 0.308,
+        "dominance": -0.083,
+        "tokens": 2804,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "CEO Anders, your demand for \"regulatory certainty\" is a demand for a license to keep killing us while you pivot at your own leisure. Minister Thorn’s \"Compact\" is just another bureaucratic shroud to hide the corpse of our future. We don't need \"workable frameworks\"—we need an immediate end to fossil fuel extraction before the tipping points render all your contracts meaningless.",
+        "sentences": [
+          {
+            "text": "CEO Anders, your demand for \"regulatory certainty\" is a demand for a license to keep killing us while you pivot at your own leisure.",
+            "valence": -0.243,
+            "arousal": 0.501,
+            "dominance": 0.138,
+            "word_count": 24,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              },
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "killing",
+                "emotion": "anger"
+              },
+              {
+                "word": "pivot",
+                "emotion": "trust"
+              },
+              {
+                "word": "leisure",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Minister Thorn’s \"Compact\" is just another bureaucratic shroud to hide the corpse of our future.",
+            "valence": -0.312,
+            "arousal": 0.062,
+            "dominance": -0.237,
+            "word_count": 15,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              },
+              {
+                "word": "shroud",
+                "emotion": "sadness"
+              },
+              {
+                "word": "hide",
+                "emotion": "fear"
+              },
+              {
+                "word": "corpse",
+                "emotion": "disgust"
+              }
+            ]
+          },
+          {
+            "text": "We don't need \"workable frameworks\"-we need an immediate end to fossil fuel extraction before the tipping points render all your contracts meaningless.",
+            "valence": -0.7,
+            "arousal": -0.4,
+            "dominance": -0.3,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "don",
+                "emotion": "trust"
+              },
+              {
+                "word": "meaningless",
+                "emotion": "sadness"
+              }
+            ]
+          }
+        ],
+        "valence": -0.418,
+        "arousal": 0.054,
+        "dominance": -0.133,
+        "tokens": 3023,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "Minister Thorn's \"Compact\" is a useful political shell, but it lacks the teeth to enforce Prof. Abebe's carbon budgets. To move from a \"blueprint for collapse\" to a functional reality, we must embed an escalating carbon floor into the Compact that automatically increases the cost of emissions regardless of political cycles. This replaces CEO Anders' request for \"regulatory certainty\" with financial inevitability, ensuring the pivot happens at the speed the physics demand.",
+        "sentences": [
+          {
+            "text": "Minister Thorn's \"Compact\" is a useful political shell, but it lacks the teeth to enforce Prof. Abebe's carbon budgets.",
+            "valence": -0.133,
+            "arousal": 0.408,
+            "dominance": 0.033,
+            "word_count": 19,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              },
+              {
+                "word": "shell",
+                "emotion": "anger"
+              },
+              {
+                "word": "enforce",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "To move from a \"blueprint for collapse\" to a functional reality, we must embed an escalating carbon floor into the Compact that automatically increases the cost of emissions regardless of political cycles.",
+            "valence": 0.0,
+            "arousal": 0.117,
+            "dominance": -0.1,
+            "word_count": 32,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              },
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "This replaces CEO Anders' request for \"regulatory certainty\" with financial inevitability, ensuring the pivot happens at the speed the physics demand.",
+            "valence": -0.2,
+            "arousal": 0.5,
+            "dominance": 0.067,
+            "word_count": 21,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              },
+              {
+                "word": "pivot",
+                "emotion": "trust"
+              },
+              {
+                "word": "demand",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.111,
+        "arousal": 0.342,
+        "dominance": 0.0,
+        "tokens": 3143,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Minister Thorn's \"Compact\" is only acceptable if the grants and technology transfers are guaranteed and unconditional, not tied to the \"regulatory certainty\" CEO Anders demands. We will not allow our survival to be used as a bargaining chip to secure corporate profits or market stability. Equity is not a component to be \"integrated\" into a shell; it must be the prerequisite for any global agreement.",
+        "sentences": [
+          {
+            "text": "Minister Thorn's \"Compact\" is only acceptable if the grants and technology transfers are guaranteed and unconditional, not tied to the \"regulatory certainty\" CEO Anders demands.",
+            "valence": 0.05,
+            "arousal": 0.4,
+            "dominance": -0.15,
+            "word_count": 25,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              },
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "We will not allow our survival to be used as a bargaining chip to secure corporate profits or market stability.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Equity is not a component to be \"integrated\" into a shell; it must be the prerequisite for any global agreement.",
+            "valence": 0.133,
+            "arousal": 0.342,
+            "dominance": 0.133,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "shell",
+                "emotion": "anger"
+              },
+              {
+                "word": "prerequisite",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "agreement",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.061,
+        "arousal": 0.247,
+        "dominance": -0.006,
+        "tokens": 3229,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:43:33.114962",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 5,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "The \"Transition Compact\" must now move from a proposal to a binding agreement, blending Dr. Wu’s escalating carbon floor with Amb. Osei's prerequisite for unconditional grants. While Prof. Abebe warns of a closing window, we must ensure the transition is politically sustainable to prevent a total reversal of these policies by a populist wave. I call for a final consensus on a timeline that respects carbon budgets but includes ironclad social protections to maintain the public's trust.",
+        "sentences": [
+          {
+            "text": "The \"Transition Compact\" must now move from a proposal to a binding agreement, blending Dr. Wu’s escalating carbon floor with Amb. Osei's prerequisite for unconditional grants.",
+            "valence": 0.467,
+            "arousal": 0.233,
+            "dominance": 0.233,
+            "word_count": 26,
+            "mentions": [
+              "economist_wu",
+              "diplomat_osei"
+            ],
+            "words_emotions": [
+              {
+                "word": "Compact",
+                "emotion": "trust"
+              },
+              {
+                "word": "agreement",
+                "emotion": "trust"
+              },
+              {
+                "word": "prerequisite",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "While Prof. Abebe warns of a closing window, we must ensure the transition is politically sustainable to prevent a total reversal of these policies by a populist wave.",
+            "valence": -0.417,
+            "arousal": 0.6,
+            "dominance": -0.25,
+            "word_count": 28,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "prevent",
+                "emotion": "fear"
+              },
+              {
+                "word": "reversal",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "I call for a final consensus on a timeline that respects carbon budgets but includes ironclad social protections to maintain the public's trust.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "respects",
+                "emotion": "trust"
+              },
+              {
+                "word": "public",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "trust",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.217,
+        "arousal": 0.311,
+        "dominance": 0.061,
+        "tokens": 3081,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Minister Thorn, a \"binding agreement\" is a hollow victory if it prioritizes political sustainability over biological survival. By the time your \"public trust\" is secured, we will have breached the 1.5°C threshold, rendering your social protections irrelevant in a world of systemic ecological failure. We must stop treating the carbon budget as a negotiable variable and accept it as the only absolute deadline.",
+        "sentences": [
+          {
+            "text": "Minister Thorn, a \"binding agreement\" is a hollow victory if it prioritizes political sustainability over biological survival.",
+            "valence": 0.144,
+            "arousal": 0.033,
+            "dominance": 0.078,
+            "word_count": 17,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "agreement",
+                "emotion": "trust"
+              },
+              {
+                "word": "hollow",
+                "emotion": "sadness"
+              },
+              {
+                "word": "victory",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "By the time your \"public trust\" is secured, we will have breached the 1.5°C threshold, rendering your social protections irrelevant in a world of systemic ecological failure.",
+            "valence": 0.1,
+            "arousal": 0.308,
+            "dominance": 0.1,
+            "word_count": 27,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "time",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "public",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "trust",
+                "emotion": "trust"
+              },
+              {
+                "word": "failure",
+                "emotion": "disgust"
+              }
+            ]
+          },
+          {
+            "text": "We must stop treating the carbon budget as a negotiable variable and accept it as the only absolute deadline.",
+            "valence": 0.45,
+            "arousal": 0.4,
+            "dominance": 0.05,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "variable",
+                "emotion": "surprise"
+              }
+            ]
+          }
+        ],
+        "valence": 0.231,
+        "arousal": 0.247,
+        "dominance": 0.076,
+        "tokens": 3280,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "Prof. Abebe’s insistence on an absolute deadline ignores the fact that a bankrupt energy sector cannot fund the very transition he demands. We will accept a binding agreement and an escalating carbon floor, but only if the timeline remains tethered to the practical capacity of the grid to avoid systemic collapse. We are willing to lead the shift, but we will not preside over a global economic suicide pact.",
+        "sentences": [
+          {
+            "text": "Prof. Abebe’s insistence on an absolute deadline ignores the fact that a bankrupt energy sector cannot fund the very transition he demands.",
+            "valence": 0.0,
+            "arousal": 0.125,
+            "dominance": -0.1,
+            "word_count": 22,
+            "mentions": [
+              "prof_abebe"
+            ],
+            "words_emotions": [
+              {
+                "word": "fact",
+                "emotion": "trust"
+              },
+              {
+                "word": "bankrupt",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "We will accept a binding agreement and an escalating carbon floor, but only if the timeline remains tethered to the practical capacity of the grid to avoid systemic collapse.",
+            "valence": -0.167,
+            "arousal": 0.308,
+            "dominance": -0.233,
+            "word_count": 29,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "agreement",
+                "emotion": "trust"
+              },
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              },
+              {
+                "word": "avoid",
+                "emotion": "fear"
+              },
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              }
+            ]
+          },
+          {
+            "text": "We are willing to lead the shift, but we will not preside over a global economic suicide pact.",
+            "valence": -0.017,
+            "arousal": 0.217,
+            "dominance": 0.05,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "suicide",
+                "emotion": "anger"
+              },
+              {
+                "word": "pact",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.061,
+        "arousal": 0.217,
+        "dominance": -0.094,
+        "tokens": 3580,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "CEO Anders, calling this a \"suicide pact\" is a sick joke when your industry has spent decades signing a death warrant for the planet. Minister Thorn, your \"binding agreement\" is just a fancy way of negotiating the speed of our extinction to keep your polls high. Stop playing games with our lives—shut it all down now or admit that your greed is more important than human survival.",
+        "sentences": [
+          {
+            "text": "CEO Anders, calling this a \"suicide pact\" is a sick joke when your industry has spent decades signing a death warrant for the planet.",
+            "valence": -0.254,
+            "arousal": 0.167,
+            "dominance": -0.083,
+            "word_count": 24,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "suicide",
+                "emotion": "anger"
+              },
+              {
+                "word": "pact",
+                "emotion": "trust"
+              },
+              {
+                "word": "sick",
+                "emotion": "disgust"
+              },
+              {
+                "word": "death",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Minister Thorn, your \"binding agreement\" is just a fancy way of negotiating the speed of our extinction to keep your polls high.",
+            "valence": 0.55,
+            "arousal": 0.325,
+            "dominance": 0.3,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "agreement",
+                "emotion": "trust"
+              },
+              {
+                "word": "fancy",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Stop playing games with our lives-shut it all down now or admit that your greed is more important than human survival.",
+            "valence": -0.025,
+            "arousal": 0.25,
+            "dominance": 0.125,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "greed",
+                "emotion": "anger"
+              },
+              {
+                "word": "important",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.09,
+        "arousal": 0.247,
+        "dominance": 0.114,
+        "tokens": 3821,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "The conflict persists because we are treating the carbon budget as a political negotiation rather than a hard economic constraint. By integrating an automated, escalating carbon price into the final agreement, we eliminate CEO Anders' reliance on \"practical capacity\" and force the capital pivot Prof. Abebe demands. This mechanism transforms the moral emergency Devi describes into an immediate financial imperative, leaving no room for political hesitation.",
+        "sentences": [
+          {
+            "text": "The conflict persists because we are treating the carbon budget as a political negotiation rather than a hard economic constraint.",
+            "valence": -0.222,
+            "arousal": 0.256,
+            "dominance": 0.0,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "conflict",
+                "emotion": "anger"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "constraint",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "By integrating an automated, escalating carbon price into the final agreement, we eliminate CEO Anders' reliance on \"practical capacity\" and force the capital pivot Prof. Abebe demands.",
+            "valence": 0.3,
+            "arousal": 0.25,
+            "dominance": 0.15,
+            "word_count": 27,
+            "mentions": [
+              "prof_abebe",
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "agreement",
+                "emotion": "trust"
+              },
+              {
+                "word": "reliance",
+                "emotion": "trust"
+              },
+              {
+                "word": "force",
+                "emotion": "anger"
+              },
+              {
+                "word": "pivot",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "This mechanism transforms the moral emergency Devi describes into an immediate financial imperative, leaving no room for political hesitation.",
+            "valence": -0.283,
+            "arousal": 0.478,
+            "dominance": -0.15,
+            "word_count": 19,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "emergency",
+                "emotion": "fear"
+              },
+              {
+                "word": "hesitation",
+                "emotion": "fear"
+              }
+            ]
+          }
+        ],
+        "valence": -0.068,
+        "arousal": 0.328,
+        "dominance": 0.0,
+        "tokens": 3940,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Dr. Wu, your \"hard economic constraint\" is simply another way to force the Global South to play by rules written by the North. We will not be coerced by automated price signals into a transition that lacks direct, unconditional financial reparations. True leadership requires the wealthy nations to pay their historical debt now, not through market mechanisms that protect the capital of the few.",
+        "sentences": [
+          {
+            "text": "Dr. Wu, your \"hard economic constraint\" is simply another way to force the Global South to play by rules written by the North.",
+            "valence": -0.617,
+            "arousal": 0.517,
+            "dominance": -0.05,
+            "word_count": 23,
+            "mentions": [
+              "economist_wu"
+            ],
+            "words_emotions": [
+              {
+                "word": "constraint",
+                "emotion": "anger"
+              },
+              {
+                "word": "force",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "We will not be coerced by automated price signals into a transition that lacks direct, unconditional financial reparations.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "True leadership requires the wealthy nations to pay their historical debt now, not through market mechanisms that protect the capital of the few.",
+            "valence": 0.178,
+            "arousal": 0.117,
+            "dominance": 0.128,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "True",
+                "emotion": "joy"
+              },
+              {
+                "word": "pay",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "debt",
+                "emotion": "sadness"
+              }
+            ]
+          }
+        ],
+        "valence": -0.146,
+        "arousal": 0.211,
+        "dominance": 0.026,
+        "tokens": 3997,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      }
+    ]
+  }
+]

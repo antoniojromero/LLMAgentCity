@@ -1,0 +1,559 @@
+{
+  "generated_at": "2026-07-30T15:00:13.301562",
+  "sentiment_model": "vad",
+  "mode": "conversation",
+  "totals": {
+    "agents": 6,
+    "turns": 30,
+    "tokens": 78577,
+    "cost_usd": 0.0,
+    "log_entries": 5,
+    "rounds": 5
+  },
+  "by_agent": [
+    {
+      "id": "ceo_park",
+      "name": "CEO Park",
+      "role": "CEO",
+      "cluster": "default_strategy",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 548,
+      "tokens": 10677,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 9272.7,
+      "valence": 0.179,
+      "arousal": 0.278,
+      "dominance": 0.099,
+      "influence": 3.4,
+      "interactions": 5,
+      "allegation_count": 18,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 5.0,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 2.607142857142857,
+          "first_round": 1
+        },
+        "surprise": {
+          "count": 3,
+          "total_intensity": 0.8428571428571429,
+          "first_round": 2
+        },
+        "fear": {
+          "count": 4,
+          "total_intensity": 1.3785714285714286,
+          "first_round": 2
+        },
+        "joy": {
+          "count": 3,
+          "total_intensity": 1.1428571428571428,
+          "first_round": 3
+        },
+        "sadness": {
+          "count": 2,
+          "total_intensity": 0.39285714285714285,
+          "first_round": 3
+        },
+        "anger": {
+          "count": 1,
+          "total_intensity": 0.25,
+          "first_round": 4
+        },
+        "disgust": {
+          "count": 1,
+          "total_intensity": 0.25,
+          "first_round": 4
+        }
+      },
+      "files": {},
+      "rank": 1
+    },
+    {
+      "id": "cmo_tanaka",
+      "name": "CMO Tanaka",
+      "role": "CMO",
+      "cluster": "default_marketing",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 583,
+      "tokens": 14192,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 7806.8,
+      "valence": 0.177,
+      "arousal": 0.211,
+      "dominance": 0.085,
+      "influence": 3.2,
+      "interactions": 5,
+      "allegation_count": 13,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 4.25,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 5,
+          "total_intensity": 1.8333333333333333,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 3.0,
+          "first_round": 2
+        },
+        "sadness": {
+          "count": 3,
+          "total_intensity": 0.8333333333333333,
+          "first_round": 2
+        },
+        "surprise": {
+          "count": 2,
+          "total_intensity": 0.5833333333333333,
+          "first_round": 2
+        },
+        "anger": {
+          "count": 1,
+          "total_intensity": 0.25,
+          "first_round": 2
+        },
+        "joy": {
+          "count": 2,
+          "total_intensity": 0.5,
+          "first_round": 4
+        },
+        "disgust": {
+          "count": 1,
+          "total_intensity": 0.16666666666666666,
+          "first_round": 5
+        }
+      },
+      "files": {},
+      "rank": 2
+    },
+    {
+      "id": "cfo_mueller",
+      "name": "CFO Mueller",
+      "role": "CFO",
+      "cluster": "default_finance",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 461,
+      "tokens": 11217,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 7830.5,
+      "valence": -0.009,
+      "arousal": 0.224,
+      "dominance": 0.047,
+      "influence": 2.7,
+      "interactions": 5,
+      "allegation_count": 11,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 4.0,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 3,
+          "total_intensity": 2.1666666666666665,
+          "first_round": 1
+        },
+        "sadness": {
+          "count": 4,
+          "total_intensity": 3.1666666666666665,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 5,
+          "total_intensity": 4.333333333333333,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 1.0,
+          "first_round": 1
+        },
+        "disgust": {
+          "count": 2,
+          "total_intensity": 1.1666666666666667,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 3,
+          "total_intensity": 2.5,
+          "first_round": 3
+        },
+        "surprise": {
+          "count": 2,
+          "total_intensity": 1.3333333333333335,
+          "first_round": 3
+        }
+      },
+      "files": {},
+      "rank": 3
+    },
+    {
+      "id": "coo_singh",
+      "name": "COO Singh",
+      "role": "COO",
+      "cluster": "default_operations",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 520,
+      "tokens": 12658,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 7991.6,
+      "valence": 0.168,
+      "arousal": 0.259,
+      "dominance": 0.084,
+      "influence": 2.4,
+      "interactions": 5,
+      "allegation_count": 5,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 5.0,
+          "first_round": 1
+        },
+        "disgust": {
+          "count": 1,
+          "total_intensity": 1.0,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 2.6666666666666665,
+          "first_round": 1
+        },
+        "surprise": {
+          "count": 3,
+          "total_intensity": 1.6666666666666665,
+          "first_round": 3
+        },
+        "anger": {
+          "count": 2,
+          "total_intensity": 0.8333333333333333,
+          "first_round": 3
+        },
+        "sadness": {
+          "count": 2,
+          "total_intensity": 0.5833333333333333,
+          "first_round": 3
+        },
+        "fear": {
+          "count": 1,
+          "total_intensity": 0.5,
+          "first_round": 5
+        }
+      },
+      "files": {},
+      "rank": 4
+    },
+    {
+      "id": "vp_legal",
+      "name": "VP Legal Chen",
+      "role": "VP Legal",
+      "cluster": "default_strategy",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 499,
+      "tokens": 14480,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 7503.5,
+      "valence": 0.218,
+      "arousal": 0.32,
+      "dominance": 0.068,
+      "influence": 2.0,
+      "interactions": 5,
+      "allegation_count": 0,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 3.083333333333333,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 5,
+          "total_intensity": 4.75,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 2,
+          "total_intensity": 0.5333333333333333,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 5,
+          "total_intensity": 2.033333333333333,
+          "first_round": 1
+        },
+        "surprise": {
+          "count": 5,
+          "total_intensity": 1.4083333333333332,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 0.125,
+          "first_round": 5
+        }
+      },
+      "files": {},
+      "rank": 5
+    },
+    {
+      "id": "board_rep",
+      "name": "Board Rep Eva",
+      "role": "Board Representative",
+      "cluster": "default_finance",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 457,
+      "tokens": 15353,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 8151.1,
+      "valence": 0.054,
+      "arousal": 0.432,
+      "dominance": 0.004,
+      "influence": 2.0,
+      "interactions": 5,
+      "allegation_count": 0,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 5.0,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 5,
+          "total_intensity": 1.8666666666666665,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 3,
+          "total_intensity": 1.2333333333333334,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 0.3333333333333333,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 3,
+          "total_intensity": 2.2666666666666666,
+          "first_round": 2
+        },
+        "surprise": {
+          "count": 2,
+          "total_intensity": 0.7,
+          "first_round": 2
+        },
+        "disgust": {
+          "count": 1,
+          "total_intensity": 0.2,
+          "first_round": 5
+        },
+        "sadness": {
+          "count": 1,
+          "total_intensity": 0.2,
+          "first_round": 5
+        }
+      },
+      "files": {},
+      "rank": 6
+    }
+  ],
+  "by_cluster": {
+    "default_strategy": {
+      "agents": 2,
+      "tokens": 25157,
+      "cost": 0.0,
+      "turns": 10,
+      "avg_valence": 0.199
+    },
+    "default_finance": {
+      "agents": 2,
+      "tokens": 26570,
+      "cost": 0.0,
+      "turns": 10,
+      "avg_valence": 0.022
+    },
+    "default_operations": {
+      "agents": 1,
+      "tokens": 12658,
+      "cost": 0.0,
+      "turns": 5,
+      "avg_valence": 0.168
+    },
+    "default_marketing": {
+      "agents": 1,
+      "tokens": 14192,
+      "cost": 0.0,
+      "turns": 5,
+      "avg_valence": 0.177
+    }
+  },
+  "mention_matrix": {
+    "ceo_park": {
+      "cfo_mueller": 5,
+      "coo_singh": 5,
+      "cmo_tanaka": 3,
+      "vp_legal": 3,
+      "board_rep": 2
+    },
+    "cfo_mueller": {
+      "coo_singh": 3,
+      "ceo_park": 3,
+      "cmo_tanaka": 2,
+      "board_rep": 2,
+      "vp_legal": 1
+    },
+    "coo_singh": {
+      "ceo_park": 3,
+      "cmo_tanaka": 2
+    },
+    "cmo_tanaka": {
+      "ceo_park": 4,
+      "cfo_mueller": 2,
+      "coo_singh": 3,
+      "vp_legal": 1,
+      "board_rep": 3
+    },
+    "vp_legal": {},
+    "board_rep": {}
+  },
+  "interaction_matrix": {
+    "ceo_park": {
+      "cfo_mueller": 5
+    },
+    "cfo_mueller": {
+      "ceo_park": 5
+    },
+    "coo_singh": {
+      "ceo_park": 5
+    },
+    "cmo_tanaka": {
+      "ceo_park": 5
+    },
+    "vp_legal": {
+      "ceo_park": 5
+    },
+    "board_rep": {
+      "ceo_park": 5
+    }
+  },
+  "emotions_detected": {
+    "anticipation": {
+      "count": 30,
+      "first_round": 1,
+      "agents": [
+        "ceo_park",
+        "cfo_mueller",
+        "coo_singh",
+        "cmo_tanaka",
+        "vp_legal",
+        "board_rep"
+      ]
+    },
+    "trust": {
+      "count": 23,
+      "first_round": 1,
+      "agents": [
+        "ceo_park",
+        "cfo_mueller",
+        "coo_singh",
+        "vp_legal",
+        "cmo_tanaka",
+        "board_rep"
+      ]
+    },
+    "sadness": {
+      "count": 12,
+      "first_round": 1,
+      "agents": [
+        "cfo_mueller",
+        "cmo_tanaka",
+        "ceo_park",
+        "coo_singh",
+        "board_rep"
+      ]
+    },
+    "anger": {
+      "count": 14,
+      "first_round": 1,
+      "agents": [
+        "cfo_mueller",
+        "vp_legal",
+        "board_rep",
+        "cmo_tanaka",
+        "coo_singh",
+        "ceo_park"
+      ]
+    },
+    "joy": {
+      "count": 8,
+      "first_round": 1,
+      "agents": [
+        "cfo_mueller",
+        "board_rep",
+        "ceo_park",
+        "cmo_tanaka",
+        "vp_legal"
+      ]
+    },
+    "disgust": {
+      "count": 6,
+      "first_round": 1,
+      "agents": [
+        "cfo_mueller",
+        "coo_singh",
+        "ceo_park",
+        "cmo_tanaka",
+        "board_rep"
+      ]
+    },
+    "fear": {
+      "count": 23,
+      "first_round": 1,
+      "agents": [
+        "cmo_tanaka",
+        "vp_legal",
+        "board_rep",
+        "ceo_park",
+        "cfo_mueller",
+        "coo_singh"
+      ]
+    },
+    "surprise": {
+      "count": 17,
+      "first_round": 1,
+      "agents": [
+        "vp_legal",
+        "ceo_park",
+        "cmo_tanaka",
+        "board_rep",
+        "cfo_mueller",
+        "coo_singh"
+      ]
+    }
+  },
+  "files_detected": {}
+}

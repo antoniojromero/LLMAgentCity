@@ -471,7 +471,7 @@ def ollama_chat(model, messages, temperature=None):
     t0 = time.time()
     try:
         r = requests.post(f"{url}/api/chat", json=payload, headers=_h(),
-                          timeout=180, verify=False)  # SSL: False
+                          timeout=300, verify=False)
         r.raise_for_status()
         d = r.json()
         content = d["message"]["content"]
@@ -483,11 +483,12 @@ def ollama_chat(model, messages, temperature=None):
         return content, {"prompt_tokens": pt, "completion_tokens": ct,
                          "total_tokens": tt, "latency_ms": lat, "cost_usd": cost}
     except Exception as first_err:
+        print(f"[LLM-DEBUG] Native Ollama /api/chat failed: {first_err}")
         pass
     oai_payload = {"model": model, "messages": messages,
                    "temperature": temperature, "stream": False}
     r = requests.post(f"{url}/v1/chat/completions", json=oai_payload,
-                      headers=_h(), timeout=180, verify=False)  # SSL: False
+                      headers=_h(), timeout=300, verify=False)
     r.raise_for_status()
     d = r.json()
     choice = d["choices"][0]

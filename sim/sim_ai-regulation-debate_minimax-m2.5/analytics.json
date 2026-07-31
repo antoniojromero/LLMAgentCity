@@ -1,0 +1,436 @@
+{
+  "generated_at": "2026-07-30T13:47:02.744118",
+  "sentiment_model": "vad",
+  "mode": "debate",
+  "totals": {
+    "agents": 5,
+    "turns": 25,
+    "tokens": 69603,
+    "cost_usd": 0.0,
+    "log_entries": 5,
+    "rounds": 5
+  },
+  "by_agent": [
+    {
+      "id": "dr_reyes",
+      "name": "Dr. Reyes",
+      "role": "AI Researcher",
+      "cluster": "default_antiReg",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 394,
+      "tokens": 11856,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 7792.2,
+      "valence": 0.012,
+      "arousal": 0.327,
+      "dominance": -0.014,
+      "influence": 3.2,
+      "interactions": 5,
+      "allegation_count": 15,
+      "argument_score": 0,
+      "emotions": {
+        "anger": {
+          "count": 3,
+          "total_intensity": 2.1666666666666665,
+          "first_round": 1
+        },
+        "surprise": {
+          "count": 1,
+          "total_intensity": 1.0,
+          "first_round": 1
+        },
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 3.4166666666666665,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 3.6666666666666665,
+          "first_round": 2
+        },
+        "fear": {
+          "count": 4,
+          "total_intensity": 2.35,
+          "first_round": 2
+        },
+        "sadness": {
+          "count": 1,
+          "total_intensity": 0.25,
+          "first_round": 2
+        },
+        "disgust": {
+          "count": 1,
+          "total_intensity": 0.3333333333333333,
+          "first_round": 4
+        }
+      },
+      "files": {},
+      "rank": 1
+    },
+    {
+      "id": "ceo_watts",
+      "name": "CEO Watts",
+      "role": "Tech CEO",
+      "cluster": "default_antiReg",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 854,
+      "tokens": 14869,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 11594.2,
+      "valence": 0.189,
+      "arousal": 0.228,
+      "dominance": 0.112,
+      "influence": 2.9,
+      "interactions": 5,
+      "allegation_count": 10,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 2.225,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 2,
+          "total_intensity": 0.6666666666666666,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 5,
+          "total_intensity": 4.666666666666666,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 5,
+          "total_intensity": 1.1916666666666667,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 4,
+          "total_intensity": 1.125,
+          "first_round": 2
+        },
+        "sadness": {
+          "count": 1,
+          "total_intensity": 0.1,
+          "first_round": 3
+        },
+        "surprise": {
+          "count": 1,
+          "total_intensity": 0.1,
+          "first_round": 3
+        }
+      },
+      "files": {},
+      "rank": 2
+    },
+    {
+      "id": "journalist_li",
+      "name": "Li Wei",
+      "role": "Journalist",
+      "cluster": "default_neutral",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 658,
+      "tokens": 16461,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 10731.9,
+      "valence": 0.086,
+      "arousal": 0.236,
+      "dominance": 0.099,
+      "influence": 2.9,
+      "interactions": 5,
+      "allegation_count": 9,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 4,
+          "total_intensity": 2.6666666666666665,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 5,
+          "total_intensity": 5.0,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 4,
+          "total_intensity": 1.8333333333333333,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 5,
+          "total_intensity": 1.8214285714285712,
+          "first_round": 1
+        },
+        "sadness": {
+          "count": 1,
+          "total_intensity": 0.14285714285714285,
+          "first_round": 5
+        }
+      },
+      "files": {},
+      "rank": 3
+    },
+    {
+      "id": "prof_okafor",
+      "name": "Prof. Okafor",
+      "role": "Ethicist",
+      "cluster": "default_proReg",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 500,
+      "tokens": 15376,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 10027.9,
+      "valence": -0.007,
+      "arousal": 0.317,
+      "dominance": 0.02,
+      "influence": 2.4,
+      "interactions": 5,
+      "allegation_count": 4,
+      "argument_score": 0,
+      "emotions": {
+        "anger": {
+          "count": 5,
+          "total_intensity": 2.428571428571429,
+          "first_round": 1
+        },
+        "anticipation": {
+          "count": 4,
+          "total_intensity": 1.7857142857142856,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 4,
+          "total_intensity": 1.6785714285714286,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 5,
+          "total_intensity": 3.75,
+          "first_round": 1
+        },
+        "sadness": {
+          "count": 2,
+          "total_intensity": 0.39285714285714285,
+          "first_round": 2
+        },
+        "surprise": {
+          "count": 1,
+          "total_intensity": 0.25,
+          "first_round": 4
+        }
+      },
+      "files": {},
+      "rank": 4
+    },
+    {
+      "id": "senator_chen",
+      "name": "Sen. Chen",
+      "role": "Legislator",
+      "cluster": "default_proReg",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 510,
+      "tokens": 11041,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 9013.8,
+      "valence": 0.156,
+      "arousal": 0.264,
+      "dominance": 0.07,
+      "influence": 2.0,
+      "interactions": 5,
+      "allegation_count": 0,
+      "argument_score": 0,
+      "emotions": {
+        "trust": {
+          "count": 5,
+          "total_intensity": 3.7857142857142856,
+          "first_round": 1
+        },
+        "anticipation": {
+          "count": 4,
+          "total_intensity": 3.8,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 3,
+          "total_intensity": 1.8142857142857145,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 3,
+          "total_intensity": 1.3857142857142857,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 0.14285714285714285,
+          "first_round": 3
+        },
+        "surprise": {
+          "count": 1,
+          "total_intensity": 0.2,
+          "first_round": 5
+        }
+      },
+      "files": {},
+      "rank": 5
+    }
+  ],
+  "by_cluster": {
+    "default_proReg": {
+      "agents": 2,
+      "tokens": 26417,
+      "cost": 0.0,
+      "turns": 10,
+      "avg_valence": 0.074
+    },
+    "default_antiReg": {
+      "agents": 2,
+      "tokens": 26725,
+      "cost": 0.0,
+      "turns": 10,
+      "avg_valence": 0.101
+    },
+    "default_neutral": {
+      "agents": 1,
+      "tokens": 16461,
+      "cost": 0.0,
+      "turns": 5,
+      "avg_valence": 0.086
+    }
+  },
+  "mention_matrix": {
+    "senator_chen": {},
+    "dr_reyes": {
+      "ceo_watts": 5,
+      "journalist_li": 4,
+      "senator_chen": 2,
+      "prof_okafor": 4
+    },
+    "ceo_watts": {
+      "journalist_li": 5,
+      "senator_chen": 2,
+      "prof_okafor": 3
+    },
+    "prof_okafor": {
+      "journalist_li": 3,
+      "ceo_watts": 1
+    },
+    "journalist_li": {
+      "senator_chen": 4,
+      "ceo_watts": 3,
+      "dr_reyes": 1,
+      "prof_okafor": 1
+    }
+  },
+  "interaction_matrix": {
+    "senator_chen": {
+      "dr_reyes": 5
+    },
+    "dr_reyes": {
+      "senator_chen": 5
+    },
+    "ceo_watts": {
+      "senator_chen": 5
+    },
+    "prof_okafor": {
+      "senator_chen": 5
+    },
+    "journalist_li": {
+      "senator_chen": 5
+    }
+  },
+  "emotions_detected": {
+    "trust": {
+      "count": 24,
+      "first_round": 1,
+      "agents": [
+        "senator_chen",
+        "ceo_watts",
+        "prof_okafor",
+        "journalist_li",
+        "dr_reyes"
+      ]
+    },
+    "anticipation": {
+      "count": 22,
+      "first_round": 1,
+      "agents": [
+        "senator_chen",
+        "dr_reyes",
+        "ceo_watts",
+        "prof_okafor",
+        "journalist_li"
+      ]
+    },
+    "fear": {
+      "count": 20,
+      "first_round": 1,
+      "agents": [
+        "senator_chen",
+        "ceo_watts",
+        "prof_okafor",
+        "journalist_li",
+        "dr_reyes"
+      ]
+    },
+    "anger": {
+      "count": 20,
+      "first_round": 1,
+      "agents": [
+        "senator_chen",
+        "dr_reyes",
+        "prof_okafor",
+        "journalist_li",
+        "ceo_watts"
+      ]
+    },
+    "surprise": {
+      "count": 4,
+      "first_round": 1,
+      "agents": [
+        "dr_reyes",
+        "ceo_watts",
+        "prof_okafor",
+        "senator_chen"
+      ]
+    },
+    "joy": {
+      "count": 3,
+      "first_round": 1,
+      "agents": [
+        "ceo_watts",
+        "senator_chen"
+      ]
+    },
+    "sadness": {
+      "count": 5,
+      "first_round": 2,
+      "agents": [
+        "dr_reyes",
+        "prof_okafor",
+        "ceo_watts",
+        "journalist_li"
+      ]
+    },
+    "disgust": {
+      "count": 1,
+      "first_round": 4,
+      "agents": [
+        "dr_reyes"
+      ]
+    }
+  },
+  "files_detected": {}
+}

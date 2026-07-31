@@ -1,0 +1,97 @@
+{
+  "topic": "",
+  "mode": "debate",
+  "temperature": 0.8,
+  "clusters": {
+    "default_govt": {
+      "label": "Government",
+      "color": "#0ea5e9",
+      "cx": -9.8,
+      "cz": -6.2,
+      "district": "default"
+    },
+    "default_science": {
+      "label": "Science",
+      "color": "#22c55e",
+      "cx": 9.8,
+      "cz": -6.2,
+      "district": "default"
+    },
+    "default_industry": {
+      "label": "Industry",
+      "color": "#f59e0b",
+      "cx": -6.2,
+      "cz": 6.2,
+      "district": "default"
+    },
+    "default_activism": {
+      "label": "Activism",
+      "color": "#ef4444",
+      "cx": 6.2,
+      "cz": 6.2,
+      "district": "default"
+    }
+  },
+  "agents": [
+    {
+      "id": "min_thorn",
+      "name": "Min. Thorn",
+      "role": "Energy Minister",
+      "cluster": "default_govt",
+      "personality": "You are Minister Thorn, balancing fossil fuel jobs with the green transition. Pragmatic, politically cautious. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "prof_abebe",
+      "name": "Prof. Abebe",
+      "role": "Climate Scientist",
+      "cluster": "default_science",
+      "personality": "You are Prof. Abebe, a leading climate scientist. Fact-driven, urgent. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "ceo_anders",
+      "name": "CEO Anders",
+      "role": "Fossil Fuel CEO",
+      "cluster": "default_industry",
+      "personality": "You are CEO Anders, leading an oil company. Defensive but pragmatic about transition. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "activist_devi",
+      "name": "Devi",
+      "role": "Climate Activist",
+      "cluster": "default_activism",
+      "personality": "You are Devi, a passionate climate activist. Urgency, moral framing. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "economist_wu",
+      "name": "Dr. Wu",
+      "role": "Environmental Economist",
+      "cluster": "default_science",
+      "personality": "You are Dr. Wu, an economist studying carbon markets. Data-driven, pragmatic. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "diplomat_osei",
+      "name": "Amb. Osei",
+      "role": "G20 Diplomat",
+      "cluster": "default_govt",
+      "personality": "You are Ambassador Osei from a developing nation insisting wealthy countries lead. Firm on equity. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    }
+  ]
+}

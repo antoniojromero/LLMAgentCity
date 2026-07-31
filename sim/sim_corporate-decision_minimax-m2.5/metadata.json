@@ -1,0 +1,12 @@
+{
+  "preset": "corporate_decision",
+  "model": "minimax-m2.5",
+  "rounds": 5,
+  "temperature": 0.8,
+  "agents": 6,
+  "errors": 0,
+  "messages": 30,
+  "snapshots": 30,
+  "elapsed_seconds": 518.4,
+  "timestamp": "2026-07-30T15:00:13.309637+00:00"
+}

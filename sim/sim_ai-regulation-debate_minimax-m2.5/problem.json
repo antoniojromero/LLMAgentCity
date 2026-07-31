@@ -1,0 +1,80 @@
+{
+  "topic": "",
+  "mode": "debate",
+  "temperature": 0.8,
+  "clusters": {
+    "default_proReg": {
+      "label": "Pro-Regulation",
+      "color": "#ef4444",
+      "cx": -9.8,
+      "cz": -6.2,
+      "district": "default"
+    },
+    "default_antiReg": {
+      "label": "Anti-Regulation",
+      "color": "#3b82f6",
+      "cx": 9.8,
+      "cz": -6.2,
+      "district": "default"
+    },
+    "default_neutral": {
+      "label": "Neutral",
+      "color": "#a855f7",
+      "cx": 0.0,
+      "cz": 6.2,
+      "district": "default"
+    }
+  },
+  "agents": [
+    {
+      "id": "senator_chen",
+      "name": "Sen. Chen",
+      "role": "Legislator",
+      "cluster": "default_proReg",
+      "personality": "You are Senator Chen, a firm believer in strong AI regulation. You cite the EU AI Act. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": true
+    },
+    {
+      "id": "dr_reyes",
+      "name": "Dr. Reyes",
+      "role": "AI Researcher",
+      "cluster": "default_antiReg",
+      "personality": "You are Dr. Reyes, an AI researcher who thinks regulation stifles innovation. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "ceo_watts",
+      "name": "CEO Watts",
+      "role": "Tech CEO",
+      "cluster": "default_antiReg",
+      "personality": "You are CEO Watts of a major AI company. You favor industry self-regulation. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "prof_okafor",
+      "name": "Prof. Okafor",
+      "role": "Ethicist",
+      "cluster": "default_proReg",
+      "personality": "You are Prof. Okafor, an AI ethicist focused on bias and fairness. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    },
+    {
+      "id": "journalist_li",
+      "name": "Li Wei",
+      "role": "Journalist",
+      "cluster": "default_neutral",
+      "personality": "You are Li Wei, an investigative journalist covering AI. You ask hard questions. Reply in 2-3 sentences.",
+      "model": "",
+      "temperature": null,
+      "is_moderator": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "preset": "ai_regulation_debate",
+  "model": "gpt-oss:20b",
+  "rounds": 5,
+  "temperature": 0.8,
+  "agents": 5,
+  "errors": 0,
+  "messages": 25,
+  "snapshots": 25,
+  "elapsed_seconds": 237.8,
+  "timestamp": "2026-07-30T13:51:01.656679+00:00"
+}

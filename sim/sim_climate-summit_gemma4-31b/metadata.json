@@ -1,0 +1,12 @@
+{
+  "preset": "climate_summit",
+  "model": "gemma4:31b",
+  "rounds": 5,
+  "temperature": 0.8,
+  "agents": 6,
+  "errors": 0,
+  "messages": 30,
+  "snapshots": 30,
+  "elapsed_seconds": 351.3,
+  "timestamp": "2026-07-30T14:43:33.172691+00:00"
+}

@@ -1,0 +1,1894 @@
+[
+  {
+    "ts": "2026-07-30T15:12:25.223544",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 1,
+    "turns": [
+      {
+        "agent_id": "ceo_park",
+        "name": "CEO Park",
+        "text": "Since the topic is open, I want us to focus on aggressive market expansion over the next three years. We cannot afford to play it safe while our competitors are hesitant; I expect a bold roadmap that prioritizes long-term dominance over short-term margins. Mueller, I'll need you to find the capital, but let's not let caution stifle our vision.",
+        "sentences": [
+          {
+            "text": "Since the topic is open, I want us to focus on aggressive market expansion over the next three years.",
+            "valence": -0.6,
+            "arousal": 0.7,
+            "dominance": 0.0,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "aggressive",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "We cannot afford to play it safe while our competitors are hesitant; I expect a bold roadmap that prioritizes long-term dominance over short-term margins.",
+            "valence": 0.422,
+            "arousal": 0.428,
+            "dominance": 0.261,
+            "word_count": 24,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "safe",
+                "emotion": "joy"
+              },
+              {
+                "word": "expect",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Mueller, I'll need you to find the capital, but let's not let caution stifle our vision.",
+            "valence": -0.067,
+            "arousal": 0.567,
+            "dominance": 0.2,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "caution",
+                "emotion": "anger"
+              },
+              {
+                "word": "vision",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": -0.082,
+        "arousal": 0.565,
+        "dominance": 0.154,
+        "tokens": 212,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "cfo_mueller",
+        "name": "CFO Mueller",
+        "text": "CEO Park, \"long-term dominance\" doesn't pay the bills if we bleed cash today. I cannot approve a roadmap that ignores short-term margins in favor of aggressive speculation. We need a phased approach with strict ROI triggers before I commit any capital.",
+        "sentences": [
+          {
+            "text": "CEO Park, \"long-term dominance\" doesn't pay the bills if we bleed cash today.",
+            "valence": 0.271,
+            "arousal": 0.473,
+            "dominance": 0.278,
+            "word_count": 13,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "pay",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "cash",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "I cannot approve a roadmap that ignores short-term margins in favor of aggressive speculation.",
+            "valence": -0.167,
+            "arousal": 0.4,
+            "dominance": -0.017,
+            "word_count": 14,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "approve",
+                "emotion": "joy"
+              },
+              {
+                "word": "aggressive",
+                "emotion": "anger"
+              },
+              {
+                "word": "speculation",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "We need a phased approach with strict ROI triggers before I commit any capital.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 14,
+            "mentions": [],
+            "words_emotions": []
+          }
+        ],
+        "valence": 0.035,
+        "arousal": 0.291,
+        "dominance": 0.087,
+        "tokens": 331,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "coo_singh",
+        "name": "COO Singh",
+        "text": "I'm with Mueller on this; we can't scale aggressively if our current supply chain is already stretched thin. CEO Park, if we push for dominance without first fixing our capacity bottlenecks, we'll just be failing faster and damaging our reputation.",
+        "sentences": [
+          {
+            "text": "I'm with Mueller on this; we can't scale aggressively if our current supply chain is already stretched thin.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "CEO Park, if we push for dominance without first fixing our capacity bottlenecks, we'll just be failing faster and damaging our reputation.",
+            "valence": -0.425,
+            "arousal": 0.375,
+            "dominance": 0.0,
+            "word_count": 22,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "failing",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.212,
+        "arousal": 0.188,
+        "dominance": 0.0,
+        "tokens": 433,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "cmo_tanaka",
+        "name": "CMO Tanaka",
+        "text": "I completely agree with CEO Park's vision; the data on Asian consumer trends is too explosive to ignore while we hesitate. While I hear Mueller and Singh's concerns, we can mitigate risk by targeting high-growth urban hubs first to ensure rapid wins and a faster ROI.",
+        "sentences": [
+          {
+            "text": "I completely agree with CEO Park's vision; the data on Asian consumer trends is too explosive to ignore while we hesitate.",
+            "valence": 0.013,
+            "arousal": 0.575,
+            "dominance": 0.175,
+            "word_count": 21,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "vision",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "explosive",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "While I hear Mueller and Singh's concerns, we can mitigate risk by targeting high-growth urban hubs first to ensure rapid wins and a faster ROI.",
+            "valence": 0.075,
+            "arousal": 0.65,
+            "dominance": -0.1,
+            "word_count": 25,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              }
+            ]
+          }
+        ],
+        "valence": 0.044,
+        "arousal": 0.613,
+        "dominance": 0.037,
+        "tokens": 538,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "vp_legal",
+        "name": "VP Legal Chen",
+        "text": "Tanaka, targeting those high-growth hubs sounds promising, but we cannot overlook the fragmented regulatory landscapes in those regions. I strongly caution against an aggressive roadmap until we've conducted a full compliance audit to avoid crippling legal penalties.",
+        "sentences": [
+          {
+            "text": "Tanaka, targeting those high-growth hubs sounds promising, but we cannot overlook the fragmented regulatory landscapes in those regions.",
+            "valence": -0.5,
+            "arousal": 0.7,
+            "dominance": -0.5,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "I strongly caution against an aggressive roadmap until we've conducted a full compliance audit to avoid crippling legal penalties.",
+            "valence": -0.047,
+            "arousal": 0.447,
+            "dominance": 0.0,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "caution",
+                "emotion": "anger"
+              },
+              {
+                "word": "aggressive",
+                "emotion": "anger"
+              },
+              {
+                "word": "compliance",
+                "emotion": "trust"
+              },
+              {
+                "word": "avoid",
+                "emotion": "fear"
+              },
+              {
+                "word": "legal",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.274,
+        "arousal": 0.574,
+        "dominance": -0.25,
+        "tokens": 594,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "board_rep",
+        "name": "Board Rep Eva",
+        "text": "CEO Park, \"vision\" is a liability if it ignores the operational red flags raised by Singh and Mueller. I am not approving a blank check for \"dominance\" without a clear path to profitability and a risk mitigation plan for the legal hurdles Chen mentioned. How exactly does this aggressive expansion protect shareholder value if we break our supply chain in the process?",
+        "sentences": [
+          {
+            "text": "CEO Park, \"vision\" is a liability if it ignores the operational red flags raised by Singh and Mueller.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 18,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "vision",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "I am not approving a blank check for \"dominance\" without a clear path to profitability and a risk mitigation plan for the legal hurdles Chen mentioned.",
+            "valence": 0.217,
+            "arousal": 0.4,
+            "dominance": 0.133,
+            "word_count": 26,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "legal",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "How exactly does this aggressive expansion protect shareholder value if we break our supply chain in the process?",
+            "valence": -0.15,
+            "arousal": 0.7,
+            "dominance": -0.05,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "aggressive",
+                "emotion": "anger"
+              },
+              {
+                "word": "break",
+                "emotion": "surprise"
+              }
+            ]
+          }
+        ],
+        "valence": 0.089,
+        "arousal": 0.533,
+        "dominance": 0.128,
+        "tokens": 669,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 1
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T15:13:24.211780",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 2,
+    "turns": [
+      {
+        "agent_id": "ceo_park",
+        "name": "CEO Park",
+        "text": "Eva, I hear your concerns, but waiting for a perfect plan is how we lose the window of opportunity. Singh, I want a proposal on how to scale capacity *alongside* this growth, not before it. We will move forward with Tanaka's targeted hub approach to prove the model to Mueller and the Board, but we are not retreating from the vision of dominance.",
+        "sentences": [
+          {
+            "text": "Eva, I hear your concerns, but waiting for a perfect plan is how we lose the window of opportunity.",
+            "valence": 0.123,
+            "arousal": 0.44,
+            "dominance": 0.193,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "perfect",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "lose",
+                "emotion": "anger"
+              },
+              {
+                "word": "opportunity",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Singh, I want a proposal on how to scale capacity *alongside* this growth, not before it.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "We will move forward with Tanaka's targeted hub approach to prove the model to Mueller and the Board, but we are not retreating from the vision of dominance.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 28,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Board",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "vision",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.108,
+        "arousal": 0.313,
+        "dominance": 0.164,
+        "tokens": 749,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "cfo_mueller",
+        "name": "CFO Mueller",
+        "text": "CEO Park, scaling capacity *alongside* growth is just another way of saying we're spending money we haven't earned yet. I will not authorize the budget for Tanaka's hubs until I see a concrete break-even analysis. We are not \"retreating,\" but I will not gamble our cash flow on a window of opportunity that lacks a guaranteed return.",
+        "sentences": [
+          {
+            "text": "CEO Park, scaling capacity *alongside* growth is just another way of saying we're spending money we haven't earned yet.",
+            "valence": 0.24,
+            "arousal": 0.52,
+            "dominance": 0.28,
+            "word_count": 19,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "money",
+                "emotion": "anger"
+              },
+              {
+                "word": "haven",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "I will not authorize the budget for Tanaka's hubs until I see a concrete break-even analysis.",
+            "valence": 0.5,
+            "arousal": 0.3,
+            "dominance": 0.1,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "authorize",
+                "emotion": "trust"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "break",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "We are not \"retreating,\" but I will not gamble our cash flow on a window of opportunity that lacks a guaranteed return.",
+            "valence": 0.14,
+            "arousal": 0.51,
+            "dominance": 0.25,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "cash",
+                "emotion": "anger"
+              },
+              {
+                "word": "opportunity",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.293,
+        "arousal": 0.443,
+        "dominance": 0.21,
+        "tokens": 898,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "coo_singh",
+        "name": "COO Singh",
+        "text": "CEO Park, I can draft a proposal, but \"scaling alongside\" is a logistical nightmare if the lead times for new equipment exceed our growth speed. If Mueller won't authorize the budget now, we're essentially planning for a stockout crisis in those hubs Tanaka wants to target.",
+        "sentences": [
+          {
+            "text": "CEO Park, I can draft a proposal, but \"scaling alongside\" is a logistical nightmare if the lead times for new equipment exceed our growth speed.",
+            "valence": 0.067,
+            "arousal": 0.583,
+            "dominance": 0.067,
+            "word_count": 25,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "draft",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "nightmare",
+                "emotion": "fear"
+              },
+              {
+                "word": "exceed",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "If Mueller won't authorize the budget now, we're essentially planning for a stockout crisis in those hubs Tanaka wants to target.",
+            "valence": 0.533,
+            "arousal": 0.167,
+            "dominance": 0.217,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "authorize",
+                "emotion": "trust"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "planning",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.3,
+        "arousal": 0.375,
+        "dominance": 0.142,
+        "tokens": 1045,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "cmo_tanaka",
+        "name": "CMO Tanaka",
+        "text": "Mueller, I can provide a detailed break-even analysis for the urban hubs by Friday to prove these aren't gambles, but high-velocity wins. Singh, let's collaborate on a \"lean launch\" model that leverages local third-party logistics to bypass your equipment lead times and keep us agile.",
+        "sentences": [
+          {
+            "text": "Mueller, I can provide a detailed break-even analysis for the urban hubs by Friday to prove these aren't gambles, but high-velocity wins.",
+            "valence": 0.45,
+            "arousal": 0.4,
+            "dominance": 0.05,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "provide",
+                "emotion": "trust"
+              },
+              {
+                "word": "break",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "Singh, let's collaborate on a \"lean launch\" model that leverages local third-party logistics to bypass your equipment lead times and keep us agile.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.325,
+        "arousal": 0.45,
+        "dominance": 0.175,
+        "tokens": 1197,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "vp_legal",
+        "name": "VP Legal Chen",
+        "text": "Tanaka, while a \"lean launch\" using third-party logistics may solve Singh's capacity issues, it introduces significant third-party liability and data privacy risks. I cannot sign off on this agile approach until we verify that these local partners comply with our strict regulatory standards.",
+        "sentences": [
+          {
+            "text": "Tanaka, while a \"lean launch\" using third-party logistics may solve Singh's capacity issues, it introduces significant third-party liability and data privacy risks.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "I cannot sign off on this agile approach until we verify that these local partners comply with our strict regulatory standards.",
+            "valence": -0.5,
+            "arousal": 0.7,
+            "dominance": -0.5,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              }
+            ]
+          }
+        ],
+        "valence": -0.15,
+        "arousal": 0.6,
+        "dominance": -0.1,
+        "tokens": 1255,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "board_rep",
+        "name": "Board Rep Eva",
+        "text": "Tanaka, a break-even analysis is a start, but it doesn't solve the liability risks Chen just highlighted. CEO Park, you are pushing for speed while your executive team is warning you about systemic failure. I want to see a consolidated risk-benefit matrix—not a series of fragmented promises—before this reaches the board for approval.",
+        "sentences": [
+          {
+            "text": "Tanaka, a break-even analysis is a start, but it doesn't solve the liability risks Chen just highlighted.",
+            "valence": 0.25,
+            "arousal": 0.6,
+            "dominance": 0.1,
+            "word_count": 17,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "break",
+                "emotion": "surprise"
+              },
+              {
+                "word": "start",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "CEO Park, you are pushing for speed while your executive team is warning you about systemic failure.",
+            "valence": -0.167,
+            "arousal": 0.311,
+            "dominance": -0.233,
+            "word_count": 17,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "team",
+                "emotion": "trust"
+              },
+              {
+                "word": "warning",
+                "emotion": "fear"
+              },
+              {
+                "word": "failure",
+                "emotion": "disgust"
+              }
+            ]
+          },
+          {
+            "text": "I want to see a consolidated risk-benefit matrix-not a series of fragmented promises-before this reaches the board for approval.",
+            "valence": 0.217,
+            "arousal": 0.4,
+            "dominance": 0.133,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "series",
+                "emotion": "trust"
+              },
+              {
+                "word": "board",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.1,
+        "arousal": 0.437,
+        "dominance": 0.0,
+        "tokens": 1351,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 2
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T15:15:03.645685",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 3,
+    "turns": [
+      {
+        "agent_id": "ceo_park",
+        "name": "CEO Park",
+        "text": "Eva, you'll have your risk-benefit matrix, but I will not allow a culture of fear to paralyze this company. Tanaka and Singh, align your lean launch and capacity plans immediately so Mueller has the hard data he requires. Chen, find a way to make these partnerships compliant rather than giving me a list of reasons why we can't move.",
+        "sentences": [
+          {
+            "text": "Eva, you'll have your risk-benefit matrix, but I will not allow a culture of fear to paralyze this company.",
+            "valence": -0.375,
+            "arousal": 0.65,
+            "dominance": -0.05,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "fear",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Tanaka and Singh, align your lean launch and capacity plans immediately so Mueller has the hard data he requires.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "immediately",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Chen, find a way to make these partnerships compliant rather than giving me a list of reasons why we can't move.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": []
+          }
+        ],
+        "valence": -0.058,
+        "arousal": 0.383,
+        "dominance": 0.083,
+        "tokens": 1318,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "cfo_mueller",
+        "name": "CFO Mueller",
+        "text": "CEO Park, this isn't a \"culture of fear,\" it's a culture of fiscal responsibility. I will review Tanaka's analysis, but until Chen clears those third-party liabilities, any \"lean launch\" is just a leak in our balance sheet. No funds will be released until the risk-benefit matrix proves a positive impact on our margins.",
+        "sentences": [
+          {
+            "text": "CEO Park, this isn't a \"culture of fear,\" it's a culture of fiscal responsibility.",
+            "valence": -0.6,
+            "arousal": 0.7,
+            "dominance": 0.0,
+            "word_count": 14,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "fear",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "I will review Tanaka's analysis, but until Chen clears those third-party liabilities, any \"lean launch\" is just a leak in our balance sheet.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "No funds will be released until the risk-benefit matrix proves a positive impact on our margins.",
+            "valence": -0.15,
+            "arousal": 0.6,
+            "dominance": -0.1,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": -0.183,
+        "arousal": 0.6,
+        "dominance": 0.067,
+        "tokens": 1504,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "coo_singh",
+        "name": "COO Singh",
+        "text": "Tanaka, I'm open to the lean launch, but relying on third-party logistics is a temporary bandage, not a scaling strategy. If we don't secure the budget for our own infrastructure now, we're just trading a capacity problem for a quality control disaster.",
+        "sentences": [
+          {
+            "text": "Tanaka, I'm open to the lean launch, but relying on third-party logistics is a temporary bandage, not a scaling strategy.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "If we don't secure the budget for our own infrastructure now, we're just trading a capacity problem for a quality control disaster.",
+            "valence": -0.147,
+            "arousal": 0.203,
+            "dominance": -0.12,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "don",
+                "emotion": "trust"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "problem",
+                "emotion": "fear"
+              },
+              {
+                "word": "disaster",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": 0.027,
+        "arousal": 0.352,
+        "dominance": 0.09,
+        "tokens": 1677,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "cmo_tanaka",
+        "name": "CMO Tanaka",
+        "text": "Singh, I hear you, but a temporary bandage is exactly what we need to capture this market window before our competitors do. Once my break-even analysis proves the demand to Mueller, we'll have the leverage to secure the long-term infrastructure budget you're looking for.",
+        "sentences": [
+          {
+            "text": "Singh, I hear you, but a temporary bandage is exactly what we need to capture this market window before our competitors do.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Once my break-even analysis proves the demand to Mueller, we'll have the leverage to secure the long-term infrastructure budget you're looking for.",
+            "valence": 0.1,
+            "arousal": 0.5,
+            "dominance": 0.225,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "break",
+                "emotion": "surprise"
+              },
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.05,
+        "arousal": 0.25,
+        "dominance": 0.113,
+        "tokens": 1866,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "vp_legal",
+        "name": "VP Legal Chen",
+        "text": "CEO Park, I am not attempting to paralyze us, but \"finding a way\" requires time for due diligence that a lean launch typically bypasses. If we rush these partnerships without rigorous vetting, we risk regulatory sanctions that would wipe out any gains Tanaka's high-velocity wins provide.",
+        "sentences": [
+          {
+            "text": "CEO Park, I am not attempting to paralyze us, but \"finding a way\" requires time for due diligence that a lean launch typically bypasses.",
+            "valence": 0.333,
+            "arousal": 0.367,
+            "dominance": 0.267,
+            "word_count": 24,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "time",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "diligence",
+                "emotion": "trust"
+              },
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "If we rush these partnerships without rigorous vetting, we risk regulatory sanctions that would wipe out any gains Tanaka's high-velocity wins provide.",
+            "valence": -0.017,
+            "arousal": 0.467,
+            "dominance": -0.133,
+            "word_count": 22,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              },
+              {
+                "word": "provide",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.158,
+        "arousal": 0.417,
+        "dominance": 0.067,
+        "tokens": 1916,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "board_rep",
+        "name": "Board Rep Eva",
+        "text": "CEO Park, you are dismissing critical warnings as \"fear\" when they are actually fiduciary red flags. Tanaka's \"temporary bandage\" is a reckless gamble if Chen cannot guarantee compliance and Singh cannot guarantee quality. I will not support a strategy that trades long-term stability for a \"market window\" while ignoring the potential for a catastrophic legal or operational collapse.",
+        "sentences": [
+          {
+            "text": "CEO Park, you are dismissing critical warnings as \"fear\" when they are actually fiduciary red flags.",
+            "valence": -0.6,
+            "arousal": 0.7,
+            "dominance": 0.0,
+            "word_count": 16,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "fear",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Tanaka's \"temporary bandage\" is a reckless gamble if Chen cannot guarantee compliance and Singh cannot guarantee quality.",
+            "valence": 0.3,
+            "arousal": 0.25,
+            "dominance": 0.15,
+            "word_count": 17,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "reckless",
+                "emotion": "anger"
+              },
+              {
+                "word": "guarantee",
+                "emotion": "trust"
+              },
+              {
+                "word": "compliance",
+                "emotion": "trust"
+              },
+              {
+                "word": "guarantee",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "I will not support a strategy that trades long-term stability for a \"market window\" while ignoring the potential for a catastrophic legal or operational collapse.",
+            "valence": 0.067,
+            "arousal": 0.244,
+            "dominance": 0.033,
+            "word_count": 25,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "legal",
+                "emotion": "trust"
+              },
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.078,
+        "arousal": 0.398,
+        "dominance": 0.061,
+        "tokens": 2028,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 3
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T15:15:58.896440",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 4,
+    "turns": [
+      {
+        "agent_id": "ceo_park",
+        "name": "CEO Park",
+        "text": "Eva, we are not gambling; we are investing in a future where we dictate the terms of the market. Chen and Singh, your constraints are the parameters of the problem, not the end of the conversation—solve them. I will review the consolidated matrix, but let be clear: we are moving forward, and I expect this team to find the \"how,\" not the \"why not.\"",
+        "sentences": [
+          {
+            "text": "Eva, we are not gambling; we are investing in a future where we dictate the terms of the market.",
+            "valence": 0.25,
+            "arousal": 0.6,
+            "dominance": 0.1,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "gambling",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Chen and Singh, your constraints are the parameters of the problem, not the end of the conversation-solve them.",
+            "valence": -0.6,
+            "arousal": 0.15,
+            "dominance": -0.4,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "problem",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "I will review the consolidated matrix, but let be clear: we are moving forward, and I expect this team to find the \"how,\" not the \"why not.\"",
+            "valence": 0.483,
+            "arousal": 0.267,
+            "dominance": 0.167,
+            "word_count": 27,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "expect",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "team",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.044,
+        "arousal": 0.339,
+        "dominance": -0.044,
+        "tokens": 1888,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "cfo_mueller",
+        "name": "CFO Mueller",
+        "text": "CEO Park, \"dictating the terms of the market\" is a luxury we cannot afford if we compromise our liquidity. I will not be pressured into funding a strategy that ignores the warnings of Legal and Operations. Until the consolidated matrix proves this is a calculated investment and not a blind leap, the treasury remains closed.",
+        "sentences": [
+          {
+            "text": "CEO Park, \"dictating the terms of the market\" is a luxury we cannot afford if we compromise our liquidity.",
+            "valence": 0.8,
+            "arousal": 0.6,
+            "dominance": 0.5,
+            "word_count": 19,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "luxury",
+                "emotion": "joy"
+              }
+            ]
+          },
+          {
+            "text": "I will not be pressured into funding a strategy that ignores the warnings of Legal and Operations.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 17,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Legal",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "Until the consolidated matrix proves this is a calculated investment and not a blind leap, the treasury remains closed.",
+            "valence": -0.167,
+            "arousal": 0.3,
+            "dominance": -0.233,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.411,
+        "arousal": 0.333,
+        "dominance": 0.156,
+        "tokens": 2100,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "coo_singh",
+        "name": "COO Singh",
+        "text": "CEO Park, I'll find the \"how,\" but the \"how\" involves long lead times that don't align with your desired speed. If Mueller keeps the treasury closed, we aren't solving parameters—we're just pretending the bottlenecks don't exist.",
+        "sentences": [
+          {
+            "text": "CEO Park, I'll find the \"how,\" but the \"how\" involves long lead times that don't align with your desired speed.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 20,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "don",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "If Mueller keeps the treasury closed, we aren't solving parameters-we're just pretending the bottlenecks don't exist.",
+            "valence": -0.7,
+            "arousal": 0.7,
+            "dominance": 0.5,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "pretending",
+                "emotion": "anger"
+              },
+              {
+                "word": "don",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.25,
+        "arousal": 0.6,
+        "dominance": 0.4,
+        "tokens": 2295,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "cmo_tanaka",
+        "name": "CMO Tanaka",
+        "text": "Let's stop focusing on the closed treasury and start focusing on the open opportunity. Singh, if we use my lean launch data to prove immediate traction, Mueller will have no choice but to open the funds for your long-term infrastructure. We can't let lead times dictate our destiny when the Asian market is moving this fast!",
+        "sentences": [
+          {
+            "text": "Let's stop focusing on the closed treasury and start focusing on the open opportunity.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 14,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "start",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "opportunity",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Singh, if we use my lean launch data to prove immediate traction, Mueller will have no choice but to open the funds for your long-term infrastructure.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 26,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "We can't let lead times dictate our destiny when the Asian market is moving this fast!",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": []
+          }
+        ],
+        "valence": 0.133,
+        "arousal": 0.333,
+        "dominance": 0.2,
+        "tokens": 2535,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "vp_legal",
+        "name": "VP Legal Chen",
+        "text": "Tanaka, \"immediate traction\" is irrelevant if we are shut down by a regulatory body for non-compliance. CEO Park, I will provide the \"how,\" but it must include a non-negotiable window for legal vetting of every third-party partner.",
+        "sentences": [
+          {
+            "text": "Tanaka, \"immediate traction\" is irrelevant if we are shut down by a regulatory body for non-compliance.",
+            "valence": 0.05,
+            "arousal": 0.4,
+            "dominance": -0.15,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              },
+              {
+                "word": "compliance",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "CEO Park, I will provide the \"how,\" but it must include a non-negotiable window for legal vetting of every third-party partner.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 21,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "provide",
+                "emotion": "trust"
+              },
+              {
+                "word": "legal",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.325,
+        "arousal": 0.25,
+        "dominance": 0.025,
+        "tokens": 2580,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "board_rep",
+        "name": "Board Rep Eva",
+        "text": "Tanaka, \"immediate traction\" is a vanity metric if it comes at the cost of our corporate integrity and legal standing. CEO Park, you are ignoring the fact that your team is fundamentally misaligned on risk and execution. Until Chen's non-negotiable vetting window is integrated into the timeline, this plan is a liability to our shareholders, not an asset.",
+        "sentences": [
+          {
+            "text": "Tanaka, \"immediate traction\" is a vanity metric if it comes at the cost of our corporate integrity and legal standing.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "integrity",
+                "emotion": "trust"
+              },
+              {
+                "word": "legal",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "CEO Park, you are ignoring the fact that your team is fundamentally misaligned on risk and execution.",
+            "valence": 0.181,
+            "arousal": 0.269,
+            "dominance": 0.069,
+            "word_count": 17,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "fact",
+                "emotion": "trust"
+              },
+              {
+                "word": "team",
+                "emotion": "trust"
+              },
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "execution",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Until Chen's non-negotiable vetting window is integrated into the timeline, this plan is a liability to our shareholders, not an asset.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.327,
+        "arousal": 0.29,
+        "dominance": 0.19,
+        "tokens": 2710,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 4
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T15:18:21.124543",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gemma4:31b",
+    "round": 5,
+    "turns": [
+      {
+        "agent_id": "ceo_park",
+        "name": "CEO Park",
+        "text": "Enough with the stalemate; the \"how\" is now a directive, not a debate. Chen, integrate your vetting window into a streamlined timeline that doesn't kill our momentum, and Mueller, prepare to release funds the moment Tanaka's data hits the target. Eva, you will see that calculating risk is not the same as avoiding it, and I will prove that our boldness is our greatest asset.",
+        "sentences": [
+          {
+            "text": "Enough with the stalemate; the \"how\" is now a directive, not a debate.",
+            "valence": -0.65,
+            "arousal": 0.4,
+            "dominance": 0.05,
+            "word_count": 13,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "stalemate",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Chen, integrate your vetting window into a streamlined timeline that doesn't kill our momentum, and Mueller, prepare to release funds the moment Tanaka's data hits the target.",
+            "valence": -0.067,
+            "arousal": 0.383,
+            "dominance": 0.067,
+            "word_count": 27,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "kill",
+                "emotion": "fear"
+              },
+              {
+                "word": "momentum",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "prepare",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Eva, you will see that calculating risk is not the same as avoiding it, and I will prove that our boldness is our greatest asset.",
+            "valence": -0.325,
+            "arousal": 0.65,
+            "dominance": -0.3,
+            "word_count": 25,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "avoiding",
+                "emotion": "fear"
+              }
+            ]
+          }
+        ],
+        "valence": -0.347,
+        "arousal": 0.478,
+        "dominance": -0.061,
+        "tokens": 2459,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "cfo_mueller",
+        "name": "CFO Mueller",
+        "text": "A directive does not create liquidity, CEO Park. I will release funds only when the data confirms a positive margin and Chen certifies that the liabilities are capped. Until then, the treasury remains closed to prevent an uncontrolled cash burn.",
+        "sentences": [
+          {
+            "text": "A directive does not create liquidity, CEO Park.",
+            "valence": 0.8,
+            "arousal": 0.6,
+            "dominance": 0.5,
+            "word_count": 8,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "create",
+                "emotion": "joy"
+              }
+            ]
+          },
+          {
+            "text": "I will release funds only when the data confirms a positive margin and Chen certifies that the liabilities are capped.",
+            "valence": -0.7,
+            "arousal": -0.4,
+            "dominance": -0.3,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "margin",
+                "emotion": "sadness"
+              }
+            ]
+          },
+          {
+            "text": "Until then, the treasury remains closed to prevent an uncontrolled cash burn.",
+            "valence": -0.196,
+            "arousal": 0.507,
+            "dominance": -0.178,
+            "word_count": 12,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              },
+              {
+                "word": "prevent",
+                "emotion": "fear"
+              },
+              {
+                "word": "cash",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.032,
+        "arousal": 0.236,
+        "dominance": 0.007,
+        "tokens": 2675,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "coo_singh",
+        "name": "COO Singh",
+        "text": "Since Mueller is still blocking the funds, I'm essentially being asked to build a bridge while the concrete is still missing. If we move forward with this \"directive\" without capital for infrastructure, we are setting ourselves up for a complete operational collapse.",
+        "sentences": [
+          {
+            "text": "Since Mueller is still blocking the funds, I'm essentially being asked to build a bridge while the concrete is still missing.",
+            "valence": -0.6,
+            "arousal": 0.15,
+            "dominance": -0.4,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "missing",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "If we move forward with this \"directive\" without capital for infrastructure, we are setting ourselves up for a complete operational collapse.",
+            "valence": -0.6,
+            "arousal": 0.133,
+            "dominance": -0.4,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "collapse",
+                "emotion": "disgust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.6,
+        "arousal": 0.142,
+        "dominance": -0.4,
+        "tokens": 2892,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "cmo_tanaka",
+        "name": "CMO Tanaka",
+        "text": "Singh, I understand the frustration, but let's use this \"directive\" as the catalyst to finally bridge the gap between your needs and Mueller's requirements. I'll refine my data to be so undeniable that the treasury has no choice but to open. We are on the verge of a massive breakthrough—let's not let a lack of concrete stop us from crossing the bridge!",
+        "sentences": [
+          {
+            "text": "Singh, I understand the frustration, but let's use this \"directive\" as the catalyst to finally bridge the gap between your needs and Mueller's requirements.",
+            "valence": -0.22,
+            "arousal": 0.55,
+            "dominance": 0.3,
+            "word_count": 24,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "frustration",
+                "emotion": "anger"
+              },
+              {
+                "word": "finally",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "I'll refine my data to be so undeniable that the treasury has no choice but to open.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 17,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "We are on the verge of a massive breakthrough-let's not let a lack of concrete stop us from crossing the bridge!",
+            "valence": -0.15,
+            "arousal": 0.6,
+            "dominance": -0.1,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "verge",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": -0.123,
+        "arousal": 0.383,
+        "dominance": 0.067,
+        "tokens": 3188,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "vp_legal",
+        "name": "VP Legal Chen",
+        "text": "Tanaka, your optimism is noted, but a \"catalyst\" cannot override the law. I will refine the vetting timeline as requested by CEO Park, but I must be clear: any attempt to bypass these legal checkpoints to save time will be flagged as a critical compliance risk.",
+        "sentences": [
+          {
+            "text": "Tanaka, your optimism is noted, but a \"catalyst\" cannot override the law.",
+            "valence": 0.537,
+            "arousal": 0.287,
+            "dominance": 0.213,
+            "word_count": 12,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "optimism",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "law",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "I will refine the vetting timeline as requested by CEO Park, but I must be clear: any attempt to bypass these legal checkpoints to save time will be flagged as a critical compliance risk.",
+            "valence": 0.358,
+            "arousal": 0.358,
+            "dominance": 0.208,
+            "word_count": 34,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "attempt",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "legal",
+                "emotion": "trust"
+              },
+              {
+                "word": "save",
+                "emotion": "joy"
+              },
+              {
+                "word": "time",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "compliance",
+                "emotion": "trust"
+              },
+              {
+                "word": "risk",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.448,
+        "arousal": 0.323,
+        "dominance": 0.21,
+        "tokens": 3221,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "board_rep",
+        "name": "Board Rep Eva",
+        "text": "CEO Park, your \"directive\" is an attempt to override governance with willpower, which is a dangerous precedent for this board. We are seeing a total breakdown in alignment between your vision and the operational reality described by Singh and Chen. Until I see a plan where legal compliance and infrastructure are funded *before* the launch, I view this strategy as a threat to our shareholder value.",
+        "sentences": [
+          {
+            "text": "CEO Park, your \"directive\" is an attempt to override governance with willpower, which is a dangerous precedent for this board.",
+            "valence": -0.033,
+            "arousal": 0.567,
+            "dominance": 0.033,
+            "word_count": 20,
+            "mentions": [
+              "ceo_park"
+            ],
+            "words_emotions": [
+              {
+                "word": "attempt",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "dangerous",
+                "emotion": "fear"
+              },
+              {
+                "word": "board",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "We are seeing a total breakdown in alignment between your vision and the operational reality described by Singh and Chen.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 20,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "vision",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Until I see a plan where legal compliance and infrastructure are funded *before* the launch, I view this strategy as a threat to our shareholder value.",
+            "valence": 0.2,
+            "arousal": 0.38,
+            "dominance": 0.2,
+            "word_count": 26,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "legal",
+                "emotion": "trust"
+              },
+              {
+                "word": "compliance",
+                "emotion": "trust"
+              },
+              {
+                "word": "launch",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "threat",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": 0.122,
+        "arousal": 0.482,
+        "dominance": 0.178,
+        "tokens": 3380,
+        "cost": 0.0,
+        "model": "gemma4:31b",
+        "temperature": 0.8,
+        "round": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "preset": "corporate_decision",
+  "model": "gpt-oss:20b",
+  "rounds": 5,
+  "temperature": 0.8,
+  "agents": 6,
+  "errors": 0,
+  "messages": 30,
+  "snapshots": 30,
+  "elapsed_seconds": 263.6,
+  "timestamp": "2026-07-30T15:04:37.984314+00:00"
+}

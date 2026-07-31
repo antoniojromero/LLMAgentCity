@@ -1,0 +1,549 @@
+{
+  "generated_at": "2026-07-30T14:43:33.167024",
+  "sentiment_model": "vad",
+  "mode": "debate",
+  "totals": {
+    "agents": 6,
+    "turns": 30,
+    "tokens": 62194,
+    "cost_usd": 0.0,
+    "log_entries": 5,
+    "rounds": 5
+  },
+  "by_agent": [
+    {
+      "id": "prof_abebe",
+      "name": "Prof. Abebe",
+      "role": "Climate Scientist",
+      "cluster": "default_science",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 306,
+      "tokens": 9039,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 2940.5,
+      "valence": 0.028,
+      "arousal": 0.259,
+      "dominance": 0.069,
+      "influence": 3.3,
+      "interactions": 5,
+      "allegation_count": 15,
+      "argument_score": 0,
+      "emotions": {
+        "disgust": {
+          "count": 4,
+          "total_intensity": 1.9166666666666665,
+          "first_round": 1
+        },
+        "surprise": {
+          "count": 2,
+          "total_intensity": 0.8333333333333333,
+          "first_round": 1
+        },
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 3.333333333333333,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 1,
+          "total_intensity": 0.5,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 2,
+          "total_intensity": 1.5,
+          "first_round": 1
+        },
+        "sadness": {
+          "count": 3,
+          "total_intensity": 1.3333333333333333,
+          "first_round": 2
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 4.0,
+          "first_round": 2
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 0.3333333333333333,
+          "first_round": 2
+        }
+      },
+      "files": {},
+      "rank": 1
+    },
+    {
+      "id": "ceo_anders",
+      "name": "CEO Anders",
+      "role": "Fossil Fuel CEO",
+      "cluster": "default_industry",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 354,
+      "tokens": 10150,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 14680.2,
+      "valence": -0.016,
+      "arousal": 0.297,
+      "dominance": 0.024,
+      "influence": 3.3,
+      "interactions": 5,
+      "allegation_count": 15,
+      "argument_score": 0,
+      "emotions": {
+        "anger": {
+          "count": 5,
+          "total_intensity": 2.75,
+          "first_round": 1
+        },
+        "disgust": {
+          "count": 4,
+          "total_intensity": 1.75,
+          "first_round": 1
+        },
+        "anticipation": {
+          "count": 4,
+          "total_intensity": 2.4166666666666665,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 3.5,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 2,
+          "total_intensity": 0.5833333333333333,
+          "first_round": 1
+        },
+        "surprise": {
+          "count": 2,
+          "total_intensity": 0.5,
+          "first_round": 2
+        },
+        "sadness": {
+          "count": 2,
+          "total_intensity": 0.75,
+          "first_round": 3
+        },
+        "fear": {
+          "count": 2,
+          "total_intensity": 1.4166666666666665,
+          "first_round": 4
+        }
+      },
+      "files": {},
+      "rank": 2
+    },
+    {
+      "id": "economist_wu",
+      "name": "Dr. Wu",
+      "role": "Environmental Economist",
+      "cluster": "default_science",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 344,
+      "tokens": 11620,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 7096.2,
+      "valence": 0.011,
+      "arousal": 0.383,
+      "dominance": 0.036,
+      "influence": 3.0,
+      "interactions": 5,
+      "allegation_count": 11,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 3,
+          "total_intensity": 2.5,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 3,
+          "total_intensity": 1.3333333333333333,
+          "first_round": 2
+        },
+        "disgust": {
+          "count": 2,
+          "total_intensity": 0.8333333333333333,
+          "first_round": 3
+        },
+        "anger": {
+          "count": 3,
+          "total_intensity": 3.0,
+          "first_round": 3
+        },
+        "trust": {
+          "count": 3,
+          "total_intensity": 2.5,
+          "first_round": 3
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 0.5,
+          "first_round": 3
+        }
+      },
+      "files": {},
+      "rank": 3
+    },
+    {
+      "id": "diplomat_osei",
+      "name": "Amb. Osei",
+      "role": "G20 Diplomat",
+      "cluster": "default_govt",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 340,
+      "tokens": 12051,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 3764.4,
+      "valence": -0.051,
+      "arousal": 0.234,
+      "dominance": 0.064,
+      "influence": 3.0,
+      "interactions": 5,
+      "allegation_count": 10,
+      "argument_score": 0,
+      "emotions": {
+        "joy": {
+          "count": 3,
+          "total_intensity": 2.0,
+          "first_round": 1
+        },
+        "sadness": {
+          "count": 3,
+          "total_intensity": 1.3333333333333333,
+          "first_round": 1
+        },
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 3.0,
+          "first_round": 1
+        },
+        "disgust": {
+          "count": 1,
+          "total_intensity": 0.6666666666666666,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 5,
+          "total_intensity": 4.166666666666666,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 3,
+          "total_intensity": 1.8333333333333333,
+          "first_round": 2
+        },
+        "fear": {
+          "count": 1,
+          "total_intensity": 0.5,
+          "first_round": 4
+        }
+      },
+      "files": {},
+      "rank": 4
+    },
+    {
+      "id": "activist_devi",
+      "name": "Devi",
+      "role": "Climate Activist",
+      "cluster": "default_activism",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 315,
+      "tokens": 11103,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 9432.7,
+      "valence": -0.296,
+      "arousal": 0.274,
+      "dominance": -0.062,
+      "influence": 2.3,
+      "interactions": 5,
+      "allegation_count": 4,
+      "argument_score": 0,
+      "emotions": {
+        "fear": {
+          "count": 2,
+          "total_intensity": 1.4166666666666665,
+          "first_round": 1
+        },
+        "anticipation": {
+          "count": 4,
+          "total_intensity": 1.2499999999999998,
+          "first_round": 1
+        },
+        "disgust": {
+          "count": 3,
+          "total_intensity": 0.9166666666666665,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 5,
+          "total_intensity": 5.0,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 2.25,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 0.2,
+          "first_round": 2
+        },
+        "sadness": {
+          "count": 1,
+          "total_intensity": 0.6666666666666666,
+          "first_round": 4
+        }
+      },
+      "files": {},
+      "rank": 5
+    },
+    {
+      "id": "min_thorn",
+      "name": "Min. Thorn",
+      "role": "Energy Minister",
+      "cluster": "default_govt",
+      "model": "(global)",
+      "temperature": "(global)",
+      "turns": 5,
+      "words": 393,
+      "tokens": 8231,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 4316.1,
+      "valence": 0.009,
+      "arousal": 0.323,
+      "dominance": 0.058,
+      "influence": 2.0,
+      "interactions": 5,
+      "allegation_count": 0,
+      "argument_score": 0,
+      "emotions": {
+        "anticipation": {
+          "count": 5,
+          "total_intensity": 3.5,
+          "first_round": 1
+        },
+        "disgust": {
+          "count": 1,
+          "total_intensity": 0.3333333333333333,
+          "first_round": 1
+        },
+        "trust": {
+          "count": 4,
+          "total_intensity": 3.083333333333333,
+          "first_round": 1
+        },
+        "joy": {
+          "count": 1,
+          "total_intensity": 0.3333333333333333,
+          "first_round": 1
+        },
+        "anger": {
+          "count": 4,
+          "total_intensity": 2.25,
+          "first_round": 1
+        },
+        "fear": {
+          "count": 2,
+          "total_intensity": 0.75,
+          "first_round": 3
+        },
+        "sadness": {
+          "count": 1,
+          "total_intensity": 0.25,
+          "first_round": 4
+        }
+      },
+      "files": {},
+      "rank": 6
+    }
+  ],
+  "by_cluster": {
+    "default_govt": {
+      "agents": 2,
+      "tokens": 20282,
+      "cost": 0.0,
+      "turns": 10,
+      "avg_valence": -0.021
+    },
+    "default_science": {
+      "agents": 2,
+      "tokens": 20659,
+      "cost": 0.0,
+      "turns": 10,
+      "avg_valence": 0.019
+    },
+    "default_industry": {
+      "agents": 1,
+      "tokens": 10150,
+      "cost": 0.0,
+      "turns": 5,
+      "avg_valence": -0.016
+    },
+    "default_activism": {
+      "agents": 1,
+      "tokens": 11103,
+      "cost": 0.0,
+      "turns": 5,
+      "avg_valence": -0.296
+    }
+  },
+  "mention_matrix": {
+    "min_thorn": {},
+    "prof_abebe": {
+      "min_thorn": 5,
+      "ceo_anders": 5,
+      "activist_devi": 1,
+      "economist_wu": 4
+    },
+    "ceo_anders": {
+      "activist_devi": 5,
+      "economist_wu": 5,
+      "diplomat_osei": 3,
+      "min_thorn": 2
+    },
+    "activist_devi": {
+      "economist_wu": 2,
+      "min_thorn": 2
+    },
+    "economist_wu": {
+      "diplomat_osei": 4,
+      "min_thorn": 3,
+      "prof_abebe": 2,
+      "ceo_anders": 2
+    },
+    "diplomat_osei": {
+      "min_thorn": 5,
+      "prof_abebe": 2,
+      "ceo_anders": 1,
+      "economist_wu": 2
+    }
+  },
+  "interaction_matrix": {
+    "min_thorn": {
+      "prof_abebe": 5
+    },
+    "prof_abebe": {
+      "min_thorn": 5
+    },
+    "ceo_anders": {
+      "min_thorn": 5
+    },
+    "activist_devi": {
+      "min_thorn": 5
+    },
+    "economist_wu": {
+      "min_thorn": 5
+    },
+    "diplomat_osei": {
+      "min_thorn": 5
+    }
+  },
+  "emotions_detected": {
+    "anticipation": {
+      "count": 26,
+      "first_round": 1,
+      "agents": [
+        "min_thorn",
+        "prof_abebe",
+        "ceo_anders",
+        "activist_devi",
+        "economist_wu",
+        "diplomat_osei"
+      ]
+    },
+    "disgust": {
+      "count": 15,
+      "first_round": 1,
+      "agents": [
+        "min_thorn",
+        "prof_abebe",
+        "ceo_anders",
+        "activist_devi",
+        "diplomat_osei",
+        "economist_wu"
+      ]
+    },
+    "trust": {
+      "count": 22,
+      "first_round": 1,
+      "agents": [
+        "min_thorn",
+        "ceo_anders",
+        "activist_devi",
+        "prof_abebe",
+        "diplomat_osei",
+        "economist_wu"
+      ]
+    },
+    "joy": {
+      "count": 9,
+      "first_round": 1,
+      "agents": [
+        "min_thorn",
+        "ceo_anders",
+        "diplomat_osei",
+        "prof_abebe",
+        "activist_devi",
+        "economist_wu"
+      ]
+    },
+    "anger": {
+      "count": 24,
+      "first_round": 1,
+      "agents": [
+        "min_thorn",
+        "prof_abebe",
+        "ceo_anders",
+        "activist_devi",
+        "diplomat_osei",
+        "economist_wu"
+      ]
+    },
+    "surprise": {
+      "count": 4,
+      "first_round": 1,
+      "agents": [
+        "prof_abebe",
+        "ceo_anders"
+      ]
+    },
+    "fear": {
+      "count": 11,
+      "first_round": 1,
+      "agents": [
+        "prof_abebe",
+        "activist_devi",
+        "economist_wu",
+        "min_thorn",
+        "ceo_anders",
+        "diplomat_osei"
+      ]
+    },
+    "sadness": {
+      "count": 10,
+      "first_round": 1,
+      "agents": [
+        "diplomat_osei",
+        "prof_abebe",
+        "ceo_anders",
+        "min_thorn",
+        "activist_devi"
+      ]
+    }
+  },
+  "files_detected": {}
+}

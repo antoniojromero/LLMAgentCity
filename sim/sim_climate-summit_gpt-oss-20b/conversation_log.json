@@ -1,0 +1,2253 @@
+[
+  {
+    "ts": "2026-07-30T14:34:47.479159",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gpt-oss:20b",
+    "round": 1,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "Minister Thorn: We must pursue a “just transition” that keeps fossil‑fuel workers employed while accelerating deployment of renewable and storage technologies, a strategy that Prof. Abebe confirms is essential to avoid runaway warming. In line with CEO Anders’ call for a phased‑out, we will pair heavy‑investment in green infrastructure with targeted retraining programmes so that no community is left behind—an approach that Dr. Wu notes preserves long‑term economic stability. Amb. Osei’s G20 framework can help us secure international finance and harmonise standards, thereby giving Activist Devi the green credibility she demands without compromising our current energy security.",
+        "sentences": [
+          {
+            "text": "Minister Thorn: We must pursue a “just transition” that keeps fossil-fuel workers employed while accelerating deployment of renewable and storage technologies, a strategy that Prof. Abebe confirms is essential to avoid runaway warming.",
+            "valence": -0.6,
+            "arousal": 0.15,
+            "dominance": -0.4,
+            "word_count": 33,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "avoid",
+                "emotion": "fear"
+              },
+              {
+                "word": "runaway",
+                "emotion": "sadness"
+              }
+            ]
+          },
+          {
+            "text": "In line with CEO Anders’ call for a phased-out, we will pair heavy-investment in green infrastructure with targeted retraining programmes so that no community is left behind-an approach that Dr. Wu notes preserves long-term economic stability. Amb. Osei’s G20 framework can help us secure international finance and harmonise standards, thereby giving Activist Devi the green credibility she demands without compromising our current energy security.",
+            "valence": 0.56,
+            "arousal": 0.28,
+            "dominance": 0.28,
+            "word_count": 64,
+            "mentions": [
+              "ceo_anders",
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "credibility",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.02,
+        "arousal": 0.215,
+        "dominance": -0.06,
+        "tokens": 502,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Prof. Abebe: The science shows we have roughly 12 years of a 1.5 °C window to cut CO₂ emissions by 45 % from 2010 levels (IPCC 2023), so the “just transition” must be rapid—not merely a retraining voucher scheme. While Min. Thorn’s emphasis on keeping fossil‑fuel workers employed is socially important, the transition must prioritize high‑yield renewable and storage infrastructure that can replace millions of coal‑ and oil‑related jobs within five years, aligning with CEO Anders’ phased‑out vision. This accelerated shift will also satisfy Dr. Wu’s economic stability argument, as early decarbonisation spurs new green industries and attracts the international finance framework Amb. Osei proposes—providing the green credibility that Devi demands without compromising long‑term climate targets.",
+        "sentences": [
+          {
+            "text": "Prof. Abebe: The science shows we have roughly 12 years of a 1.5 °C window to cut CO₂ emissions by 45 % from 2010 levels (IPCC 2023), so the “just transition” must be rapid-not merely a retraining voucher scheme.",
+            "valence": 0.45,
+            "arousal": 0.4,
+            "dominance": 0.05,
+            "word_count": 39,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              },
+              {
+                "word": "voucher",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "While Min.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 2,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thorn’s emphasis on keeping fossil-fuel workers employed is socially important, the transition must prioritize high-yield renewable and storage infrastructure that can replace millions of coal- and oil-related jobs within five years, aligning with CEO Anders’ phased-out vision.",
+            "valence": 0.467,
+            "arousal": 0.233,
+            "dominance": 0.233,
+            "word_count": 37,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "important",
+                "emotion": "trust"
+              },
+              {
+                "word": "related",
+                "emotion": "trust"
+              },
+              {
+                "word": "vision",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "This accelerated shift will also satisfy Dr. Wu’s economic stability argument, as early decarbonisation spurs new green industries and attracts the international finance framework Amb. Osei proposes-providing the green credibility that Devi demands without compromising long-term climate targets.",
+            "valence": 0.376,
+            "arousal": 0.357,
+            "dominance": 0.319,
+            "word_count": 38,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "argument",
+                "emotion": "anger"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "providing",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "credibility",
+                "emotion": "trust"
+              },
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.323,
+        "arousal": 0.247,
+        "dominance": 0.151,
+        "tokens": 700,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "CEO Anders: We will pursue a phased‑out strategy over the next 20 years that scales renewable and storage deployment while maintaining critical oil supply and safeguarding the jobs that fuel our economy, thereby addressing Dr. Wu’s economic stability concerns and keeping communities secure as Min. Thorn advocates.  \nWe recognize Prof. Abebe’s urgency—our transition must accelerate enough to meet the 1.5 °C window—but we must do so without compromising energy security or destabilising markets, a balance achievable through the G20 financing framework Amb. Osei outlines and the retraining programmes Min. Thorn proposes.  \nIn this pragmatic path we keep the green credibility Devi demands while ensuring we do not abandon the infrastructure that underpins our nation’s reliability.",
+        "sentences": [
+          {
+            "text": "CEO Anders: We will pursue a phased-out strategy over the next 20 years that scales renewable and storage deployment while maintaining critical oil supply and safeguarding the jobs that fuel our economy, thereby addressing Dr. Wu’s economic stability concerns and keeping communities secure as Min.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 45,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "economy",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "Thorn advocates.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 2,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "We recognize Prof. Abebe’s urgency-our transition must accelerate enough to meet the 1.5 °C window-but we must do so without compromising energy security or destabilising markets, a balance achievable through the G20 financing framework Amb. Osei outlines and the retraining programmes Min.",
+            "valence": 0.267,
+            "arousal": 0.411,
+            "dominance": 0.133,
+            "word_count": 42,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "accelerate",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "Thorn proposes.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 2,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "In this pragmatic path we keep the green credibility Devi demands while ensuring we do not abandon the infrastructure that underpins our nation’s reliability.",
+            "valence": 0.38,
+            "arousal": 0.16,
+            "dominance": 0.11,
+            "word_count": 24,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "credibility",
+                "emotion": "trust"
+              },
+              {
+                "word": "abandon",
+                "emotion": "fear"
+              },
+              {
+                "word": "nation",
+                "emotion": "trust"
+              },
+              {
+                "word": "reliability",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.249,
+        "arousal": 0.134,
+        "dominance": 0.089,
+        "tokens": 1006,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "We cannot afford a 20‑year, “just‑transition” dance that merely pays workers a stipend while fossil fuel plants keep burning; the 12‑year 1.5 °C window demands that every watt of coal be replaced within the next decade, not a half‑century. Prof. Abebe’s science is the moral compass; Min. Thorn and CEO Anders must admit that retraining programs alone cannot offset the climate debt we are about to incur, and Amb. Osei’s G20 finance must be re‑directed towards zero‑emission infrastructure, not fossil‑fuel subsidies. Climate justice requires immediate, uncompromised action—any delay is an irreversible betrayal of future generations.",
+        "sentences": [
+          {
+            "text": "We cannot afford a 20-year, “just-transition” dance that merely pays workers a stipend while fossil fuel plants keep burning; the 12-year 1.5 °C window demands that every watt of coal be replaced within the next decade, not a half-century. Prof. Abebe’s science is the moral compass; Min.",
+            "valence": 0.417,
+            "arousal": 0.283,
+            "dominance": 0.3,
+            "word_count": 47,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "dance",
+                "emotion": "joy"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "compass",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "Thorn and CEO Anders must admit that retraining programs alone cannot offset the climate debt we are about to incur, and Amb. Osei’s G20 finance must be re-directed towards zero-emission infrastructure, not fossil-fuel subsidies.",
+            "valence": -0.25,
+            "arousal": 0.05,
+            "dominance": 0.0,
+            "word_count": 34,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "offset",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "debt",
+                "emotion": "sadness"
+              }
+            ]
+          },
+          {
+            "text": "Climate justice requires immediate, uncompromised action-any delay is an irreversible betrayal of future generations.",
+            "valence": -0.231,
+            "arousal": 0.169,
+            "dominance": -0.014,
+            "word_count": 14,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "justice",
+                "emotion": "trust"
+              },
+              {
+                "word": "delay",
+                "emotion": "anger"
+              },
+              {
+                "word": "betrayal",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.021,
+        "arousal": 0.167,
+        "dominance": 0.095,
+        "tokens": 1020,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "Dr. Wu: Carbon markets can deliver the regulatory certainty Min. Thorn and Amb. Osei need while still driving the 45 % cut in 12 years that Prof. Abebe cites; a well‑priced carbon tax or cap‑and‑trade system forces fossil‑fuel firms to invest in renewables within a market‑driven timeline, eliminating the need for ad‑hoc retraining vouchers. CEO Anders’ 20‑year phased‑out plan can be tightened by tightening the carbon budget annually, thereby preserving energy security while meeting the science‑driven deadline, and the G20 finance framework can earmark proceeds for zero‑emission infrastructure rather than fossil‑fuel subsidies—addressing Devi’s call for immediate action without destabilising markets.",
+        "sentences": [
+          {
+            "text": "Dr. Wu: Carbon markets can deliver the regulatory certainty Min.",
+            "valence": -0.5,
+            "arousal": 0.7,
+            "dominance": -0.5,
+            "word_count": 10,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "regulatory",
+                "emotion": "fear"
+              }
+            ]
+          },
+          {
+            "text": "Thorn and Amb. Osei need while still driving the 45 % cut in 12 years that Prof. Abebe cites; a well-priced carbon tax or cap-and-trade system forces fossil-fuel firms to invest in renewables within a market-driven timeline, eliminating the need for ad-hoc retraining vouchers.",
+            "valence": 0.225,
+            "arousal": 0.025,
+            "dominance": 0.088,
+            "word_count": 44,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "tax",
+                "emotion": "sadness"
+              },
+              {
+                "word": "cap",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "trade",
+                "emotion": "trust"
+              },
+              {
+                "word": "system",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "CEO Anders’ 20-year phased-out plan can be tightened by tightening the carbon budget annually, thereby preserving energy security while meeting the science-driven deadline, and the G20 finance framework can earmark proceeds for zero-emission infrastructure rather than fossil-fuel subsidies-addressing Devi’s call for immediate action without destabilising markets.",
+            "valence": 0.467,
+            "arousal": 0.233,
+            "dominance": 0.233,
+            "word_count": 46,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.064,
+        "arousal": 0.319,
+        "dominance": -0.06,
+        "tokens": 1255,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 1
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Ambassador Osei: The burden of a just‑transition must be borne by the wealthy, who have the capacity to finance a rapid, equity‑based decarbonisation through the G20 framework; a 20‑year phase‑out is insufficient for the 1.5 °C window and risks perpetuating fossil‑fuel subsidies that Dr. Wu calls for. We can, however, pair carbon markets with targeted subsidies for low‑income communities—ensuring that retraining and renewable deployment are funded while maintaining energy security, as Min. Thorn and CEO Anders propose, but only if the financial flows are redirected from fossil fuel subsidies to zero‑emission infrastructure, echoing Devi’s imperative for immediate action.",
+        "sentences": [
+          {
+            "text": "Ambassador Osei: The burden of a just-transition must be borne by the wealthy, who have the capacity to finance a rapid, equity-based decarbonisation through the G20 framework; a 20-year phase-out is insufficient for the 1.5 °C window and risks perpetuating fossil-fuel subsidies that Dr. Wu calls for.",
+            "valence": 0.475,
+            "arousal": 0.3,
+            "dominance": 0.138,
+            "word_count": 47,
+            "mentions": [
+              "economist_wu"
+            ],
+            "words_emotions": [
+              {
+                "word": "Ambassador",
+                "emotion": "trust"
+              },
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "calls",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "We can, however, pair carbon markets with targeted subsidies for low-income communities-ensuring that retraining and renewable deployment are funded while maintaining energy security, as Min.",
+            "valence": 0.225,
+            "arousal": 0.2,
+            "dominance": 0.175,
+            "word_count": 25,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "income",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Thorn and CEO Anders propose, but only if the financial flows are redirected from fossil fuel subsidies to zero-emission infrastructure, echoing Devi’s imperative for immediate action.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 26,
+            "mentions": [
+              "ceo_anders",
+              "activist_devi"
+            ],
+            "words_emotions": []
+          }
+        ],
+        "valence": 0.233,
+        "arousal": 0.167,
+        "dominance": 0.104,
+        "tokens": 1404,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 1
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:35:35.334941",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gpt-oss:20b",
+    "round": 2,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "Minister Thorn: We must pursue a “just transition” that keeps fossil‑fuel workers employed while accelerating deployment of renewable and storage technologies—an approach Prof. Abebe stresses is essential to avoid runaway warming. In line with CEO Anders’ phased‑out vision, we’ll pair heavy‑investment in green infrastructure with targeted retraining programmes, a strategy Dr. Wu notes preserves long‑term economic stability. Amb. Osei’s G20 framework can secure international finance and harmonise standards, giving Activist Devi the green credibility she demands without compromising our current energy security.",
+        "sentences": [
+          {
+            "text": "Minister Thorn: We must pursue a “just transition” that keeps fossil-fuel workers employed while accelerating deployment of renewable and storage technologies-an approach Prof. Abebe stresses is essential to avoid runaway warming.",
+            "valence": -0.6,
+            "arousal": 0.15,
+            "dominance": -0.4,
+            "word_count": 31,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "avoid",
+                "emotion": "fear"
+              },
+              {
+                "word": "runaway",
+                "emotion": "sadness"
+              }
+            ]
+          },
+          {
+            "text": "In line with CEO Anders’ phased-out vision, we’ll pair heavy-investment in green infrastructure with targeted retraining programmes, a strategy Dr. Wu notes preserves long-term economic stability. Amb. Osei’s G20 framework can secure international finance and harmonise standards, giving Activist Devi the green credibility she demands without compromising our current energy security.",
+            "valence": 0.5,
+            "arousal": 0.317,
+            "dominance": 0.283,
+            "word_count": 51,
+            "mentions": [
+              "ceo_anders",
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "vision",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "long",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "credibility",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.05,
+        "arousal": 0.233,
+        "dominance": -0.059,
+        "tokens": 1554,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Prof. Abebe: While Min. Thorn rightly stresses the need to protect fossil‑fuel workers, the 12‑year 1.5 °C window demands that we replace coal and oil generation with high‑yield renewables and storage within five years—otherwise we will miss the science‑based target. Rapid deployment must be financed through G20‑backed carbon markets that lock in a 45 % cut, freeing resources for retraining and ensuring energy security as CEO Anders and Dr. Wu outline. This integrated, market‑driven approach delivers the urgent decarbonisation Devi calls for while maintaining social and economic stability.",
+        "sentences": [
+          {
+            "text": "Prof. Abebe: While Min.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 4,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thorn rightly stresses the need to protect fossil-fuel workers, the 12-year 1.5 °C window demands that we replace coal and oil generation with high-yield renewables and storage within five years-otherwise we will miss the science-based target.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 36,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Rapid deployment must be financed through G20-backed carbon markets that lock in a 45 % cut, freeing resources for retraining and ensuring energy security as CEO Anders and Dr. Wu outline.",
+            "valence": 0.5,
+            "arousal": 0.525,
+            "dominance": 0.125,
+            "word_count": 31,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "Rapid",
+                "emotion": "surprise"
+              },
+              {
+                "word": "resources",
+                "emotion": "joy"
+              }
+            ]
+          },
+          {
+            "text": "This integrated, market-driven approach delivers the urgent decarbonisation Devi calls for while maintaining social and economic stability.",
+            "valence": 0.2,
+            "arousal": 0.467,
+            "dominance": 0.075,
+            "word_count": 17,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgent",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "calls",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.175,
+        "arousal": 0.248,
+        "dominance": 0.05,
+        "tokens": 1793,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "CEO Anders: While Prof. Abebe rightfully stresses the 12‑year 1.5 °C window, a 20‑year phased‑out plan lets us scale renewables and storage at a pace that keeps oil supply stable and protects the jobs Min. Thorn insists must be preserved; this balance is what Dr. Wu’s carbon‑pricing model can deliver without abrupt market shocks. By tying the G20‑backed financing framework Amb. Osei proposes to zero‑emission projects and careful subsidy re‑allocation, we can meet science‑based goals and maintain energy security, thereby addressing Devi’s urgency without abandoning the infrastructure that underpins our economy.",
+        "sentences": [
+          {
+            "text": "CEO Anders: While Prof. Abebe rightfully stresses the 12-year 1.5 °C window, a 20-year phased-out plan lets us scale renewables and storage at a pace that keeps oil supply stable and protects the jobs Min.",
+            "valence": 0.4,
+            "arousal": 0.3,
+            "dominance": 0.25,
+            "word_count": 35,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "stable",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "Thorn insists must be preserved; this balance is what Dr. Wu’s carbon-pricing model can deliver without abrupt market shocks.",
+            "valence": 0.3,
+            "arousal": 0.7,
+            "dominance": -0.1,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "abrupt",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "By tying the G20-backed financing framework Amb. Osei proposes to zero-emission projects and careful subsidy re-allocation, we can meet science-based goals and maintain energy security, thereby addressing Devi’s urgency without abandoning the infrastructure that underpins our economy.",
+            "valence": 0.137,
+            "arousal": 0.308,
+            "dominance": 0.087,
+            "word_count": 37,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "subsidy",
+                "emotion": "anger"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "economy",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.279,
+        "arousal": 0.436,
+        "dominance": 0.079,
+        "tokens": 2075,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "The 12‑year window to stay below 1.5 °C cannot be met with a 20‑year “just‑transition” that keeps fossil‑fuel plants running and merely retrains workers; every coal‑plant must be shut down within the next decade. Prof. Abebe’s science, Dr. Wu’s carbon‑pricing, and Amb. Osei’s G20 framework must be re‑oriented to fund zero‑emission infrastructure—not subsidise fossil fuel—because moral responsibility to future generations demands immediate, uncompromised action. Any delay is an irreversible betrayal that will cost lives and ecosystems far beyond our current economic calculations.",
+        "sentences": [
+          {
+            "text": "The 12-year window to stay below 1.5 °C cannot be met with a 20-year “just-transition” that keeps fossil-fuel plants running and merely retrains workers; every coal-plant must be shut down within the next decade. Prof. Abebe’s science, Dr. Wu’s carbon-pricing, and Amb. Osei’s G20 framework must be re-oriented to fund zero-emission infrastructure-not subsidise fossil fuel-because moral responsibility to future generations demands immediate, uncompromised action.",
+            "valence": 0.275,
+            "arousal": 0.25,
+            "dominance": 0.275,
+            "word_count": 64,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "Any delay is an irreversible betrayal that will cost lives and ecosystems far beyond our current economic calculations.",
+            "valence": -0.646,
+            "arousal": 0.204,
+            "dominance": -0.121,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "delay",
+                "emotion": "anger"
+              },
+              {
+                "word": "betrayal",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.185,
+        "arousal": 0.227,
+        "dominance": 0.077,
+        "tokens": 2258,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "Dr. Wu: Market‑based carbon pricing remains the fastest route to the 45 % cut Prof. Abebe demands; a dynamic cap‑and‑trade system can tighten the budget yearly, forcing a 20‑year phased‑out plan (CEO Anders) to contract to a shorter horizon while preserving energy security. By channeling the G20‑backed proceeds into zero‑emission infrastructure, we satisfy Devi’s urgency without destabilising markets, and the retraining voucher scheme Min. Thorn values becomes a side benefit rather than a crutch. Thus, a calibrated carbon market, not a protracted transition, delivers both economic stability and the 12‑year climate deadline.",
+        "sentences": [
+          {
+            "text": "Dr. Wu: Market-based carbon pricing remains the fastest route to the 45 % cut Prof. Abebe demands; a dynamic cap-and-trade system can tighten the budget yearly, forcing a 20-year phased-out plan (CEO Anders) to contract to a shorter horizon while preserving energy security.",
+            "valence": 0.226,
+            "arousal": 0.367,
+            "dominance": 0.18,
+            "word_count": 43,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              },
+              {
+                "word": "dynamic",
+                "emotion": "surprise"
+              },
+              {
+                "word": "cap",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "trade",
+                "emotion": "trust"
+              },
+              {
+                "word": "system",
+                "emotion": "trust"
+              },
+              {
+                "word": "tighten",
+                "emotion": "anger"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "horizon",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "By channeling the G20-backed proceeds into zero-emission infrastructure, we satisfy Devi’s urgency without destabilising markets, and the retraining voucher scheme Min.",
+            "valence": 0.3,
+            "arousal": 0.367,
+            "dominance": 0.05,
+            "word_count": 21,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "voucher",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "Thorn values becomes a side benefit rather than a crutch.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 10,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thus, a calibrated carbon market, not a protracted transition, delivers both economic stability and the 12-year climate deadline.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": []
+          }
+        ],
+        "valence": 0.132,
+        "arousal": 0.183,
+        "dominance": 0.057,
+        "tokens": 2415,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 2
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Ambassador Osei: The burden of a just transition—rapid decarbonisation, equity safeguards, and cross‑border financing—must be borne by the affluent nations; their G20‑fueled capital is essential to meet the 1.5 °C window that Prof. Abebe stresses. While CEO Anders and Min. Thorn favour a 20‑year phased‑out plan, that timeline undermines the 12‑year science‑based deadline and risks prolonging fossil‑fuel subsidies; only the richest can re‑direct those subsidies toward zero‑emission infrastructure as Devi demands, with Dr. Wu’s carbon‑pricing mechanisms enforcing the shift. Thus, a wealth‑led, equity‑driven strategy is the only route that preserves energy security, economic stability, and urgent climate targets.",
+        "sentences": [
+          {
+            "text": "Ambassador Osei: The burden of a just transition-rapid decarbonisation, equity safeguards, and cross-border financing-must be borne by the affluent nations; their G20-fueled capital is essential to meet the 1.5 °C window that Prof. Abebe stresses.",
+            "valence": 0.089,
+            "arousal": 0.378,
+            "dominance": 0.0,
+            "word_count": 35,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Ambassador",
+                "emotion": "trust"
+              },
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              },
+              {
+                "word": "cross",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "While CEO Anders and Min.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 5,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thorn favour a 20-year phased-out plan, that timeline undermines the 12-year science-based deadline and risks prolonging fossil-fuel subsidies; only the richest can re-direct those subsidies toward zero-emission infrastructure as Devi demands, with Dr. Wu’s carbon-pricing mechanisms enforcing the shift.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 39,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Thus, a wealth-led, equity-driven strategy is the only route that preserves energy security, economic stability, and urgent climate targets.",
+            "valence": 0.35,
+            "arousal": 0.492,
+            "dominance": 0.125,
+            "word_count": 19,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "wealth",
+                "emotion": "joy"
+              },
+              {
+                "word": "urgent",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.16,
+        "arousal": 0.343,
+        "dominance": 0.106,
+        "tokens": 2834,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 2
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:36:18.437793",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gpt-oss:20b",
+    "round": 3,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "Minister Thorn: We must continue a “just transition” that preserves fossil‑fuel jobs while rapidly scaling renewables and storage, a balance Prof. Abebe underscoring is key to stay below 1.5 °C. CEO Anders’ 20‑year phased‑out plan will be tightened through a robust carbon‑pricing regime that Dr. Wu notes keeps markets stable, and the G20 framework Ambassador Osei offers will redirect subsidies to zero‑emission infrastructure, satisfying Activist Devi’s call for decisive action without jeopardising energy security.",
+        "sentences": [
+          {
+            "text": "Minister Thorn: We must continue a “just transition” that preserves fossil-fuel jobs while rapidly scaling renewables and storage, a balance Prof. Abebe underscoring is key to stay below 1.5 °C.",
+            "valence": 0.4,
+            "arousal": 0.3,
+            "dominance": 0.25,
+            "word_count": 30,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "continue",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "CEO Anders’ 20-year phased-out plan will be tightened through a robust carbon-pricing regime that Dr. Wu notes keeps markets stable, and the G20 framework Ambassador Osei offers will redirect subsidies to zero-emission infrastructure, satisfying Activist Devi’s call for decisive action without jeopardising energy security.",
+            "valence": 0.5,
+            "arousal": 0.2,
+            "dominance": 0.225,
+            "word_count": 44,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "stable",
+                "emotion": "trust"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "Ambassador",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.45,
+        "arousal": 0.25,
+        "dominance": 0.237,
+        "tokens": 2549,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Prof. Abebe: The 12‑year 1.5 °C window forces us to replace coal and oil generation with high‑yield renewables and storage in the next five years—only then can we meet the 45 % cut from 2010 levels (IPCC 2023). While preserving fossil‑fuel jobs is socially important, rapid deployment must be financed through G20‑backed carbon markets and a stringent carbon budget that ensures energy security without prolonging the transition. This market‑driven, equity‑focused strategy satisfies Min. Thorn’s social goals while delivering the science‑based urgency Devi demands.",
+        "sentences": [
+          {
+            "text": "Prof. Abebe: The 12-year 1.5 °C window forces us to replace coal and oil generation with high-yield renewables and storage in the next five years-only then can we meet the 45 % cut from 2010 levels (IPCC 2023).",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 38,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "While preserving fossil-fuel jobs is socially important, rapid deployment must be financed through G20-backed carbon markets and a stringent carbon budget that ensures energy security without prolonging the transition.",
+            "valence": 0.5,
+            "arousal": 0.3,
+            "dominance": 0.1,
+            "word_count": 29,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "important",
+                "emotion": "trust"
+              },
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "This market-driven, equity-focused strategy satisfies Min.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 6,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thorn’s social goals while delivering the science-based urgency Devi demands.",
+            "valence": 0.0,
+            "arousal": 0.633,
+            "dominance": -0.1,
+            "word_count": 10,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.125,
+        "arousal": 0.233,
+        "dominance": 0.0,
+        "tokens": 2857,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "CEO Anders: While Prof. Abebe rightly stresses a 5‑year rapid deployment to hit the 1.5 °C target, a 20‑year phased‑out plan lets us roll out renewables and storage at a pace that preserves oil output and protects the jobs Min. Thorn champions; we can tighten this horizon through a dynamic carbon‑pricing regime Dr. Wu proposes. By aligning the G20‑backed financing framework Amb. Osei suggests with targeted subsidy re‑allocation, we meet the science deadline, maintain energy security, and deliver the green credibility Devi demands—all without unleashing market shocks.",
+        "sentences": [
+          {
+            "text": "CEO Anders: While Prof. Abebe rightly stresses a 5-year rapid deployment to hit the 1.5 °C target, a 20-year phased-out plan lets us roll out renewables and storage at a pace that preserves oil output and protects the jobs Min.",
+            "valence": -0.067,
+            "arousal": 0.633,
+            "dominance": 0.233,
+            "word_count": 40,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              },
+              {
+                "word": "hit",
+                "emotion": "anger"
+              },
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Thorn champions; we can tighten this horizon through a dynamic carbon-pricing regime Dr. Wu proposes.",
+            "valence": -0.067,
+            "arousal": 0.633,
+            "dominance": 0.233,
+            "word_count": 15,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "tighten",
+                "emotion": "anger"
+              },
+              {
+                "word": "horizon",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "dynamic",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "By aligning the G20-backed financing framework Amb. Osei suggests with targeted subsidy re-allocation, we meet the science deadline, maintain energy security, and deliver the green credibility Devi demands-all without unleashing market shocks.",
+            "valence": 0.312,
+            "arousal": 0.237,
+            "dominance": 0.2,
+            "word_count": 32,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "subsidy",
+                "emotion": "anger"
+              },
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "credibility",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.059,
+        "arousal": 0.501,
+        "dominance": 0.222,
+        "tokens": 3194,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "The 12‑year, 1.5 °C window cannot be met with a 20‑year “just‑transition” that lets fossil‑fuel plants keep running while we retrain workers. Prof. Abebe’s science demands we shut every coal‑plant in the next five years, and the G20 framework must be redirected from fossil‑fuel subsidies to zero‑emission infrastructure, not from sustaining a 20‑year phased‑out plan that CEO Anders proposes. Moral responsibility to future generations forces immediate, uncompromised action—any delay is a betrayal that will cost lives and ecosystems far beyond our current economic calculations.",
+        "sentences": [
+          {
+            "text": "The 12-year, 1.5 °C window cannot be met with a 20-year “just-transition” that lets fossil-fuel plants keep running while we retrain workers. Prof. Abebe’s science demands we shut every coal-plant in the next five years, and the G20 framework must be redirected from fossil-fuel subsidies to zero-emission infrastructure, not from sustaining a 20-year phased-out plan that CEO Anders proposes.",
+            "valence": 0.4,
+            "arousal": 0.3,
+            "dominance": 0.25,
+            "word_count": 59,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Moral responsibility to future generations forces immediate, uncompromised action-any delay is a betrayal that will cost lives and ecosystems far beyond our current economic calculations.",
+            "valence": -0.447,
+            "arousal": 0.269,
+            "dominance": 0.036,
+            "word_count": 25,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "delay",
+                "emotion": "anger"
+              },
+              {
+                "word": "betrayal",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": -0.023,
+        "arousal": 0.284,
+        "dominance": 0.143,
+        "tokens": 3505,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "Dr. Wu: A calibrated, dynamic cap‑and‑trade system can tighten the carbon budget annually, forcing the 20‑year phased‑out trajectory of CEO Anders to contract to a 5‑10‑year horizon while preserving energy security; this aligns with Prof. Abebe’s 12‑year 1.5 °C window and delivers the 45 % cut IPCC‑2023 demands. By earmarking G20‑backed proceeds for zero‑emission infrastructure, we satisfy Devi’s call for immediate action and free retraining vouchers to become a complementary, not core, tool. Thus, a market‑driven, rapidly tightening carbon price delivers both economic stability and the urgent climate deadlines.",
+        "sentences": [
+          {
+            "text": "Dr. Wu: A calibrated, dynamic cap-and-trade system can tighten the carbon budget annually, forcing the 20-year phased-out trajectory of CEO Anders to contract to a 5-10-year horizon while preserving energy security; this aligns with Prof. Abebe’s 12-year 1.5 °C window and delivers the 45 % cut IPCC-2023 demands.",
+            "valence": 0.286,
+            "arousal": 0.357,
+            "dominance": 0.221,
+            "word_count": 48,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "dynamic",
+                "emotion": "surprise"
+              },
+              {
+                "word": "cap",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "trade",
+                "emotion": "trust"
+              },
+              {
+                "word": "system",
+                "emotion": "trust"
+              },
+              {
+                "word": "tighten",
+                "emotion": "anger"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "horizon",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "By earmarking G20-backed proceeds for zero-emission infrastructure, we satisfy Devi’s call for immediate action and free retraining vouchers to become a complementary, not core, tool.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 25,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": []
+          },
+          {
+            "text": "Thus, a market-driven, rapidly tightening carbon price delivers both economic stability and the urgent climate deadlines.",
+            "valence": 0.0,
+            "arousal": 0.633,
+            "dominance": -0.1,
+            "word_count": 16,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "urgent",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.095,
+        "arousal": 0.33,
+        "dominance": 0.04,
+        "tokens": 3696,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 3
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Ambassador Osei: The weight of a swift, equity‑driven decarbonisation must rest on the affluent, whose G20‑backed capital can replace fossil‑fuel subsidies with zero‑emission infrastructure, fulfilling Prof. Abebe’s 12‑year 1.5 °C window and Dr. Wu’s market‑based pricing that can tighten the carbon budget. While CEO Anders and Min. Thorn favour a 20‑year phase‑out, that horizon dilutes the moral urgency that Devi highlights—only a wealth‑led, re‑oriented finance stream can sustain energy security and economic stability without prolonging the climate debt.",
+        "sentences": [
+          {
+            "text": "Ambassador Osei: The weight of a swift, equity-driven decarbonisation must rest on the affluent, whose G20-backed capital can replace fossil-fuel subsidies with zero-emission infrastructure, fulfilling Prof. Abebe’s 12-year 1.5 °C window and Dr. Wu’s market-based pricing that can tighten the carbon budget.",
+            "valence": 0.129,
+            "arousal": 0.307,
+            "dominance": 0.214,
+            "word_count": 42,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Ambassador",
+                "emotion": "trust"
+              },
+              {
+                "word": "weight",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "tighten",
+                "emotion": "anger"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "While CEO Anders and Min.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 5,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thorn favour a 20-year phase-out, that horizon dilutes the moral urgency that Devi highlights-only a wealth-led, re-oriented finance stream can sustain energy security and economic stability without prolonging the climate debt.",
+            "valence": 0.03,
+            "arousal": 0.297,
+            "dominance": 0.12,
+            "word_count": 31,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "horizon",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "wealth",
+                "emotion": "joy"
+              },
+              {
+                "word": "debt",
+                "emotion": "sadness"
+              }
+            ]
+          }
+        ],
+        "valence": 0.053,
+        "arousal": 0.201,
+        "dominance": 0.111,
+        "tokens": 3811,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 3
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:37:02.451145",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gpt-oss:20b",
+    "round": 4,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "Minister Thorn: We must chart a “just transition” that safeguards fossil‑fuel workers while rapidly deploying renewables and storage, a compromise that Prof. Abebe deems essential to stay within the 1.5 °C window. By coupling CEO Anders’ 20‑year phased‑out plan with a dynamic carbon‑pricing regime that Dr. Wu advocates, we can incrementally tighten the budget, preserve energy security, and channel G20 funds—per Amb. Osei’s framework—toward zero‑emission infrastructure, thereby meeting Activist Devi’s urgency without destabilising markets.",
+        "sentences": [
+          {
+            "text": "Minister Thorn: We must chart a “just transition” that safeguards fossil-fuel workers while rapidly deploying renewables and storage, a compromise that Prof. Abebe deems essential to stay within the 1.5 °C window.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 32,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "chart",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "By coupling CEO Anders’ 20-year phased-out plan with a dynamic carbon-pricing regime that Dr. Wu advocates, we can incrementally tighten the budget, preserve energy security, and channel G20 funds-per Amb. Osei’s framework-toward zero-emission infrastructure, thereby meeting Activist Devi’s urgency without destabilising markets.",
+            "valence": 0.167,
+            "arousal": 0.456,
+            "dominance": 0.167,
+            "word_count": 42,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "dynamic",
+                "emotion": "surprise"
+              },
+              {
+                "word": "tighten",
+                "emotion": "anger"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.384,
+        "arousal": 0.278,
+        "dominance": 0.183,
+        "tokens": 3732,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Min. Thorn rightly highlights social equity, but the IPCC 2023 report shows we have only a 12‑year window to cut global CO₂ 45 % from 2010 levels and stay below 1.5 °C. Therefore the “just transition” must pivot immediately to high‑yield renewables and storage, financed by G20‑backed carbon markets and a tightening carbon budget that can protect jobs through retraining while eliminating fossil‑fuel plants within five years. This strategy satisfies Dr. Wu’s economic stability arguments, Amb. Osei’s equity‑driven finance framework, and Devi’s moral urgency.",
+        "sentences": [
+          {
+            "text": "Min.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 1,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thorn rightly highlights social equity, but the IPCC 2023 report shows we have only a 12-year window to cut global CO₂ 45 % from 2010 levels and stay below 1.5 °C.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 31,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Therefore the “just transition” must pivot immediately to high-yield renewables and storage, financed by G20-backed carbon markets and a tightening carbon budget that can protect jobs through retraining while eliminating fossil-fuel plants within five years.",
+            "valence": 0.467,
+            "arousal": 0.233,
+            "dominance": 0.233,
+            "word_count": 35,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "pivot",
+                "emotion": "trust"
+              },
+              {
+                "word": "immediately",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "This strategy satisfies Dr. Wu’s economic stability arguments, Amb. Osei’s equity-driven finance framework, and Devi’s moral urgency.",
+            "valence": -0.037,
+            "arousal": 0.458,
+            "dominance": 0.237,
+            "word_count": 17,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "arguments",
+                "emotion": "anger"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.108,
+        "arousal": 0.173,
+        "dominance": 0.117,
+        "tokens": 4295,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "CEO Anders: While Prof. Abebe correctly points to the 12‑year window, a 20‑year phased‑out plan allows us to scale renewables and storage gradually, preserving oil output and the jobs Min. Thorn deems essential; this pace is sustainable only if tightened by a dynamic carbon‑pricing regime Dr. Wu supports.  By channeling Amb. Osei’s G20‑backed financing into zero‑emission projects and reallocating fossil‑fuel subsidies, we can meet science‑based targets, protect communities, and maintain energy security—delivering the green credibility Devi demands without abrupt market shocks.",
+        "sentences": [
+          {
+            "text": "CEO Anders: While Prof. Abebe correctly points to the 12-year window, a 20-year phased-out plan allows us to scale renewables and storage gradually, preserving oil output and the jobs Min.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 30,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Thorn deems essential; this pace is sustainable only if tightened by a dynamic carbon-pricing regime Dr. Wu supports.",
+            "valence": 0.3,
+            "arousal": 0.7,
+            "dominance": -0.1,
+            "word_count": 18,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "dynamic",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "By channeling Amb. Osei’s G20-backed financing into zero-emission projects and reallocating fossil-fuel subsidies, we can meet science-based targets, protect communities, and maintain energy security-delivering the green credibility Devi demands without abrupt market shocks.",
+            "valence": 0.533,
+            "arousal": 0.383,
+            "dominance": 0.15,
+            "word_count": 33,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "credibility",
+                "emotion": "trust"
+              },
+              {
+                "word": "abrupt",
+                "emotion": "surprise"
+              }
+            ]
+          }
+        ],
+        "valence": 0.344,
+        "arousal": 0.528,
+        "dominance": 0.117,
+        "tokens": 4302,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "We cannot wait another decade with fossil‑fuel plants still firing; the 12‑year, 1.5 °C window forces us to shut every coal‑plant in five years, backed by a G20‑led, zero‑emission finance stream that replaces subsidies with renewable capital. Any 20‑year phased‑out plan, even with retraining, is an irreversible betrayal that will cost lives and ecosystems far beyond economic calculations. We must act now—moral, scientific, and economic imperatives demand uncompromised, rapid decarbonisation.",
+        "sentences": [
+          {
+            "text": "We cannot wait another decade with fossil-fuel plants still firing; the 12-year, 1.5 °C window forces us to shut every coal-plant in five years, backed by a G20-led, zero-emission finance stream that replaces subsidies with renewable capital.",
+            "valence": 0.2,
+            "arousal": 0.5,
+            "dominance": 0.3,
+            "word_count": 37,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "wait",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Any 20-year phased-out plan, even with retraining, is an irreversible betrayal that will cost lives and ecosystems far beyond economic calculations.",
+            "valence": -0.233,
+            "arousal": 0.317,
+            "dominance": 0.117,
+            "word_count": 21,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "betrayal",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "We must act now-moral, scientific, and economic imperatives demand uncompromised, rapid decarbonisation.",
+            "valence": 0.037,
+            "arousal": 0.475,
+            "dominance": 0.238,
+            "word_count": 12,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "scientific",
+                "emotion": "trust"
+              },
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "rapid",
+                "emotion": "surprise"
+              }
+            ]
+          }
+        ],
+        "valence": 0.001,
+        "arousal": 0.431,
+        "dominance": 0.218,
+        "tokens": 4565,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "Dr. Wu: A flexible carbon‑pricing regime that tightens annually can compress the 20‑year phased‑out horizon of CEO Anders to a 5‑10‑year window, meeting Prof. Abebe’s 12‑year 45 % cut while preserving energy security; this is the only market‑based tool that aligns economic stability with the urgent science. By earmarking G20 proceeds for zero‑emission infrastructure, we satisfy Devi’s demand for immediate action and turn retraining vouchers into a complementary strategy rather than a crutch, ensuring the transition remains both socially equitable and climate‑effective.",
+        "sentences": [
+          {
+            "text": "Dr. Wu: A flexible carbon-pricing regime that tightens annually can compress the 20-year phased-out horizon of CEO Anders to a 5-10-year window, meeting Prof. Abebe’s 12-year 45 % cut while preserving energy security; this is the only market-based tool that aligns economic stability with the urgent science.",
+            "valence": -0.167,
+            "arousal": 0.611,
+            "dominance": 0.233,
+            "word_count": 47,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "compress",
+                "emotion": "anger"
+              },
+              {
+                "word": "horizon",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "urgent",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "By earmarking G20 proceeds for zero-emission infrastructure, we satisfy Devi’s demand for immediate action and turn retraining vouchers into a complementary strategy rather than a crutch, ensuring the transition remains both socially equitable and climate-effective.",
+            "valence": -0.089,
+            "arousal": 0.367,
+            "dominance": 0.156,
+            "word_count": 35,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "demand",
+                "emotion": "anger"
+              },
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              },
+              {
+                "word": "effective",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": -0.128,
+        "arousal": 0.489,
+        "dominance": 0.195,
+        "tokens": 4801,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 4
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Ambassador Osei: The burden of a swift, equity‑driven decarbonisation rests squarely on the affluent nations; their G20‑backed capital must replace fossil‑fuel subsidies with zero‑emission infrastructure to honour Prof. Abebe’s 12‑year 1.5 °C window. While CEO Anders and Min. Thorn champion a 20‑year phase‑out, that horizon dilutes the moral urgency that Devi stresses—only a wealth‑led, re‑oriented finance stream can preserve energy security, economic stability, and the urgent climate targets without prolonging the climate debt. Thus, a market‑based, dynamically tightening carbon price, financed by the G20, is the only viable path to meet science, equity, and security in concert.",
+        "sentences": [
+          {
+            "text": "Ambassador Osei: The burden of a swift, equity-driven decarbonisation rests squarely on the affluent nations; their G20-backed capital must replace fossil-fuel subsidies with zero-emission infrastructure to honour Prof. Abebe’s 12-year 1.5 °C window.",
+            "valence": 0.6,
+            "arousal": 0.1,
+            "dominance": 0.2,
+            "word_count": 33,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "Ambassador",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "While CEO Anders and Min.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 5,
+            "mentions": [],
+            "words_emotions": []
+          },
+          {
+            "text": "Thorn champion a 20-year phase-out, that horizon dilutes the moral urgency that Devi stresses-only a wealth-led, re-oriented finance stream can preserve energy security, economic stability, and the urgent climate targets without prolonging the climate debt.",
+            "valence": 0.098,
+            "arousal": 0.36,
+            "dominance": 0.119,
+            "word_count": 35,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "champion",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "horizon",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "wealth",
+                "emotion": "joy"
+              },
+              {
+                "word": "urgent",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "debt",
+                "emotion": "sadness"
+              }
+            ]
+          },
+          {
+            "text": "Thus, a market-based, dynamically tightening carbon price, financed by the G20, is the only viable path to meet science, equity, and security in concert.",
+            "valence": 0,
+            "arousal": 0,
+            "dominance": 0,
+            "word_count": 24,
+            "mentions": [],
+            "words_emotions": []
+          }
+        ],
+        "valence": 0.174,
+        "arousal": 0.115,
+        "dominance": 0.08,
+        "tokens": 4949,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 4
+      }
+    ]
+  },
+  {
+    "ts": "2026-07-30T14:37:40.724763",
+    "type": "broadcast",
+    "topic": "",
+    "model": "gpt-oss:20b",
+    "round": 5,
+    "turns": [
+      {
+        "agent_id": "min_thorn",
+        "name": "Min. Thorn",
+        "text": "Minister Thorn: Our priority remains a “just transition” that protects fossil‑fuel workers while rapidly scaling renewables and storage—an approach Prof. Abebe deems essential for the 1.5 °C window. By aligning CEO Anders’ 20‑year phased‑out plan with a dynamic carbon‑pricing regime Dr. Wu champions, we can tighten the budget annually, preserve energy security, and redirect G20 funds—per Ambassador Osei’s framework—toward zero‑emission infrastructure, thereby addressing Activist Devi’s urgency without destabilising markets.",
+        "sentences": [
+          {
+            "text": "Minister Thorn: Our priority remains a “just transition” that protects fossil-fuel workers while rapidly scaling renewables and storage-an approach Prof. Abebe deems essential for the 1.5 °C window.",
+            "valence": -0.167,
+            "arousal": 0.3,
+            "dominance": -0.233,
+            "word_count": 28,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              }
+            ]
+          },
+          {
+            "text": "By aligning CEO Anders’ 20-year phased-out plan with a dynamic carbon-pricing regime Dr. Wu champions, we can tighten the budget annually, preserve energy security, and redirect G20 funds-per Ambassador Osei’s framework-toward zero-emission infrastructure, thereby addressing Activist Devi’s urgency without destabilising markets.",
+            "valence": 0.229,
+            "arousal": 0.405,
+            "dominance": 0.171,
+            "word_count": 41,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "dynamic",
+                "emotion": "surprise"
+              },
+              {
+                "word": "tighten",
+                "emotion": "anger"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              },
+              {
+                "word": "Ambassador",
+                "emotion": "trust"
+              },
+              {
+                "word": "framework",
+                "emotion": "trust"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": 0.031,
+        "arousal": 0.353,
+        "dominance": -0.031,
+        "tokens": 4730,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "prof_abebe",
+        "name": "Prof. Abebe",
+        "text": "Prof. Abebe: The IPCC 2023 data show only a 12‑year window to cut global CO₂ by 45 % from 2010 levels and stay below 1.5 °C, so the “just transition” must pivot immediately to high‑yield renewables and storage, financed by G20‑backed carbon markets and a tightening carbon budget that protects jobs through retraining. A 20‑year phased‑out plan simply postpones the irreversible emissions debt and risks missing the science‑based deadline that Devi and the climate science community demand.",
+        "sentences": [
+          {
+            "text": "Prof. Abebe: The IPCC 2023 data show only a 12-year window to cut global CO₂ by 45 % from 2010 levels and stay below 1.5 °C, so the “just transition” must pivot immediately to high-yield renewables and storage, financed by G20-backed carbon markets and a tightening carbon budget that protects jobs through retraining.",
+            "valence": 0.5,
+            "arousal": 0.2,
+            "dominance": 0.225,
+            "word_count": 53,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "show",
+                "emotion": "trust"
+              },
+              {
+                "word": "pivot",
+                "emotion": "trust"
+              },
+              {
+                "word": "immediately",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "budget",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "A 20-year phased-out plan simply postpones the irreversible emissions debt and risks missing the science-based deadline that Devi and the climate science community demand.",
+            "valence": -0.45,
+            "arousal": 0.237,
+            "dominance": 0.025,
+            "word_count": 24,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "plan",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "debt",
+                "emotion": "sadness"
+              },
+              {
+                "word": "missing",
+                "emotion": "fear"
+              },
+              {
+                "word": "demand",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": 0.025,
+        "arousal": 0.218,
+        "dominance": 0.125,
+        "tokens": 5081,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "ceo_anders",
+        "name": "CEO Anders",
+        "text": "CEO Anders: While Prof. Abebe’s 12‑year, 1.5‑degree window underscores urgency, a 20‑year phased‑out strategy lets us scale renewables and storage while maintaining oil output and safeguarding the jobs Min. Thorn champions; this balance can be tightened through a dynamic carbon‑pricing regime Dr. Wu advocates. By redirecting Amb. Osei’s G20‑backed financing from fossil‑fuel subsidies to zero‑emission projects, we meet the science‑based cut, preserve energy security, and deliver the green credibility Devi demands—all without abrupt market shocks.",
+        "sentences": [
+          {
+            "text": "CEO Anders: While Prof. Abebe’s 12-year, 1.5-degree window underscores urgency, a 20-year phased-out strategy lets us scale renewables and storage while maintaining oil output and safeguarding the jobs Min.",
+            "valence": 0.0,
+            "arousal": 0.633,
+            "dominance": -0.1,
+            "word_count": 29,
+            "mentions": [
+              "ceo_anders"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "Thorn champions; this balance can be tightened through a dynamic carbon-pricing regime Dr. Wu advocates.",
+            "valence": 0.3,
+            "arousal": 0.7,
+            "dominance": -0.1,
+            "word_count": 15,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "dynamic",
+                "emotion": "surprise"
+              }
+            ]
+          },
+          {
+            "text": "By redirecting Amb. Osei’s G20-backed financing from fossil-fuel subsidies to zero-emission projects, we meet the science-based cut, preserve energy security, and deliver the green credibility Devi demands-all without abrupt market shocks.",
+            "valence": 0.533,
+            "arousal": 0.383,
+            "dominance": 0.15,
+            "word_count": 31,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "green",
+                "emotion": "joy"
+              },
+              {
+                "word": "credibility",
+                "emotion": "trust"
+              },
+              {
+                "word": "abrupt",
+                "emotion": "surprise"
+              }
+            ]
+          }
+        ],
+        "valence": 0.278,
+        "arousal": 0.572,
+        "dominance": -0.017,
+        "tokens": 5397,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "activist_devi",
+        "name": "Devi",
+        "text": "The 12‑year, 1.5 °C window forces us to shut every coal‑plant in the next five years—any 20‑year “just‑transition” that keeps fossil‑fuel workers on the clock is a moral betrayal. Prof. Abebe’s science, Dr. Wu’s carbon‑pricing, and Amb. Osei’s G20 finance must be re‑oriented to zero‑emission projects, not fossil‑fuel subsidies, so that energy security is preserved while we decarbonise irrevocably. The future of our children and the planet demands immediate, uncompromised action; delay will cost lives and ecosystems far beyond any economic calculation.",
+        "sentences": [
+          {
+            "text": "The 12-year, 1.5 °C window forces us to shut every coal-plant in the next five years-any 20-year “just-transition” that keeps fossil-fuel workers on the clock is a moral betrayal. Prof. Abebe’s science, Dr. Wu’s carbon-pricing, and Amb. Osei’s G20 finance must be re-oriented to zero-emission projects, not fossil-fuel subsidies, so that energy security is preserved while we decarbonise irrevocably.",
+            "valence": -0.172,
+            "arousal": 0.344,
+            "dominance": 0.194,
+            "word_count": 59,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "clock",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "moral",
+                "emotion": "anger"
+              },
+              {
+                "word": "betrayal",
+                "emotion": "anger"
+              }
+            ]
+          },
+          {
+            "text": "The future of our children and the planet demands immediate, uncompromised action; delay will cost lives and ecosystems far beyond any economic calculation.",
+            "valence": -0.212,
+            "arousal": 0.388,
+            "dominance": 0.062,
+            "word_count": 23,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "delay",
+                "emotion": "anger"
+              },
+              {
+                "word": "calculation",
+                "emotion": "anticipation"
+              }
+            ]
+          }
+        ],
+        "valence": -0.192,
+        "arousal": 0.366,
+        "dominance": 0.128,
+        "tokens": 5733,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "economist_wu",
+        "name": "Dr. Wu",
+        "text": "Dr. Wu: A dynamically tightening cap‑and‑trade system can compress the 20‑year phase‑out of CEO Anders into a 5‑10‑year window, delivering the 45 % cut IPCC 2023 requires while keeping energy security intact. By earmarking G20 proceeds for zero‑emission infrastructure, we satisfy Devi’s urgency and use retraining vouchers as a complementary buffer, ensuring the transition remains both economically stable and scientifically sound.",
+        "sentences": [
+          {
+            "text": "Dr. Wu: A dynamically tightening cap-and-trade system can compress the 20-year phase-out of CEO Anders into a 5-10-year window, delivering the 45 % cut IPCC 2023 requires while keeping energy security intact.",
+            "valence": 0.3,
+            "arousal": 0.26,
+            "dominance": 0.27,
+            "word_count": 32,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "cap",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "trade",
+                "emotion": "trust"
+              },
+              {
+                "word": "system",
+                "emotion": "trust"
+              },
+              {
+                "word": "compress",
+                "emotion": "anger"
+              },
+              {
+                "word": "intact",
+                "emotion": "trust"
+              }
+            ]
+          },
+          {
+            "text": "By earmarking G20 proceeds for zero-emission infrastructure, we satisfy Devi’s urgency and use retraining vouchers as a complementary buffer, ensuring the transition remains both economically stable and scientifically sound.",
+            "valence": 0.144,
+            "arousal": 0.344,
+            "dominance": -0.044,
+            "word_count": 29,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              },
+              {
+                "word": "remains",
+                "emotion": "disgust"
+              },
+              {
+                "word": "stable",
+                "emotion": "trust"
+              }
+            ]
+          }
+        ],
+        "valence": 0.222,
+        "arousal": 0.302,
+        "dominance": 0.113,
+        "tokens": 5938,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 5
+      },
+      {
+        "agent_id": "diplomat_osei",
+        "name": "Amb. Osei",
+        "text": "Ambassador Osei: The only path that honours the 1.5 °C window and protects vulnerable communities is a wealth‑led, equity‑driven decarbonisation financed through the G20; the 20‑year phase‑out championed by CEO Anders dilutes the urgency Prof. Abebe and Devi insist upon. By channeling G20 capital into zero‑emission infrastructure and a dynamically tightening carbon price—exactly the mechanism Dr. Wu proposes—we can replace fossil‑fuel subsidies, preserve energy security, and deliver the 45 % cut within five years, fulfilling both moral and economic imperatives.",
+        "sentences": [
+          {
+            "text": "Ambassador Osei: The only path that honours the 1.5 °C window and protects vulnerable communities is a wealth-led, equity-driven decarbonisation financed through the G20; the 20-year phase-out championed by CEO Anders dilutes the urgency Prof. Abebe and Devi insist upon.",
+            "valence": 0.433,
+            "arousal": 0.361,
+            "dominance": 0.15,
+            "word_count": 40,
+            "mentions": [
+              "activist_devi"
+            ],
+            "words_emotions": [
+              {
+                "word": "Ambassador",
+                "emotion": "trust"
+              },
+              {
+                "word": "wealth",
+                "emotion": "joy"
+              },
+              {
+                "word": "urgency",
+                "emotion": "anticipation"
+              }
+            ]
+          },
+          {
+            "text": "By channeling G20 capital into zero-emission infrastructure and a dynamically tightening carbon price-exactly the mechanism Dr. Wu proposes-we can replace fossil-fuel subsidies, preserve energy security, and deliver the 45 % cut within five years, fulfilling both moral and economic imperatives.",
+            "valence": -0.05,
+            "arousal": 0.4,
+            "dominance": 0.35,
+            "word_count": 40,
+            "mentions": [],
+            "words_emotions": [
+              {
+                "word": "moral",
+                "emotion": "anger"
+              }
+            ]
+          }
+        ],
+        "valence": 0.192,
+        "arousal": 0.381,
+        "dominance": 0.25,
+        "tokens": 6078,
+        "cost": 0.0,
+        "model": "gpt-oss:20b",
+        "temperature": 0.8,
+        "round": 5
+      }
+    ]
+  }
+]
